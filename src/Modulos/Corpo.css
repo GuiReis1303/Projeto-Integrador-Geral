@@ -1,0 +1,17 @@
+.corpo{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemLateral{
+    width: 12%;
+    height: 530px;
+    background: red;
+}
+
+.meio{
+    width: 72%;
+    background: blue;
+}

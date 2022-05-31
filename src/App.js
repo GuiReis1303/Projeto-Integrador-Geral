@@ -1,11 +1,13 @@
 import './App.css';
-import Menu from './Menu';
+import Menu from './Modulos/Menu';
 import { Routes, Route, Link } from "react-router-dom";
-import Home from './Home';
-import Assinatura from './Assinatura';
-import CursosOferecidos from './CursosOferecidos';
-import Cadastro from './Cadastro';
-import Login from './Login';
+import Home from './Paginas/Home';
+import Assinatura from './Paginas/Assinatura';
+import CursosOferecidos from './Paginas/CursosOferecidos';
+import Comunidade from './Paginas/Comunidade';
+import Faq from './Paginas/Faq';
+import Cadastro from './Paginas/Cadastro';
+import Login from './Paginas/Login';
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
                 <Route path='/' element={<Home/>} />
                 <Route path='Assinatura' element={<Assinatura/>} />
                 <Route path='CursosOferecidos' element={<CursosOferecidos/>} />
+                <Route path='Comunidade' element={<Comunidade />} />
+                <Route path='Faq' element={<Faq />} />
                 <Route path='Cadastro' element={<Cadastro/>} />
                 <Route path='Login' element={<Login/>} /> 
             </Routes>

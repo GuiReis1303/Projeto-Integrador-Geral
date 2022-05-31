@@ -1,9 +1,12 @@
 import React from "react";
+import Corpo from "../Modulos/Corpo";
+import Rodape from "../Modulos/Rodape";
 
 const Assinatura = () => {
     return ( 
         <div>
-            <h1>Assinatura</h1>
+            <Corpo/>
+            <Rodape/>
         </div>
      );
 }
