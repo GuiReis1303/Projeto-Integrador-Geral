@@ -2,13 +2,15 @@
     margin-top: 10px;
     width: 100%;
     display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: space-between;
 }
 
 .imagemLateral{
     width: 12%;
     height: 530px;
-    background: red;
+    background: none;
+    
 }
 
 .meio{
@@ -23,9 +25,11 @@
 .caixa01{
     width: 45%;
     border: 2px yellowgreen solid;
+    background-color: #2b2b2b;
 }
 
 .caixa02{
     width: 45%;
     border: 2px yellow solid;
+    background-color: #2b2b2b;
 }
