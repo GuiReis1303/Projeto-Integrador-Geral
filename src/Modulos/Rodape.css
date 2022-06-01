@@ -5,12 +5,19 @@
     display: flex;
     justify-content: space-between;
     background: #313131;
+    background-image: linear-gradient(-90deg, #313131, #414147);
     color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+h3{
 
+font-size: 1.8em;
+
+}
 .editRodape{
     text-decoration: none;
     color: #FFFFFF;
+   
 }
 
 .rodapeLogo{
@@ -19,41 +26,43 @@
 
 .rodapeLogo img{
     width: 100%;
+    opacity: 25%;
+    padding-top: 7%;
+
 }
 
 .rodapeInformacao{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    font-size: 0.8em;
+    width: 55%;
 }
 
 .rodapeInicio{
     width: 150px;
+    padding-top: 0.5em;
 }
 
 .rodapeSobrenos{
     width: 150px;
+    padding-top: 0.5em;
 }
 
 .rodapeSuporte{
     width: 150px;
+    padding-top: 0.5em;
 }
 
 .rodapeSocial{
-    width: 25%;
+   
     text-align: center;
+  padding: 6% 3%;
+cursor: pointer;
+  
 }
 
 .rodapeSocial img{
     margin-top: 10px;
+    margin-left: 20px;
 }
 
-.rodapeSocial button{
-    padding: 20px;
-    width: 150px;
-    border-radius: 20px;
-    border: none;
-    background: red;
-    color: #FFFFFF;
-    font-size: 1.2em;
-}

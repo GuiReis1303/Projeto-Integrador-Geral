@@ -6,6 +6,7 @@ const Assinatura = () => {
     return ( 
         <div>
             <Corpo/>
+            
             <Rodape/>
         </div>
      );
