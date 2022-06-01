@@ -6,18 +6,18 @@ const Menu = () => {
     return ( 
         <div className="menu">
             <div className="imagem">
-                <img src="https://www.jotform.com/pt/resources/assets/logo-nb/jotform-logo-dark-400x200.png" />
+            <img src={require("./logobranca.png")}/>
             </div>
             <div className="link">
-                <Link to="/">Home</Link>
-                <Link to="/Assinatura">Assinatura</Link>
-                <Link to="/CursosOferecidos">Cursos Oferecidos</Link>
-                <Link to="/Comunidade">Comunidade</Link>
-                <Link to="/Faq">FAQ</Link>
+                <Link className="editMenuH1" to="/">Home</Link>
+                <Link className="editMenuH1" to="/Assinatura">Assinatura</Link>
+                <Link className="editMenuH1" to="/CursosOferecidos">Cursos Oferecidos</Link>
+                <Link className="editMenuH1" to="/Comunidade">Comunidade</Link>
+                <Link className="editMenuH1" to="/Faq">FAQ</Link>
             </div>
             <div className="login">
-                <Link to="/Cadastro">Cadastre-se</Link>
-                <Link to="/Login">Login</Link>
+                <Link className="editMenuH2" to="/Cadastro">Cadastre-se</Link>
+                <Link className="editMenuH2" to="/Login">Login</Link>
             </div>
             
         </div>
