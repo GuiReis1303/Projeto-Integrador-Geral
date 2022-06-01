@@ -1,0 +1,31 @@
+.corpo{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemLateral{
+    width: 12%;
+    height: 530px;
+    background: red;
+}
+
+.meio{
+    width: 72%; 
+    display: flex;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+
+.caixa01{
+    width: 45%;
+    border: 2px yellowgreen solid;
+}
+
+.caixa02{
+    width: 45%;
+    border: 2px yellow solid;
+}
