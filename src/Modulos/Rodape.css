@@ -1,8 +1,59 @@
 .rodape{
     margin-top: 10px;
     width: 100%;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     background: #313131;
     color: #FFFFFF;
+}
+
+.editRodape{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.rodapeLogo{
+    width: 20%;
+}
+
+.rodapeLogo img{
+    width: 100%;
+}
+
+.rodapeInformacao{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.rodapeInicio{
+    width: 150px;
+}
+
+.rodapeSobrenos{
+    width: 150px;
+}
+
+.rodapeSuporte{
+    width: 150px;
+}
+
+.rodapeSocial{
+    width: 25%;
+    text-align: center;
+}
+
+.rodapeSocial img{
+    margin-top: 10px;
+}
+
+.rodapeSocial button{
+    padding: 20px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    background: red;
+    color: #FFFFFF;
+    font-size: 1.2em;
 }
