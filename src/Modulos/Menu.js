@@ -6,7 +6,7 @@ const Menu = () => {
     return ( 
         <div className="menu">
             <div className="imagem">
-            <img src={require("./logobranca.png")}/>
+                <img src={require("./logobranca.png")}/>
             </div>
             <div className="link">
                 <Link className="editMenuH1" to="/">Home</Link>
