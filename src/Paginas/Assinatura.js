@@ -1,7 +1,5 @@
 import React from "react";
-import Corpo from "../Modulos/Corpo";
 import Rodape from "../Modulos/Rodape";
-
 const Assinatura = () => {
     require('./Assinatura.css')
     return ( 
