@@ -12,8 +12,8 @@ const Assinatura = () => {
                 <div className="meio">
                     <div className="caixa1">
                         <div>
-                            <h2>Plano Prata</h2>
-                            <img className="imgC" src="https://i.imgur.com/NIxXpcL.png"/>
+                            <h2 className="">Plano Prata</h2>
+                            <img className="imgCP" src="https://i.imgur.com/NIxXpcL.png"/>
                         </div>
 
                        
@@ -22,7 +22,7 @@ const Assinatura = () => {
                     <div className="caixa2">
                         <div>
                             <h2>Plano Gold</h2>
-                            <img className="imgC" src=" https://i.imgur.com/pzop9Yh.png"/>
+                            <img className="imgCG" src=" https://i.imgur.com/pzop9Yh.png"/>
                         </div>
 
                       
@@ -31,19 +31,18 @@ const Assinatura = () => {
 
 
                     <div className="preco1">
-                        <div>
+                       
                             <button>Compre agora</button>
                             <p> A partir de <b>R$29,99</b>/mês </p>
                                 <ul>
                                     <li>60 Aulas</li>
                                     <li>11 Cursos disponíveis</li> 
                                 </ul>
-                        </div>
 
                     </div>
 
                     <div className="preco2">
-                        <div>
+
                             <button>Compre agora</button>
                               <p> A partir de <b>R$59,99</b>/mês </p>
                                 <ul>
@@ -51,11 +50,22 @@ const Assinatura = () => {
                                     <li>33 Cursos disponíveis</li> 
                                     <li>Certificado</li>
                                 </ul>
-                        </div>
 
                     </div>
 
+                    <div className="informacaoCorpo">
+                <h2> oi </h2>
+                        <div className="informacao">
+                            
+
+                        </div>
+
+                    </div>
+                    
                 </div>
+
+                
+                
 
             </div>
             <Rodape/>

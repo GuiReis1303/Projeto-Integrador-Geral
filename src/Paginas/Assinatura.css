@@ -6,8 +6,28 @@
   
 }
 
-.imgC{
-    width: 40vw;
+.imgCP{
+   
+    border-radius: 50%;
+}
+
+.imgCP:hover{
+    box-shadow: 18px 18px #36cab6a8;
+    transition: 0.15s;
+    border: none; 
+    transition: 1.25s; 
+    
+}
+.imgCG{
+   
+    border-radius: 50%;
+}
+
+.imgCG:hover{
+    box-shadow: 18px 18px #ca8012;
+    transition: 0.15s;
+    border: none; 
+    transition: 1.25s; 
 }
 
 b{
@@ -34,10 +54,12 @@ li{
     
     display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-template-rows: 100vh 70vh 50vh;
+    grid-template-rows: 100vh 60vh 60vh 20vh;
     grid-template-areas:  "c1   c2 "
-                           "preco1 preco2 "  ;
+                           "preco1 preco2 "
+                       "inf inf"   ;
     text-align: center;
+    
    
 }
 
@@ -54,20 +76,22 @@ li{
     background-color: #e0dada;
     grid-area: c2 ;
 }
+
+.informacaoCorpo{
+
+    color: #cdd3d3;
+    background-color: #f00606;
+    grid-area: inf ;
+    
+
+}
+/* preço Plano Prata e o funcionamento do botão */
 .preco1{
     
     color:#e9e9e9 ;
     background-color: #222222;
     grid-area: preco1 ;
 }
-.preco2{
-    
-    
-    background-color: #cac7c7;
-    grid-area: preco2 ;
-}
-
-
 .preco1 button{
     margin-top: 20px;
 font-size: 3em;
@@ -90,6 +114,12 @@ box-shadow: 4px 4px #e9e9e9;
     transition: 0.25s; 
 }
 
+.preco2{
+    
+    
+    background-color: #cac7c7;
+    grid-area: preco2 ;
+}
 
 .preco2 button{
     margin-top: 20px;
@@ -103,8 +133,6 @@ cursor: pointer;
 text-shadow: 2px 2px #92929248;
 box-shadow: 4px 4px #e9e9e9;
 }
-
-
 .preco2 button:hover{
    
     background: #b6852c; 
@@ -112,3 +140,7 @@ box-shadow: 4px 4px #e9e9e9;
     border: none; 
     transition: 0.25s; 
 }
+
+
+
+
