@@ -1,35 +1,101 @@
 .corpo{
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
+    
+  
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: space-between;
 }
 
-.imagemLateral{
-    width: 12%;
-    height: 530px;
-    background: none;
-    
+img{
+    width: 40vw;
+  
 }
+b{
+    font-size: 1.5em;
+}
+h2{
+  
+font-size: 3em;
 
+}
 .meio{
-    width: 72%; 
-    display: flex;
-    justify-content: space-around;
-
+  
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 100vh 40vh 50vh;
+    grid-template-areas:  "c1   c2 "
+                           "preco1 preco2 "  ;
     text-align: center;
 }
 
 
-.caixa01{
-    width: 45%;
-    border: 2px yellowgreen solid;
+.caixa1{
+    
+   color: #cdd3d3;
     background-color: #2b2b2b;
+    grid-area: c1 ;
+}
+.caixa2{
+    
+    color: #e2850b ;
+    background-color: #e0dada;
+    grid-area: c2 ;
+}
+.preco1{
+    
+    
+    background-color: #222222;
+    grid-area: preco1 ;
+}
+.preco2{
+    
+    
+    background-color: #cac7c7;
+    grid-area: preco2 ;
 }
 
-.caixa02{
-    width: 45%;
-    border: 2px yellow solid;
-    background-color: #2b2b2b;
+
+.preco1 button{
+    margin-top: 20px;
+font-size: 3em;
+border-radius: 35px;
+border: none;
+padding: 2% 10% 2% 10%;
+background-color: #36cab6 ;
+color: #e9e9e9;
+cursor: pointer;
+text-shadow: 2px 2px #92929248;
+box-shadow: 4px 4px #e9e9e9;
+}
+
+
+.preco1 button:hover{
+   
+    background: #2baa99; 
+    transition: 0.15s;
+    border: none; 
+    transition: 0.25s; 
+}
+
+
+.preco2 button{
+    margin-top: 20px;
+font-size: 3em;
+border-radius: 35px;
+border: none;
+padding: 2% 10% 2% 10%;
+background-color: #cf9a36 ;
+color: #e9e9e9;
+cursor: pointer;
+text-shadow: 2px 2px #92929248;
+box-shadow: 4px 4px #e9e9e9;
+}
+
+
+.preco2 button:hover{
+   
+    background: #b6852c; 
+    transition: 0.15s;
+    border: none; 
+    transition: 0.25s; 
 }
