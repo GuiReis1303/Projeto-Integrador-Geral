@@ -1,14 +1,15 @@
 import React from "react";
+import Menu from "../Modulos/Menu";
 import Rodape from "../Modulos/Rodape";
+
+
+
 const Assinatura = () => {
     require('./Assinatura.css')
     return ( 
         <div>
+            <Menu/>
             <div className="corpo">
-                <div className="imagemLateral">
-                    
-                </div>
-
                 <div className="meio">
                     <div className="caixa1">
                         <div>

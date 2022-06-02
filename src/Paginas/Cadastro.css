@@ -1,0 +1,14 @@
+.cadastro{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.caixaLogin{
+    background: #222222;
+    width: 50%;
+    margin-top: 10%;
+    padding: 30px;
+    border-radius: 37px;
+    border: none;
+}
