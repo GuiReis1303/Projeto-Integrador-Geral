@@ -11,7 +11,7 @@ const Cadastro = () => {
             <div className="caixaLogin">
            
                 <Form>
-                <Row className="mb-3">
+                <Row className="mb-3 ">
 
                 <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Control type="nome" placeholder="Digite seu nome" />
