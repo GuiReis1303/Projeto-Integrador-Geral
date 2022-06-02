@@ -15,7 +15,7 @@ const Assinatura = () => {
                     <div className="caixa1">
                         <div>
                             <h2>Plano Prata</h2>
-                            <img src="https://i.imgur.com/NIxXpcL.png"/>
+                            <img className="imgC" src="https://i.imgur.com/NIxXpcL.png"/>
                         </div>
 
                        
@@ -24,7 +24,7 @@ const Assinatura = () => {
                     <div className="caixa2">
                         <div>
                             <h2>Plano Gold</h2>
-                            <img src=" https://i.imgur.com/pzop9Yh.png"/>
+                            <img className="imgC" src=" https://i.imgur.com/pzop9Yh.png"/>
                         </div>
 
                       
@@ -36,6 +36,10 @@ const Assinatura = () => {
                         <div>
                             <button>Compre agora</button>
                             <p> A partir de <b>R$29,99</b>/mês </p>
+                                <ul>
+                                    <li>60 Aulas</li>
+                                    <li>11 Cursos disponíveis</li> 
+                                </ul>
                         </div>
 
                     </div>
@@ -43,7 +47,12 @@ const Assinatura = () => {
                     <div className="preco2">
                         <div>
                             <button>Compre agora</button>
-                            <p> A partir de <b>R$59,99</b>/mês </p>
+                              <p> A partir de <b>R$59,99</b>/mês </p>
+                                <ul>
+                                    <li>150 Aulas</li>
+                                    <li>33 Cursos disponíveis</li> 
+                                    <li>Certificado</li>
+                                </ul>
                         </div>
 
                     </div>
