@@ -7,24 +7,24 @@
 }
 
 .imgCP{
-   
+    width: 80%;
     border-radius: 50%;
 }
 
 .imgCP:hover{
-    box-shadow: 18px 18px #36cab6a8;
+    box-shadow: 13px 13px #36cab6a8;
     transition: 0.15s;
     border: none; 
     transition: 1.25s; 
     
 }
 .imgCG{
-   
+   width: 80%;
     border-radius: 50%;
 }
 
 .imgCG:hover{
-    box-shadow: 18px 18px #ca8012;
+    box-shadow: 13px 13px #ca8012;
     transition: 0.15s;
     border: none; 
     transition: 1.25s; 
