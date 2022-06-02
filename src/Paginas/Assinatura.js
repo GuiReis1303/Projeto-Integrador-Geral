@@ -13,6 +13,8 @@ const Assinatura = () => {
                 <div className="meio">
                     <div className="caixa1">
                         <div>
+                            <br/>
+                            
                             <h2 className="">Plano Prata</h2>
                             <img className="imgCP" src="https://i.imgur.com/NIxXpcL.png"/>
                         </div>
@@ -22,6 +24,7 @@ const Assinatura = () => {
 
                     <div className="caixa2">
                         <div>
+                            <br/>
                             <h2>Plano Gold</h2>
                             <img className="imgCG" src=" https://i.imgur.com/pzop9Yh.png"/>
                         </div>
@@ -43,7 +46,7 @@ const Assinatura = () => {
                     </div>
 
                     <div className="preco2">
-
+                       
                             <button>Compre agora</button>
                               <p> A partir de <b>R$59,99</b>/mês </p>
                                 <ul>

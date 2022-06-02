@@ -12,7 +12,7 @@ const Cadastro = () => {
            
                 <Form>
                 <Row className="mb-3 ">
-
+               
                 <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Control type="nome" placeholder="Digite seu nome" />
                 </Form.Group>
