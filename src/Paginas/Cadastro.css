@@ -53,9 +53,11 @@ border: none;
 background-color: #9117a1;
 padding: 0.5em 4.0em;
 border-radius: 0.75em;
+box-shadow: 3px 3px #f0f0f0;
 }
 .botaoEnviar:hover{
  background-color: #7c148a;
+ box-shadow: 2px 2px #f0f0f0d2;
 }
 
     .testes{
@@ -69,10 +71,12 @@ border-radius: 0.75em;
     background-color: rgb(238, 28, 28);
     padding: 0.5em 4.0em;
     border-radius: 0.75em;
+    box-shadow: 3px 3px #f0f0f0;
     }
 
 
     .botaoCancela:hover{
         background-color: rgb(197, 21, 21);
+        box-shadow: 2px 2px #f0f0f0d2;
         }
     

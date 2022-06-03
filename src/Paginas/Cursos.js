@@ -19,8 +19,9 @@ const Cursos = () => {
                                 />
                             </div>
                             <div className="caixatexto">
-                                <h1> Nome Curso</h1>
-                                <p> Descrição do Curso</p>
+                                <h1>Desenvolvimento Web Completo 2022 - 20 cursos + 20 projetos</h1>
+                                <p>Domine Web - 20 Cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais.</p>
+                                <p1>Marcos Paulo </p1> <br/>
                                 <button>Ver mais</button>
                             </div>
                         </div>
@@ -34,8 +35,9 @@ const Cursos = () => {
                                 />
                             </div>
                             <div className="caixatexto">
-                                <h1> Teste02</h1>
-                                <p> Descrição do Curso</p>
+                                <h1>Curso de Photoshop Completo - Do Básico ao Avançado</h1>
+                                <p>Aprenda a editar imagens na prática realizando diversos trabalhos e exercícios</p>
+                                <p1>Paulo Neto</p1> <br/>
                                 <button>Ver mais</button>
                             </div>
                         </div>
@@ -49,9 +51,16 @@ const Cursos = () => {
                                 />
                             </div>
                             <div className="caixatexto">
-                                <h1> Teste03</h1>
-                                <p> Descrição do Curso</p>
-                                <button>Ver mais</button>
+                                <h1>C# COMPLETO Programação Orientada a Objetos + Projetos </h1>
+                                <p>Curso mais didático e completo de C# e OO, coleções, UML, ASP.NET, Entity Framework, LINQ, Lambda e muito mais</p>
+                                <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1> <br/>
+                                <button>Ver mais</button> <br/>
+                                <p2>38 horas de vídeo sob demanda</p2>
+                                <p2>23 artigos</p2>
+                                <p2>43 recursos para download </p2>
+                                <p2>Acesso total vitalício </p2>
+                                <p2>Acesso no dispositivo móvel e na TV </p2>
+                                <p2>Certificado de conclusão </p2>
                             </div>
                         </div>
                     </Carousel.Item>
