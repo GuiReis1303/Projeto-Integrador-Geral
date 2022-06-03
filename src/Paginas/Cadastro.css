@@ -1,45 +1,77 @@
+.bodyCadastro{
+    background-image: linear-gradient(120deg, #210a86, rgb(87, 138, 138), #3fbbaa, #5cccbb , #48248a, blue);
+   width: 100%;
+   height: 60em;
+}
+#h2bodycadastro{
+display: block;
+font-size: 5em;
+
+}
+
+
 .cadastro{
     display: flex;
     justify-content: center;
     width: 100%;
+    text-align: center;
+
 }
+.phcadastro{
+
+    margin: 5px ;
+    padding: 1em ;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+}
+
 
 .caixaLogin{
-    background: #222222;
+    background-color: #1e706541;
     width: 50%;
-    margin-top: 10%;
-    padding: 30px;
+    margin-top: 10em;
+    padding: 3em;
     border-radius: 37px;
     border: none;
+
 }
 
-.botaoEnvia{
+.botoes{
 
-font-size: 1.3em;
-border: none;
-background-color: rgb(145, 23, 161);
+display: flex;
+justify-content: space-around;
+font-size: 1.3em ;
 padding: 0.5em 3.2em;
+margin-top: 1em;
 }
 
-.botaoEnvia:hover{
 
-    background-color: #690e75;
-    border: none;
-}
 
-.botaoCancela{
-    font-size: 1.3em;
-    border: none;
-    padding: 0.5em 3.2em;
-    background-color: rgb(211, 18, 18);
+.botaoEnviar{
+border: none;
+background-color: #9117a1;
+padding: 0.5em 4.0em;
+border-radius: 0.75em;
 }
-.botaoCancela:hover{
-    background-color: rgb(173, 12, 12);
-    border: none;
+.botaoEnviar:hover{
+ background-color: #7c148a;
 }
+<<<<<<< Updated upstream
     .testes{
     display: flex;
     justify-content: space-between;
     padding: 10px 75px 0px 75px;
+=======
+.botaoCancela{
+    border: none;
+    background-color: rgb(238, 28, 28);
+    padding: 0.5em 4.0em;
+    border-radius: 0.75em;
+    }
+>>>>>>> Stashed changes
 
-}
+    .botaoCancela:hover{
+        background-color: rgb(197, 21, 21);
+        }
+    

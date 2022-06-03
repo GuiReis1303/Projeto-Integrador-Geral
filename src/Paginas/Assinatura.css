@@ -54,11 +54,11 @@ li{
     
     display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-template-rows: 6.5vh 80vh 60vh 30vh;
+    grid-template-rows: 6.5vh 100vh 60vh 30vh;
     grid-template-areas:    "ps ps"
                             "c1   c2 "
                            "preco1 preco2 "
-                       "inf inf"   ;
+                              "inf inf"   ;
     text-align: center;
     
    

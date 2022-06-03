@@ -5,21 +5,37 @@ import { Link } from "react-router-dom";
 const Cadastro = () => {
     require('./Cadastro.css')
     return ( 
+     <div className="bodyCadastro">  
+    
         <div className="cadastro">
-            <div className="caixaLogin">
-                <form>
-                    <input type="email" placeholder="Digite seu Email"></input>
-                    <input type="nick" placeholder="Digite seu Nick"></input>
-                    <input type="password" placeholder="Digite uma Senha"></input>
+            <div >
 
-                    <button type="submit" className="">Enviar</button>
+            
+            </div>
+            <div className="caixaLogin">
+                
+                <form>
+               
+           <input    className="phcadastro" required minlenght="3" type="nick" placeholder="Digite seu Usuário..."></input>
+           
+                    <input className="phcadastro" type="email" placeholder="Digite seu Email..."></input>  <br/>
+         
+                    <input className="phcadastro" required minlenght="10" type="password" placeholder="Digite uma Senha..."></input>
+                  
+                    <input className="phcadastro" required minlenght="10" type="password" placeholder="Confirme sua Senha..."></input> 
+                <br/>
+                    <div className="botoes">
+                    <button type="submit" className="botaoEnviar">Enviar</button>
                     
                     <Link to={"/"}>
-                        <button type="cancel" className="">Cancelar</button>
+                        <button type="cancel" className="botaoCancela">Cancelar</button>
                     </Link>
+
+                    </div>
                 </form>
             </div>
         </div>
+    </div>    
      );
 }
  
