@@ -1,7 +1,4 @@
-.carouselHome{
-    width: 200px;
-}
-
-.testes{
-    width: 61%;
+.carousel-inner > .carousel-item > img {
+    width: 50%;
+    height: 33.7em;
 }
