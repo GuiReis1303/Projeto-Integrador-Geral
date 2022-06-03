@@ -12,7 +12,7 @@ const Cadastro = () => {
 
             
             </div>
-            <div className="caixaLogin">
+            <div className="caixaCadastro">
                 
                 <form>
                
