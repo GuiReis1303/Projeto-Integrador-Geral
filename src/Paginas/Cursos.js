@@ -9,7 +9,7 @@ const Cursos = () => {
             <Menu/>
             <div className="programacao">
                 <h2>Cursos de Linguagens de Programação</h2>
-                <Carousel fade variant="dark">
+                <Carousel variant="dark">
                     <Carousel.Item className="itemcarousel">
                         <div className="caixa">
                             <div className="caixaimagem">
@@ -57,8 +57,6 @@ const Cursos = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-
-            
             
         </div>
      );
