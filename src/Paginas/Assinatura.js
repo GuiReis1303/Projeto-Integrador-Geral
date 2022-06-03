@@ -32,7 +32,9 @@ const Assinatura = () => {
                       
                     </div>
 
-
+                <div className="planosSuperior">
+                    <h2> Assinatura </h2>
+                </div>
 
                     <div className="preco1">
                        
