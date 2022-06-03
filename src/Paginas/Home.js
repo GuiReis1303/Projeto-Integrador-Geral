@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Menu/>
             <div className="carousel">
-                <Carousel fade className="testes">
+                <Carousel fade>
                     <Carousel.Item>
                         <img
                         className="d-block w-100 "

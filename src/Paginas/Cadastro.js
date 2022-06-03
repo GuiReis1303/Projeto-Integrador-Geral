@@ -1,7 +1,5 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Col, Button, Row } from "react-bootstrap";
-import Form from 'react-bootstrap/Form'
 import { Link } from "react-router-dom";
 
 const Cadastro = () => {

@@ -15,7 +15,7 @@ const Menu = () => {
                 <Link className="editMenuH1" to="/Comunidade">Comunidade</Link>
                 <Link className="editMenuH1" to="/Faq">FAQ</Link>
             </div>
-            <div className="login">
+            <div className="loginMenu">
                 <Link className="editMenuH2" to="/Cadastro">Cadastro</Link>
                 <Link className="editMenuH2" to="/Login">Login</Link>
             </div>
