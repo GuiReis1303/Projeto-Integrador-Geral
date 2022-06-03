@@ -9,9 +9,10 @@ const Cadastro = () => {
     return ( 
         <div className="cadastro">
             <div className="caixaLogin">
+           
                 <Form>
                 <Row className="mb-3 ">
-
+               
                 <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Control type="nome" placeholder="Digite seu nome" />
                 </Form.Group>
@@ -84,11 +85,11 @@ const Cadastro = () => {
                 <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
                 <div className="testes">
-                    <Button variant="primary" type="submit" className="botao">
+                    <Button variant="primary" type="submit" className="botaoEnvia">
                         Enviar
                     </Button>
                     <Link to={"/"}>
-                        <Button className="botao">
+                        <Button className="botaoCancela">
                             Cancelar
                         </Button>
                     </Link>

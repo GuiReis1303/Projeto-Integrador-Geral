@@ -12,3 +12,34 @@
     border-radius: 37px;
     border: none;
 }
+
+.botaoEnvia{
+
+font-size: 1.3em;
+border: none;
+background-color: rgb(145, 23, 161);
+padding: 0.5em 3.2em;
+}
+
+.botaoEnvia:hover{
+
+    background-color: #690e75;
+    border: none;
+}
+
+.botaoCancela{
+    font-size: 1.3em;
+    border: none;
+    padding: 0.5em 3.2em;
+    background-color: rgb(211, 18, 18);
+}
+.botaoCancela:hover{
+    background-color: rgb(173, 12, 12);
+    border: none;
+}
+.testes{
+display: flex;
+justify-content: space-between;
+padding: 10px 75px 0px 75px;
+
+}
