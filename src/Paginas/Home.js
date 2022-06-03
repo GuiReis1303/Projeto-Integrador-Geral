@@ -8,10 +8,10 @@ const Home = () => {
         <div>
             <Menu/>
             <div className="carousel">
-                <Carousel fade className="">
+                <Carousel fade className="testes">
                     <Carousel.Item>
                         <img
-                        className="d-block w-100"
+                        className="d-block w-100 "
                         src="https://wallpaperaccess.com/full/6359574.jpg"
                         alt="First slide"
                         />
