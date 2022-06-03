@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
     require('./Menu.css');
-    return ( 
-        <div className="menu" id="classMenu">
+    return (
+        <div className="menu">
             <div className="imagem">
                 <Link to="/"><img src={require("./logobranca.png")}/></Link>
             </div>
