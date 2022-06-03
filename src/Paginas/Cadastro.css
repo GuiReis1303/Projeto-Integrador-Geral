@@ -20,7 +20,7 @@ font-size: 5em;
 .phcadastro{
 
     margin: 5px ;
-    padding: 1em ;
+    padding: 1vw ;
     width: 70%;
     border-radius: 10px;
     border: none;
@@ -30,25 +30,25 @@ font-size: 5em;
 .caixaLogin{
     background-color: #1e706541;
     width: 50%;
-    margin-top: 10em;
-    padding: 3em;
+    margin-top: 10vw;
+    padding: 3vw;
     border-radius: 37px;
     border: none;
 
 }
 
 .botoes{
-
 display: flex;
 justify-content: space-around;
-font-size: 1.3em ;
-padding: 0.5em 3.2em;
-margin-top: 1em;
+font-size: 1.25vw ;
+padding: 0.5vw 3.2vw;
+margin-top: 1vw;
 }
 
 
 
 .botaoEnviar{
+    
 border: none;
 background-color: #9117a1;
 padding: 0.5em 4.0em;
