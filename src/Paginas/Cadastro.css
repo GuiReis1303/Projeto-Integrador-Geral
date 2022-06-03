@@ -57,19 +57,20 @@ border-radius: 0.75em;
 .botaoEnviar:hover{
  background-color: #7c148a;
 }
-<<<<<<< Updated upstream
+
     .testes{
     display: flex;
     justify-content: space-between;
     padding: 10px 75px 0px 75px;
-=======
+    }
+
 .botaoCancela{
     border: none;
     background-color: rgb(238, 28, 28);
     padding: 0.5em 4.0em;
     border-radius: 0.75em;
     }
->>>>>>> Stashed changes
+
 
     .botaoCancela:hover{
         background-color: rgb(197, 21, 21);
