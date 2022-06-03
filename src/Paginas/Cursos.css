@@ -1,0 +1,31 @@
+.programacao{
+    background-color: gray;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.itemcarousel{
+    width: 100%;
+    height: 450px;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.caixa{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.caixaimagem{
+    width: 45%;
+}
+
+.caixatexto{
+    width: 45%;
+    text-align: justify;
+}
