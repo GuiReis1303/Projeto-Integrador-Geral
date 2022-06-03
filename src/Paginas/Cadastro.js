@@ -10,9 +10,9 @@ const Cadastro = () => {
         <div className="cadastro">
             <div className="caixaLogin">
                 <form>
-                    <input placeholder="Digite seu Email"></input>
-                    <input placeholder="Digite seu Nick"></input>
-                    <input placeholder="Digite uma Senha"></input>
+                    <input type="email" placeholder="Digite seu Email"></input>
+                    <input type="nick" placeholder="Digite seu Nick"></input>
+                    <input type="password" placeholder="Digite uma Senha"></input>
 
                     <button type="submit" className="">Enviar</button>
                     
