@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock, faAt} from "@fortawesome/free-solid-svg-icons";
+import Rodape from "../Modulos/Rodape";
+
 
 const Cadastro = () => {
     require('./Cadastro.css')
@@ -20,7 +22,7 @@ const Cadastro = () => {
                     <FontAwesomeIcon icon={faLock} className="iconCadastro"/><input className="phcadastro" required minlenght="10" type="password" placeholder="Digite uma Senha..."></input><br/>
                   
                     <FontAwesomeIcon icon={faLock} className="iconCadastro"/><input className="phcadastro" required minlenght="10" type="password" placeholder="Confirme sua Senha..."></input><br/>
-                    <div className="botoes">
+                    <div className="botoesCadastro">
                     <button type="submit" className="botaoEnviar">Enviar</button>
                     
                     <Link to={"/"}>
@@ -31,6 +33,7 @@ const Cadastro = () => {
                 </form>
             </div>
         </div>
+        <Rodape/>   
     </div>    
      );
 }

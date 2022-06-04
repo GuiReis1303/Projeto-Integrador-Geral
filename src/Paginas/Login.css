@@ -2,6 +2,7 @@
     background-image: linear-gradient(120deg, #210a86, rgb(87, 138, 138), #3fbbaa, #5cccbb , #48248a, blue);
     width: 100%;
     height: 60em;
+    margin: 0;
 }
 
 .iconLogin{

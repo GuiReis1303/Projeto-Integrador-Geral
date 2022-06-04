@@ -9,7 +9,7 @@ const Assinatura = () => {
     return ( 
         <div>
             <Menu/>
-            <div className="corpo">
+            <div className="corpoAssinatura">
                 <div className="meio">
                     <div className="caixa1">
                         <div>

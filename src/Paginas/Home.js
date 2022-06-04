@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "../Modulos/Menu";
 import Carousel from 'react-bootstrap/Carousel'
 import MenuAL from "../Modulos/MenuAL";
+import Rodape from "../Modulos/Rodape";
 
 const Home = () => {
     require('./Home.css')
@@ -47,6 +48,7 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
+         <Rodape/>   
         </div>
      );
 }

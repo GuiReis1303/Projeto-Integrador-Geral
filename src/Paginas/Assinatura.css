@@ -1,16 +1,26 @@
-.corpo{
-    
-  
-
+.corpoAssinatura{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
 }
+.corpoAssinatura b{
+    font-size: 1.5em;
+}
+.corpoAssinatura h2{
+    font-size: 3em;
+}
+.corpoAssinatura ul{
+    font-size: 2.5vw;
+    padding-left: 25%;
+    margin: 5% 0% 0% 1%;
+}
+.corpoAssinatura li{
+    text-align: start;
+}
+
 
 .imgCP{
     width: 80%;
     border-radius: 50%;
 }
-
 .imgCP:hover{
     box-shadow: 13px 13px #36cab6a8;
     transition: 0.15s;
@@ -22,31 +32,11 @@
    width: 80%;
     border-radius: 50%;
 }
-
 .imgCG:hover{
     box-shadow: 13px 13px #ca8012;
     transition: 0.15s;
     border: none; 
     transition: 1.25s; 
-}
-
-b{
-    font-size: 1.5em;
-}
-
-h2{
-    font-size: 3em;
-}
-
-ul{
-font-size: 2.5vw;
-padding-left: 25%;
-margin: 5% 0% 0% 1%;
-
-}
-li{
-    text-align: start;
-    
 }
 
 

@@ -3,6 +3,8 @@ import Menu from "../Modulos/Menu";
 import Carousel from 'react-bootstrap/Carousel'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCertificate, faClapperboard, faDownload, faMobileAndroid, faNewspaper, } from "@fortawesome/free-solid-svg-icons";
+import Rodape from "../Modulos/Rodape";
+
 
 const Cursos = () => {
     require('./Cursos.css')
@@ -82,8 +84,96 @@ const Cursos = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            
+                <div className="bodyCursos">
+                    <div className="containerCursos">
+                       
+                            <h2>Cursos mais Assistidos</h2> 
+                        <div className="AlinharCursosDescricao">
+                            <div class="cardMaisAssistidos">
+                            <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
+                                    <div class="containerMaisAssistidos">
+                                        <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
+                                        <p>Paulo Neto</p> 
+                                        <h2>Plano Gold</h2> <br/>
+                                    </div>
+                            </div>
+
+                                    <div class="cardMaisAssistidos">
+                                    <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qfzujyG.png" alt="Avatar" />
+                                            <div class="containerMaisAssistidos">
+                                                <h5><b>Java 2022 COMPLETO: Do Zero ao Profissional + Projetos!</b></h5> 
+                                                <p>Paulo Neto</p> 
+                                                <h2>Plano Gold</h2> <br/>
+                                            </div>
+                                    </div>
+
+                                                <div class="cardMaisAssistidos">
+                                            <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
+                                                    <div class="containerMaisAssistidos">
+                                                        <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
+                                                        <p>Paulo Neto</p> 
+                                                        <h2>Plano Gold</h2> <br/>
+                                                    </div>
+                                            </div>
+
+                                            <div class="cardMaisAssistidos">
+                                                     <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
+                                                       <div class="containerMaisAssistidos">
+                                                            <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
+                                                            <p>Paulo Neto</p> 
+                                                            <h2>Plano Gold</h2> <br/>
+                                                       </div>
+                                          </div>
+
+                                              
+                                                <br/><br/>  <br/><br/>
+                                
+                        </div>   
+
+                        <div className="AlinharCursosDescricao">
+                            <div class="cardMaisAssistidos">
+                            <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
+                                    <div class="containerMaisAssistidos">
+                                        <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
+                                        <p>Paulo Neto</p> 
+                                        <h2>Plano Gold</h2> <br/>
+                                    </div>
+                            </div>
+
+                                    <div class="cardMaisAssistidos">
+                                    <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
+                                            <div class="containerMaisAssistidos">
+                                                <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
+                                                <p>Paulo Neto</p> 
+                                                <h2>Plano Gold</h2> <br/>
+                                            </div>
+                                    </div>
+
+                                                <div class="cardMaisAssistidos">
+                                            <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
+                                                    <div class="containerMaisAssistidos">
+                                                        <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
+                                                        <p>Paulo Neto</p> 
+                                                        <h2>Plano Gold</h2> <br/>
+                                                    </div>
+                                            </div>
+
+                                            <div class="cardMaisAssistidos">
+                                                     <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
+                                                       <div class="containerMaisAssistidos">
+                                                            <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
+                                                            <p>Paulo Neto</p> 
+                                                            <h2>Plano Gold</h2> <br/>
+                                                       </div>
+                                          </div>
+                                
+                        </div>  
+                    </div>
+            </div>
+    <Rodape/>            
         </div>
+
+        
      );
 }
  

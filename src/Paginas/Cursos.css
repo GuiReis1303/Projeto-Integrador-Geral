@@ -38,7 +38,7 @@ opacity: 85%;
 }
 
 .caixatexto button{
-    position: fixed;
+    position:absolute;
     bottom: 14%;
     padding: 1.5vw 16.1vw;
     border-radius: 15px; 
@@ -64,11 +64,58 @@ padding-top: 15px;
     justify-content: start;
     font-size: 0.8em;
     /*margin-left: 300px;*/
-color: rgb(117, 117, 114);
+color: #757572;
 }
 
 .iconCursos{
     font-size: 1.1em;
     padding-top: 4px;
     padding-right: 10px;
+}
+
+.containerCursos{
+
+    padding: 7% ;
+    border: 1.2px ridge #6464643b;
+
+}
+.AlinharCursosDescricao{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%
+}
+
+.cardMaisAssistidos {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   
+    height: 22.5vw;
+    margin: 15px;
+    
+    
+  }
+  .cardMaisAssistidos h5 {
+    font-size: 1.25vw;
+    padding-top: 0.75vw;
+  }
+  .cardMaisAssistidos h2 {
+    color: #d4661dee;
+    text-align: center;
+    font-size: 2.25vw;
+  }
+  .cardMaisAssistidos p {
+    font-size: 0.8em;
+    color: #757572;
+  }
+  
+  .cardMaisAssistidos:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .containerMaisAssistidos{
+    padding: 2px 16px;
+  }
+
+.imagemCursosMaisAssistidos{
+width: 100% ;
 }
