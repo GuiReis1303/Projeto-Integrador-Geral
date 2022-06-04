@@ -1,7 +1,9 @@
 import React from "react";
 import Menu from "../Modulos/Menu";
 
+
 const Faq = () => {
+    require('./Faq.css')
     return ( 
         <div>
             <Menu/>

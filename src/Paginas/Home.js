@@ -7,7 +7,7 @@ const Home = () => {
     return ( 
         <div>
             <Menu/>
-            <div className="carousel">
+            <div>
                 <Carousel fade>
                     <Carousel.Item>
                         <img

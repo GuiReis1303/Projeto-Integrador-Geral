@@ -67,6 +67,7 @@ li{
     color: #cdd3d3;
     background-color: #241f1f;
     grid-area: ps ;
+    height: 60px;
     border: 3px ridge rgb(27, 26, 26);
 }
 

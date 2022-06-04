@@ -10,10 +10,6 @@ const Cadastro = () => {
     <div className="bodyCadastro">  
 
         <div className="cadastro">
-            <div >
-
-            
-            </div>
             <div className="caixaCadastro">
                 
                 <form>
