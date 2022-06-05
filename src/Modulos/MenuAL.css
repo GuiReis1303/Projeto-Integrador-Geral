@@ -1,82 +1,23 @@
-@media screen and (min-width: 1367px) {
-    .menu{
-        display: flex;
-        justify-content: space-between;
-        background-image: linear-gradient(-90deg, rgb(185, 185, 185), rgb(120, 120, 121));
-        font-family:cursive;
-        
-    }
-
-    .imagem img{
-        width: 20%;
-        margin-top: 1%;
-    }
-
-    .editMenuH2{
-        width: 2%;
-        padding: 1.2em;
-      margin-bottom: 3em;
-        text-decoration: none;
-        color: #d15252;
-        padding: 1.3em;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-    }
-
-    .loginMenu{
-        width: 16em;
-        margin-top: 1.30%;
-    }
-
+body{
+    margin-top: 80px;
 }
 
-@media screen and (max-width: 1367px) {
+.logoMenuAL{
+    width: 130px
+}
+
+.sla{
+    background-image: linear-gradient(-90deg, rgb(185, 185, 185), rgb(120, 120, 121));
+}
+
+.editMenuH1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
-    .menu{
-        display: flex;
-        justify-content: space-between;
-        background-image: linear-gradient(-90deg, rgb(185, 185, 185), rgb(120, 120, 121));
-        font-family:cursive;
-    }
+}
+.editMenuH2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-    .imagem img{
-        width: 40%;
-        margin-top: 2.1%;
-    }
-
-
-
-
-
-    .editMenuH1{
-        margin-left: 40px;
-        text-decoration: none;
-        color: #e4e4e4;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-shadow: 2px 2px #888484;
-
-        
-    }
-    .editMenuH2{
-        margin-left: 20px;
-        text-decoration: none;
-        color: #e4e4e4;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-shadow: 2px 2px #888484;
-
-    }
-    .link{
-        display: flex;
-        width: 90%;
-        margin-top: 2.1%;
-        padding: 0px ;
-        
-    }
-
-    .loginMenu{
-        display: flex;
-        width: 25%;
-        margin-top: 2.1%;
-    }
-
+.teste01 img{
+    display: none;
 }
