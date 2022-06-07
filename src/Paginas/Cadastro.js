@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock, faAt} from "@fortawesome/free-solid-svg-icons";
-import Rodape from "../Modulos/Rodape";
 
 
 const Cadastro = () => {
@@ -32,8 +31,7 @@ const Cadastro = () => {
                     </div>
                 </form>
             </div>
-        </div>
-        <Rodape/>   
+        </div> 
     </div>    
      );
 }

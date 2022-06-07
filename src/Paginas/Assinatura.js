@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "../Modulos/Menu";
+import MenuAL from "../Modulos/MenuAL";
 import Rodape from "../Modulos/Rodape";
 
 
@@ -8,7 +8,7 @@ const Assinatura = () => {
     require('./Assinatura.css')
     return ( 
         <div>
-            <Menu/>
+            <MenuAL/>
             <div className="corpoAssinatura">
                 <div className="meio">
                     <div className="caixa1">

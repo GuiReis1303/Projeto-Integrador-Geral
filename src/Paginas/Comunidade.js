@@ -1,10 +1,10 @@
 import React from "react";
-import Menu from "../Modulos/Menu";
+import MenuAL from "../Modulos/MenuAL";
 
 const Comunidade = () => {
     return ( 
         <div>
-            <Menu/>
+            <MenuAL/>
             <h1>Comunidade</h1>
         </div>
      );

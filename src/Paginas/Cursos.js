@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "../Modulos/Menu";
+import MenuAL from "../Modulos/MenuAL";
 import Carousel from 'react-bootstrap/Carousel'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCertificate, faClapperboard, faDownload, faMobileAndroid, faNewspaper, } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +10,7 @@ const Cursos = () => {
     require('./Cursos.css')
     return ( 
         <div>
-            <Menu/>
+            <MenuAL/>
             <div className="programacao">
                 <Carousel variant="dark">
                     <Carousel.Item className="itemcarousel">
