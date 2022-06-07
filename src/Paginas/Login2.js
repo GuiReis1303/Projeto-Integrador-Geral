@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Login2 = () => {
     const mudarCadastro = () =>{
@@ -16,7 +18,7 @@ const Login2 = () => {
         const email = document.getElementsByName('email').values
         const usuario = document.getElementsByName('usuario').values
         const senha = document.getElementsByName('senha').values
-
+        
         alert(email + usuario + senha)
     }
 
@@ -30,7 +32,7 @@ const Login2 = () => {
                 </div>
                 <div className="right-login">
                     <div className="card-login">
-                        <h2>LOGIN</h2>
+                        <h2><Link className="link-icon" to={'/'}><FontAwesomeIcon icon={faCircleArrowLeft} className="icon-voltar"/></Link> LOGIN</h2>
                         <div className="textfield">
                             <label for="usuario"> Usuário</label>
                             <input type="text" name="usuario" placeholder="Usuário" />
@@ -44,14 +46,14 @@ const Login2 = () => {
                     </div>
                 </div>
             </div>
-            <div className="main-login invisivel" id="cadastro">
-                <div className="left-login">
+            <div className="main-cadastro invisivel" id="cadastro">
+            <div className="rigth-cadastro" id="imgCadastroCima">
                     <h1> Cadastre-se<br/> E comece a estudar</h1>
                     <img src={require("./Imagens/aulaonline.png")} alt="Aula Online Animação" className="left-login-image"/>
                 </div>
-                <div className="right-login">
-                    <div className="card-login">
-                        <h2>CADASTRO</h2>
+                <div className="left-cadastro">
+                    <div className="card-cadastro">
+                        <h2><Link className="link-icon" to={'/'}><FontAwesomeIcon icon={faCircleArrowLeft} className="icon-voltar"/></Link> CADASTRO</h2>
                         <div className="textfield">
                             <label for="usuario"> Email</label>
                             <input type="email" name="email" placeholder="Email" />
@@ -64,9 +66,13 @@ const Login2 = () => {
                             <label for="senha"> Senha</label>
                             <input type="password" name="senha" placeholder="Senha" />
                         </div>
-                        <button className="btn-login" onClick={() => enviarCadastro()}>Cadastre-se</button>
-                        <p className="criar-conta">Já possui conta? <a className="criar-conta-a" onClick={() => mudarLogin()}>Login</a></p>
+                        <button className="btn-cadastro" onClick={() => enviarCadastro()}>Cadastre-se</button>
+                        <p className="logar-conta">Já possui conta? <a className="criar-conta-a" onClick={() => mudarLogin()}>Login</a></p>
                     </div>
+                </div>
+                <div className="right-cadastro" id="imgCadastroBaixo">
+                    <h1> Cadastre-se<br/> E comece a estudar</h1>
+                    <img src={require("./Imagens/aulaonline.png")} alt="Aula Online Animação" className="left-login-image"/>
                 </div>
             </div>
         </div>
