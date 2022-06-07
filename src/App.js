@@ -1,4 +1,3 @@
-import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from './Paginas/Home';
 import Assinatura from './Paginas/Assinatura';
@@ -8,8 +7,10 @@ import Faq from './Paginas/Faq';
 import Cadastro from './Paginas/Cadastro';
 import Login from './Paginas/Login';
 import HomeInicial from './Paginas/HomeInicial'
+import Login2 from './Paginas/Login2';
 
 function App() {
+    require('./App.css')
     return (
         <div className="App">
             <Routes>
@@ -20,7 +21,7 @@ function App() {
                 <Route path='Comunidade' element={<Comunidade />} />
                 <Route path='Faq' element={<Faq />} />
                 <Route path='Cadastro' element={<Cadastro/>} />
-                <Route path='Login' element={<Login/>} /> 
+                <Route path='Login2' element={<Login2/>} /> 
             </Routes>
         </div>
   );
