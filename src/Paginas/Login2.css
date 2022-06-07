@@ -3,6 +3,7 @@
 body{
     font-family: sans-serif;
     margin-top: 0;
+    background: #201b2c;;
 }
 
 body * {
@@ -12,7 +13,6 @@ body * {
 .main-login{
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,11 @@ body * {
     }
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 600px){
+    .main-login{
+        height: auto;
+    }
+
     .main-login{
         flex-direction: column;
     }

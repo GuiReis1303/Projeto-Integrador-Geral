@@ -3,17 +3,21 @@
 }
 
 .sla{
-    background-image: linear-gradient(-90deg, rgb(185, 185, 185), rgb(120, 120, 121));
+    background: #201b2c;
 }
 
 .editMenuH1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    color: #00ff88;
 }
 .editMenuH2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #00ff88;
 }
 
-.teste01 img{
-    display: none;
+.testes01{
+    color: #00ff88;
+    outline: #01ce6e;
+    border: 3px solid #00ff88;
+    width: 50px;
 }

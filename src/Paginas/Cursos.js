@@ -9,7 +9,7 @@ import Rodape from "../Modulos/Rodape";
 const Cursos = () => {
     require('./Cursos.css')
     return ( 
-        <div>
+        <div className="geral-curso">
             <MenuAL/>
             <div className="programacao">
                 <Carousel variant="dark">
