@@ -13,7 +13,7 @@ const Cursos = () => {
         <div className="geral-curso">
             <MenuAL/>
             <div className="programacao">
-                <Carousel variant="dark" interval={null}>
+                <Carousel variant="dark" interval={null} className="carousel-tamanho">
                     <Carousel.Item className="itemcarousel">
                         <div className="caixa">
                             <div className="caixaimagem">
@@ -22,6 +22,9 @@ const Cursos = () => {
                                 src={require("./Imagens/linguagens.png")}
                                 alt="Slide Inicial"
                                 />
+                                <div className="caixa-botao-vermais">
+                                    <button className="botao-ver-mais">Ver mais</button>
+                                </div>
                             </div>
                             <div className="caixatexto">
                                 <h3>Linguagens de Programação</h3>
@@ -113,7 +116,7 @@ const Cursos = () => {
 
 
             <div className="financas">
-                <Carousel variant="dark" interval={null}>
+                <Carousel variant="dark" interval={null} className="carousel-tamanho">
                     <Carousel.Item className="itemcarousel">
                         <div className="caixa">
                             <div className="caixaimagem">
@@ -213,7 +216,7 @@ const Cursos = () => {
 
             
             <div className="design">
-                <Carousel variant="dark" interval={null}>
+                <Carousel variant="dark" interval={null} className="carousel-tamanho">
                     <Carousel.Item className="itemcarousel">
                         <div className="caixa">
                             <div className="caixaimagem">
@@ -334,28 +337,14 @@ const Cursos = () => {
                                                 <h2>Plano Gold</h2> <br/>
                                             </div>
                                     </div>
-
-                                                <div class="cardMaisAssistidos">
+                                            <div class="cardMaisAssistidos">
                                             <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
                                                     <div class="containerMaisAssistidos">
                                                         <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
                                                         <p>Paulo Neto</p> 
                                                         <h2>Plano Gold</h2> <br/>
                                                     </div>
-                                            </div>
-
-                                            <div class="cardMaisAssistidos">
-                                                     <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
-                                                       <div class="containerMaisAssistidos">
-                                                            <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
-                                                            <p>Paulo Neto</p> 
-                                                            <h2>Plano Gold</h2> <br/>
-                                                       </div>
-                                          </div>
-
-                                              
-                                                <br/><br/>  <br/><br/>
-                                
+                                            </div><br/><br/> <br/><br/>
                         </div>   
 
                         <div className="AlinharCursosDescricao">
@@ -386,14 +375,6 @@ const Cursos = () => {
                                                     </div>
                                             </div>
 
-                                            <div class="cardMaisAssistidos">
-                                                     <img className="imagemCursosMaisAssistidos" src="https://i.imgur.com/qJrMdbS.png" alt="Avatar" />
-                                                       <div class="containerMaisAssistidos">
-                                                            <h5><b>Curso Completo de Linguagem C e C++ - Iniciante Ao Avançado</b></h5> 
-                                                            <p>Paulo Neto</p> 
-                                                            <h2>Plano Gold</h2> <br/>
-                                                       </div>
-                                          </div>
                                 
                         </div>  
                     </div>

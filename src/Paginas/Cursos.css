@@ -5,21 +5,18 @@
     margin-bottom: 20px;
 }
 
-.programacao img:hover{
-background-image: #000000f1;
-opacity: 85%;
-
-}
-
-.itemcarousel{
-    width: 100%;
-    height: 500px;
+.carousel-tamanho{
+    height: auto;
 }
 
 
 .carouselImagem{
     width: 100%;
-    height: 400px;
+}
+
+.itemcarousel{
+    width: 100%;
+    height: 500px;
 }
 
 .caixa{
@@ -32,11 +29,16 @@ opacity: 85%;
 
 .caixaimagem{
     width: 45%;
+    height: auto;
 }
 
 .caixatexto{
     width: 45%;
     text-align: left;
+}
+
+.caixa-botao-vermais{
+    display: none;
 }
 
 .caixatexto button{
@@ -123,7 +125,28 @@ color: #757572;
 }
 
 @media only screen and (max-width: 950px){
-    .geral-cursos{
+    .carousel-tamanho{
+        width: auto;
+        height: auto;
+    }
+
+    .geral-curso{
+        width: 100%;
+    }
+
+    .caixatexto{
         display: none;
+    }
+
+    .caixa-botao-vermais{
+        display: block;
+    }
+
+    .botao-ver-mais{
+        width: auto;
+        border-radius: 15px; 
+        background-color: #f1721e ;
+        font-size: 1.1em;
+        border: none;
     }
 }
