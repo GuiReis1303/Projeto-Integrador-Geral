@@ -275,6 +275,7 @@
     /* Media CSS Login*/
     .main-login{
         height: auto;
+        padding-bottom: 30%;
     }
 
     .main-login{
@@ -306,6 +307,7 @@
     /* Media CSS Cadastro */
     .main-cadastro{
         height: auto;
+        padding-bottom: 30%;
     }
 
     .main-cadastro{
