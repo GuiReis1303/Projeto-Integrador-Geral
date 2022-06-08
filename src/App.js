@@ -7,6 +7,7 @@ import Faq from './Paginas/Faq';
 import Cadastro from './Paginas/Cadastro';
 import Login from './Paginas/Login';
 import Login2 from './Paginas/Login2';
+import Assinatura2 from "./Paginas/Assinatura2";
 
 function App() {
     require('./App.css')
