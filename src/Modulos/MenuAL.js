@@ -9,13 +9,13 @@ const MenuAL = () => {
     return (
         <div className="menuALgeral">
             <Navbar collapseOnSelect expand="md" fixed="top" className="CorMenuAL" variant="#00ff88">
-                <Nav.Link href="/Home"><img src={require("./logobranca.png")} className="logoMenuAL"/></Nav.Link>
+                <Nav.Link href="/"><img src={require("./logobranca.png")} className="logoMenuAL"/></Nav.Link>
                 <Navbar.Toggle className="testes01"><FontAwesomeIcon icon={faBars}/></Navbar.Toggle>
                 <Container fluid>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto"/>
                         <Nav className="me-auto testes13">
-                            <Nav.Link href="/Home" className="editMenuALH1">Home</Nav.Link>
+                            <Nav.Link href="/" className="editMenuALH1">Home</Nav.Link>
                             <Nav.Link href="/Assinatura" className="editMenuALH1">Assinatura</Nav.Link>
                             <Nav.Link href="/Cursos" className="editMenuALH1">Cursos</Nav.Link>
                             <Nav.Link href="/Comunidade" className="editMenuALH1">Comunidade</Nav.Link>

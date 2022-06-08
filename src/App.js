@@ -6,7 +6,6 @@ import Comunidade from './Paginas/Comunidade';
 import Faq from './Paginas/Faq';
 import Cadastro from './Paginas/Cadastro';
 import Login from './Paginas/Login';
-import HomeInicial from './Paginas/HomeInicial'
 import Login2 from './Paginas/Login2';
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
     return (
         <div className="App">
             <Routes>
-                <Route path='/' element={<HomeInicial/>} />
-                <Route path='/Home' element={<Home/>} />
+                <Route path='/' element={<Home/>} />
                 <Route path='Assinatura' element={<Assinatura/>} />
                 <Route path='Cursos' element={<Cursos/>} />
                 <Route path='Comunidade' element={<Comunidade />} />

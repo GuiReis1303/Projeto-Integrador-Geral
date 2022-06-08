@@ -9,7 +9,7 @@ const Rodape = () => {
         <div className="rodape">
             
             <div className="rodapeLogo">
-                <img src={require("./logopreta.png")}/>
+                <img src={require("./logobranca.png")}/>
             </div>
 
             <div className="rodapeInformacao">
