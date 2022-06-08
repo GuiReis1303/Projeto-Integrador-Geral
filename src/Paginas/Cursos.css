@@ -1,8 +1,10 @@
-.programacao{
+.programacao, .financas, .design{
     background-color: rgb(223, 223, 223);
     text-align: center;
     margin-top: 2%;
+    margin-bottom: 20px;
 }
+
 .programacao img:hover{
 background-image: #000000f1;
 opacity: 85%;
