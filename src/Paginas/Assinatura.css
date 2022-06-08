@@ -1,41 +1,49 @@
 
+:root{
+    --avançadoCor: #6b1b6b;
+    --avançadoPremium : #00ff88;
 
+}
 .corpoAssinatura{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 .corpoAssinatura b{
-    font-size: 1.5em;
+    font-size: 1.25vw;
 }
 .corpoAssinatura h2{
-    font-size: 3em;
+    font-size: 2.5vw;
 }
 .corpoAssinatura ul{
-    font-size: 2.5vw;
+    font-size: 1.75vw;
     padding-left: 25%;
     margin: 5% 0% 0% 1%;
 }
 .corpoAssinatura li{
     text-align: start;
+    font-size: 1.25vw;
 }
 
 
 .imgCP{
-    width: 80%;
+    width: 50%;
     border-radius: 50%;
+    opacity: 15%;
 }
 .imgCP:hover{
-    box-shadow: 13px 13px #36cab6a8;
+    box-shadow: 7px 7px #36cab6a8;
     transition: 0.15s;
     border: none; 
     transition: 1.25s; 
     
 }
 .imgCG{
-   width: 80%;
+   width: 50%;
     border-radius: 50%;
+   
 }
 .imgCG:hover{
-    box-shadow: 13px 13px #ca8012;
+    box-shadow: 7px 7px #ca8012;
     transition: 0.15s;
     border: none; 
     transition: 1.25s; 
@@ -45,63 +53,73 @@
 .meio{
     
     display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-template-rows: 6.5vh 100vh 60vh 30vh;
-    grid-template-areas:    "ps ps"
-                            "c1   c2 "
-                           "preco1 preco2 "
-                              "inf inf"   ;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 40vh 47.50vh 10vh;
+    grid-template-areas:   
+                            "c1  c3 c2"
+                           "preco1 preco3 preco2"
+                               ;
     text-align: center;
+    padding: 3% 6%;
+    margin:10% ;
     
    
 }
-.planosSuperior{
-    color: #cdd3d3;
-    background-color: #241f1f;
-    grid-area: ps ;
-    height: 60px;
-    border: 3px ridge rgb(27, 26, 26);
-}
+
 
 .caixa1{
     
    color: #cdd3d3;
     background-color: #2b2b2b;
     grid-area: c1 ;
+    border-radius: 2.5em 2.5em 0em 0em;
+    
+    box-shadow: 1em 25em 6em #0edbe2;
+
 }
 .caixa2{
     
-    color: #e2850b ;
-    background-color: #e0dada;
+    color: #cf9a36 ;
+    background-color: var(--avançadoCor);
     grid-area: c2 ;
-}
-
-.informacaoCorpo{
-
-    color: #cdd3d3;
-    background-color: #f00606;
-    grid-area: inf ;
+    border-radius: 2.5em 2.5em 0em 0em;
+    box-shadow: 1em 25em 6em #e20ed748;
     
-
+    
 }
+.caixa3{
+    
+    color: var(--avançadoPremium) ;
+    background-color: #2f2f6d;
+    grid-area: c3 ;
+    border-radius: 2.5em 2.5em 0em 0em;
+    box-shadow: 1em 25em 6em #002fff;
+    
+}
+
+
 /* preço Plano Prata e o funcionamento do botão */
 .preco1{
     
     color:#e9e9e9 ;
     background-color: #222222;
     grid-area: preco1 ;
+    border-radius: 0em 0em 2.5em 2.5em;
 }
 .preco1 button{
     margin-top: 20px;
-font-size: 3em;
-border-radius: 35px;
-border: none;
-padding: 2% 10% 2% 10%;
-background-color: #36cab6 ;
-color: #e9e9e9;
-cursor: pointer;
-text-shadow: 2px 2px #92929248;
-box-shadow: 4px 4px #e9e9e9;
+    margin-bottom:15px;
+    font-size: 2vw;
+    border-radius: 35px;
+    border: none;
+    padding: 1% 5% 1% 5%;
+    background-color: #36cab6 ;
+    color: #e9e9e9;
+    cursor: pointer;
+    text-shadow: 2px 2px #92929248;
+    box-shadow: 4px 4px #e9e9e9;
+    
+    
 }
 
 
@@ -116,21 +134,23 @@ box-shadow: 4px 4px #e9e9e9;
 .preco2{
     
     
-    background-color: #cac7c7;
+    background-color: #ffffff;
     grid-area: preco2 ;
+    border-radius: 0em 0em 2.5em 2.5em;
 }
 
 .preco2 button{
     margin-top: 20px;
-font-size: 3em;
-border-radius: 35px;
-border: none;
-padding: 2% 10% 2% 10%;
-background-color: #cf9a36 ;
-color: #e9e9e9;
-cursor: pointer;
-text-shadow: 2px 2px #92929248;
-box-shadow: 4px 4px #e9e9e9;
+    margin-bottom:15px;
+    font-size: 2vw;
+    border-radius: 35px;
+    border: none;
+    padding: 1% 5% 1% 5%;
+    background-color: #cf9a36 ;
+    color: #e9e9e9;
+    cursor: pointer;
+    text-shadow: 2px 2px #92929248;
+    box-shadow: 4px 4px #e9e9e9;
 }
 .preco2 button:hover{
    
@@ -139,7 +159,34 @@ box-shadow: 4px 4px #e9e9e9;
     border: none; 
     transition: 0.25s; 
 }
+.preco3{
+    
+    color: var(--avançadoPremium) ;
+    background-color: #28285c;
+    grid-area: preco3 ;
+    border-radius: 0em 0em 2.5em 2.5em;
+}
 
+.preco3 button{
+    margin-top: 20px;
+    margin-bottom:15px;
+    font-size: 2vw;
+    border-radius: 35px;
+    border: none;
+    padding: 1% 5% 1% 5%;
+    background-color: var(--avançadoPremium) ;
+    color: #e9e9e9;
+    cursor: pointer;
+    text-shadow: 2px 2px #92929248;
+    box-shadow: 4px 4px #e9e9e9;
+}
+.preco3 button:hover{
+   
+    background: #b6852c; 
+    transition: 0.15s;
+    border: none; 
+    transition: 0.25s; 
+}
 
 
 

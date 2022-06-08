@@ -15,7 +15,7 @@ const Assinatura = () => {
                         <div>
                             <br/>
                             
-                            <h2 className="">Plano Prata</h2>
+                            <h2 className="">Plano Básico</h2>
                             <img className="imgCP" src="https://i.imgur.com/NIxXpcL.png"/>
                         </div>
 
@@ -25,16 +25,19 @@ const Assinatura = () => {
                     <div className="caixa2">
                         <div>
                             <br/>
-                            <h2>Plano Gold</h2>
+                            <h2>Plano Avançado</h2>
                             <img className="imgCG" src=" https://i.imgur.com/pzop9Yh.png"/>
                         </div>
-
-                      
                     </div>
 
-                <div className="planosSuperior">
-                    <h2> Assinatura </h2>
-                </div>
+                        <div className="caixa3">
+                            <div>
+                                <br/>
+                                <h2>Plano Premium</h2>
+                                <img className="imgCG" src=" https://i.imgur.com/pzop9Yh.png"/>
+                            </div>
+                        </div>
+
 
                     <div className="preco1">
                        
@@ -56,17 +59,21 @@ const Assinatura = () => {
                                     <li>33 Cursos disponíveis</li> 
                                     <li>Certificado</li>
                                 </ul>
-
                     </div>
 
-                    <div className="informacaoCorpo">
-                <h2> oi </h2>
-                        <div className="informacao">
+
                             
+                            <div className="preco3">
+                            
+                                    <button>Compre agora</button>
+                                    <p> A partir de <b>R$59,99</b>/mês </p>
+                                        <ul>
+                                            <li>150 Aulas</li>
+                                            <li>33 Cursos disponíveis</li> 
+                                            <li>Certificado</li>
+                                        </ul>
+                            </div>
 
-                        </div>
-
-                    </div>
                     
                 </div>
 
