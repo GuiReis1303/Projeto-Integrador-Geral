@@ -11,12 +11,12 @@
 
 
 .carouselImagem{
-    width: 100%;
+    width: 80%;
 }
 
 .itemcarousel{
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .caixa{
@@ -124,10 +124,9 @@ color: #757572;
     width: 100% ;
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-height: 1000px){
     .carousel-tamanho{
-        width: auto;
-        height: auto;
+        height: 30vh;
     }
 
     .geral-curso{
