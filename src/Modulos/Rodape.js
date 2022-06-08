@@ -1,3 +1,5 @@
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -35,11 +37,9 @@ const Rodape = () => {
             </div>
 
             <div className="rodapeSocial">
-                <img src={require("./facebook.png")}/>
-                <img src={require("./instagram.png")}/>
-                <img src={require("./youtube.png")}/>
-                <br/><br/>
-               
+                <FontAwesomeIcon icon={faFacebook}/>
+                <FontAwesomeIcon icon={faInstagram}/>
+                <FontAwesomeIcon icon={faYoutube}/>
             </div>
         </div>   
      );
