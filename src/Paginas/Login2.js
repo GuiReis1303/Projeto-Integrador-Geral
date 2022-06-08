@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-const Login2 = () => {
+const Login2 = (props) => {
+
+    
     const mudarCadastro = () =>{
         document.getElementById('cadastro').classList.remove('invisivel');
         document.getElementById('login').classList.add('invisivel')
@@ -15,17 +17,16 @@ const Login2 = () => {
     }
 
     const enviarCadastro = () =>{
-        const email = document.getElementsByName('email').values
-        const usuario = document.getElementsByName('usuario').values
-        const senha = document.getElementsByName('senha').values
-        
-        alert(email + usuario + senha)
-    }
+        const email = document.querySelector("input[name='email']").value
+        const usuariocadastro = document.querySelector("input[name='usuariocadastro']").value
+        const senhacadastro = document.querySelector("input[name='senhacadastro']").value
+        console.log(email, usuariocadastro, senhacadastro)
+      }
 
     require('./Login2.css')
     return ( 
-        <div>
-            <div className="main-login" id="login">
+        <div className="body">
+            <div className={"main-login" + (props.cadastro ? " invisivel" : "")} id="login">
                 <div className="left-login">
                     <h1> Faça Login<br/> E comece a estudar</h1>
                     <img src={require("./Imagens/aulaonline.png")} alt="Aula Online Animação" className="left-login-image"/>
@@ -46,7 +47,7 @@ const Login2 = () => {
                     </div>
                 </div>
             </div>
-            <div className="main-cadastro invisivel" id="cadastro">
+            <div className={"main-cadastro" + (props.cadastro ? "" : " invisivel")} id="cadastro">
             <div className="rigth-cadastro" id="imgCadastroCima">
                     <h1> Cadastre-se<br/> E comece a estudar</h1>
                     <img src={require("./Imagens/aulaonline.png")} alt="Aula Online Animação" className="left-login-image"/>
@@ -55,16 +56,16 @@ const Login2 = () => {
                     <div className="card-cadastro">
                         <h2><Link className="link-icon" to={'/'}><FontAwesomeIcon icon={faCircleArrowLeft} className="icon-voltar"/></Link> CADASTRO</h2>
                         <div className="textfield">
-                            <label for="usuario"> Email</label>
+                            <label for="email"> Email</label>
                             <input type="email" name="email" placeholder="Email" />
                         </div>
                         <div className="textfield">
                             <label for="usuario"> Usuário</label>
-                            <input type="text" name="usuario" placeholder="Usuário" />
+                            <input type="text" name="usuariocadastro" placeholder="Usuário" />
                         </div>
                         <div className="textfield">
                             <label for="senha"> Senha</label>
-                            <input type="password" name="senha" placeholder="Senha" />
+                            <input type="password" name="senhacadastro" placeholder="Senha" />
                         </div>
                         <button className="btn-cadastro" onClick={() => enviarCadastro()}>Cadastre-se</button>
                         <p className="logar-conta">Já possui conta? <a className="criar-conta-a" onClick={() => mudarLogin()}>Login</a></p>

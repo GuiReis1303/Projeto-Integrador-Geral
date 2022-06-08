@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-body{
+.body{
     font-family: sans-serif;
-    margin-top: 0;
+    margin-top: -80px;
     background: #201b2c;;
 }
 
-body * {
+.body * {
     box-sizing: border-box;
 }
 
