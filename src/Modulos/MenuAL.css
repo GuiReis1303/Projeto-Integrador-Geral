@@ -1,16 +1,20 @@
+
+
 .logoMenuAL{
-    width: 130px
+    width: 10em
 }
 
-.sla{
+.CorMenuAL{
     background: #201b2c;
 }
 
-.editMenuH1{
+.editMenuALH1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #00ff88;
+    
+    
 }
-.editMenuH2{
+.editMenuALH2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #00ff88;
 }
@@ -20,4 +24,5 @@
     outline: #01ce6e;
     border: 3px solid #00ff88;
     width: 50px;
+
 }

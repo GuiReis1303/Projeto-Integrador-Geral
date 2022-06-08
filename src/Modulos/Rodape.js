@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const Rodape = () => {
     require('./Rodape.css')
     return ( 
+
+       
         <div className="rodape">
+            
             <div className="rodapeLogo">
                 <img src={require("./logopreta.png")}/>
             </div>
@@ -38,7 +41,7 @@ const Rodape = () => {
                 <br/><br/>
                
             </div>
-        </div>
+        </div>   
      );
 }
  
