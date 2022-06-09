@@ -9,7 +9,6 @@
     height: auto;
 }
 
-
 .carouselImagem{
     width: 80%;
 }
@@ -39,16 +38,19 @@
 
 .caixa-botao-vermais{
     display: none;
+    padding-top: 10px;
+    padding-bottom: 50px
 }
 
 .caixatexto button{
-    position:absolute;
-    bottom: 14%;
-    padding: 1.5vw 16.1vw;
+    width: 100%;
+    padding: 1.5vw;
     border-radius: 15px; 
     background-color: #f1721e ;
     font-size: 1.15em;
     border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .caixatexto button:hover{
@@ -124,11 +126,7 @@ color: #757572;
     width: 100% ;
 }
 
-@media only screen and (max-height: 1000px){
-    .carousel-tamanho{
-        height: 30vh;
-    }
-
+@media only screen and (max-width: 767px){
     .geral-curso{
         width: 100%;
     }
@@ -142,10 +140,40 @@ color: #757572;
     }
 
     .botao-ver-mais{
-        width: auto;
+        width: 100%;
         border-radius: 15px; 
         background-color: #f1721e ;
         font-size: 1.1em;
         border: none;
     }
 }
+
+/*
+@media only screen and (max-height: 700px){
+    .carousel-tamanho{
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-height: 900px){
+    .carousel-tamanho{
+        height: 25vh;
+    }
+}
+
+@media only screen and (min-height: 1000px){
+    .carousel-tamanho{
+        height: 32vh;
+    }
+}
+
+@media only screen and (min-height: 1100px){
+    .carousel-tamanho{
+        height: 30vh;
+    }
+}
+
+@media only screen and (min-height: 1300px){
+
+}*/
+

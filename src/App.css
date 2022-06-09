@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 body{
     margin: 0;
     background-color: #ebebeb;
     margin-top: 93px;
-    font-family: cursive;
+    font-family: Kdam;
 }
 

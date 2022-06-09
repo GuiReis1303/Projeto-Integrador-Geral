@@ -9,7 +9,7 @@ const MenuAL = () => {
     return (
         <div className="menuALgeral">
             <Navbar collapseOnSelect expand="md" fixed="top" className="CorMenuAL" variant="#00ff88">
-                <Nav.Link href="/"><img src={require("./logobranca.png")} className="logoMenuAL"/></Nav.Link>
+                <Nav.Link href="/"><img src={require("./Imagens/logobranca.png")} className="logoMenuAL"/></Nav.Link>
                 <Navbar.Toggle className="testes01"><FontAwesomeIcon icon={faBars}/></Navbar.Toggle>
                 <Container fluid>
                     <Navbar.Collapse id="responsive-navbar-nav">

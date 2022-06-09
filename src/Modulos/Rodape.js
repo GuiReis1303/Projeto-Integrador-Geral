@@ -8,7 +8,7 @@ const Rodape = () => {
     return ( 
         <div className="rodape">
             <div className="rodapeLogo">
-                <img src={require("./logobranca.png")}/>
+                <img src={require("./Imagens/logobranca.png")}/>
             </div>
 
             <div className="rodapeInformacao">
@@ -18,7 +18,7 @@ const Rodape = () => {
                     
                     <Link className="editRodape" to="/">Home</Link><br/>
                     <Link className="editRodape" to="/Assinatura">Assinatura</Link><br/>
-                    <Link className="editRodape" to="/CursosOferecidos">Cursos Oferecidos</Link><br/>
+                    <Link className="editRodape" to="/Cursos">Cursos</Link><br/>
                 </div>
 
                 <div className="rodapeSobrenos">
