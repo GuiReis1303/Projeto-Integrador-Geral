@@ -46,9 +46,9 @@ const Assinatura = () => {
                             <p> <b>R$8,90</b>/mês <b>R$89,90</b>/ano </p>
                                 <ul className="descricao">
                                     <li>Acesso a todos os CURSOS*</li>
-                                    <li>Acesso a todos os BENEFÍCIOS** de assinantes basico e padrão</li>
-                                    <li>As aulas contém anunicos de 10seg/cada</li> 
-                                    <li>Valor por dia 0,30 centavos</li>
+                                    <li>Acesso a todos os BENEFÍCIOS** de assinantes básico e padrão.</li>
+                                    <li>As aulas contém anúncios de 30seg/por módulo.</li> 
+                                    <li>Valor diário: R$0,30 centavos.</li>
                                 </ul>
 
                     </div>
@@ -59,9 +59,9 @@ const Assinatura = () => {
                                 <p> <b>R$14,90</b>/mês <b>R$149,90</b>/ano </p>
                                 <ul className="descricao">
                                     <li>Acesso a todos os CURSOS*</li>
-                                    <li>Acesso a todos os BENEFÍCIOS** de assinantes basico e padrão</li>
-                                    <li>Acesso a sala exclusivo do telegram</li> 
-                                    <li>Valor por dia 0,50 centavos</li>
+                                    <li>Acesso a todos os BENEFÍCIOS** de assinantes básico e padrão.</li>
+                                    <li>Acesso a sala exclusivo do telegram.</li> 
+                                    <li>Valor diário: R$0,50 centavos.</li>
                                 </ul>
                     </div>
 
@@ -73,9 +73,9 @@ const Assinatura = () => {
                                 <p> <b>R$29,90</b>/mês <b>R$299,90</b>/ano </p>
                                     <ul className="descricao">
                                         <li>Acesso a todos os CURSOS*</li>
-                                        <li>Acesso a todos os beneficios, incluindo mentorias e eventos</li>
-                                        <li>Acesso a sala exclusivo no WhatsApp</li> 
-                                        <li>Valor por dia 0,99 centavos</li>
+                                        <li>Acesso a todos os beneficios, incluindo mentorias e eventos.</li>
+                                        <li>Acesso a sala exclusivo no WhatsApp.</li> 
+                                        <li>Valor diário: R$0,99 centavos.</li>
                                     </ul>
                             </div>
 
