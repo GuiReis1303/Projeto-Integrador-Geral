@@ -7,6 +7,7 @@ import Faq from './Paginas/Faq';
 import Cadastro from './Paginas/Cadastro';
 import Login from './Paginas/Login';
 import Login2 from './Paginas/Login2';
+import Curso_HTML from "./Modulos/Cursos/Curso_HTML";
 
 function App() {
     require('./App.css')
@@ -20,6 +21,7 @@ function App() {
                 <Route path='Faq' element={<Faq />} />
                 <Route path='Cadastro' element={<Login2 cadastro={true}/>} />
                 <Route path='Login2' element={<Login2/>} /> 
+                <Route path='Curso_HTML' element={<Curso_HTML/>} />
             </Routes>
         </div>
   );
