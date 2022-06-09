@@ -8,7 +8,29 @@ const Home = () => {
     return ( 
         <div>
             <MenuAL/>
-            <div>
+                <div className="inicio">
+                    <div>
+                    <br/>
+                    <br/>
+                        <p>
+                            <h2>
+                            Bem-vindo à Station Class uma plataforma 
+                            criada para te ajudar a mudar sua vida, 
+                            transformando horas perdidas em aula 
+                            com conteúdo exclusivo e bem atual.
+                            </h2>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <h2>
+                            Criamos essa plataforma com o objetivo 
+                            de mudar vidas, trazendo conhecimento e 
+                            aprendizado para todas as pessoas, 
+                            de todos os gêneros, classes e etnias.
+                            </h2>
+                        </p>  
+                    <br/>
+                </div>
                 <Carousel fade>
                     <Carousel.Item>
                         <img
