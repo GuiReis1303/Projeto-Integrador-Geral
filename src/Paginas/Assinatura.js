@@ -26,7 +26,7 @@ const Assinatura = () => {
                     <div className="caixa2">
                         <div>
                             <br/>
-                            <h2>Plano Avançado</h2>
+                            <h2>Plano Padrão</h2>
                             <img className="imgCG" src=" https://i.imgur.com/pzop9Yh.png"/>
                         </div>
                     </div>
@@ -42,37 +42,38 @@ const Assinatura = () => {
 
                     <div className="preco1">
                        
-                            <button>Compre agora</button>
-                            <p> A partir de <b>R$29,99</b>/mês </p>
-                                <ul>
-                                    <li>60 Aulas</li>
-                                    <li>11 Cursos disponíveis</li> 
+                            <button>Assine agora</button>
+                            <p> Valor por dia 0,30 centavos <b>R$8,90</b>/mês <b>R$89,90</b>/mês </p>
+                                <ul className="descricao">
+                                    <li>Acesso a todos os CURSOS*</li>
+                                    <li>Acesso a todos os BENEFÍCIOS* de assinantes basico e padrão</li>
+                                    <li>As aulas contém anunicos de 10seg/cada</li> 
                                 </ul>
 
                     </div>
 
                     <div className="preco2">
                        
-                            <button>Compre agora</button>
-                              <p> A partir de <b>R$59,99</b>/mês </p>
-                                <ul>
-                                    <li>150 Aulas</li>
-                                    <li>33 Cursos disponíveis</li> 
-                                    <li>Certificado</li>
+                            <button>Assine agora</button>
+                                <p> Valor por dia 0,50 centavos <b>R$14,90</b>/mês <b>R$149,90</b>/mês </p>
+                                <ul className="descricao">
+                                    <li>Acesso a todos os CURSOS*</li>
+                                    <li>Acesso a todos os BENEFÍCIOS** de assinantes basico e padrão</li>
+                                    <li>Acesso a sala exclusivo do telegram</li> 
                                 </ul>
                     </div>
 
 
                             
-                            <div className="preco3">
+                    <div className="preco3">
                             
-                                    <button>Compre agora</button>
-                                    <p> A partir de <b>R$59,99</b>/mês </p>
-                                        <ul>
-                                            <li>150 Aulas</li>
-                                            <li>33 Cursos disponíveis</li> 
-                                            <li>Certificado</li>
-                                        </ul>
+                            <button>Assine agora</button>
+                                <p> Valor por dia 0,99 centavos <b>R$29,90</b>/mês <b>R$299,90</b>/mês </p>
+                                    <ul className="descricao">
+                                        <li>Acesso a todos os CURSOS*</li>
+                                        <li>Acesso a todos os beneficios, incluindo mentorias e eventos</li>
+                                        <li>Acesso a sala exclusivo no WhatsApp</li> 
+                                    </ul>
                             </div>
 
                     
