@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCertificate, faClapperboard, faDownload, faMobileAndroid, faNewspaper,  } from "@fortawesome/free-solid-svg-icons";
 import { faCss3, faHtml5, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Curso_ProgC = () => {
     require('./CarouselCursos.css');
@@ -59,7 +60,7 @@ const Curso_ProgC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>43 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Ver mais</button>                            
+                                <Link to={'/Curso_HTML'}><button>Ver mais</button></Link>                           
                             </div>
                         </div>
                     </Carousel.Item>
