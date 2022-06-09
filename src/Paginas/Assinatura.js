@@ -10,6 +10,7 @@ const Assinatura = () => {
         <div>
             <MenuAL/>
             <div className="corpoAssinatura">
+               
                 <div className="meio">
                     <div className="caixa1">
                         <div>
