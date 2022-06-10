@@ -9,9 +9,7 @@ const AulaM = () => {
     const informacoesAula = [
         {
             iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
-            nomeAula: "Mundo Virtual",
-            avaliacaoPositiva: "20",
-            avaliacaoNegativa: "0",
+            idCurso: [{nomeCurso: "HTML - Completo", avaliacaoPositiva: "20", avaliacaoNegativa: "0"}],
             comentario: [ 
                             {nick:"Guilherme", comentario:"asdasd", registro:"05/07/2003"}, 
                             {nick:"Bruna", comentario:"asdasd", registro:"05/07/2003"},
@@ -35,16 +33,16 @@ const AulaM = () => {
 
                     <div className="aulaLeftRodape">
                         <div className="nomeAula">
-                            <p>{informacoesAula[0].nomeAula}</p>
+                            <p>{informacoesAula[0].idCurso[0].nomeCurso}</p>
                         </div>
 
                         <div className="caixaAvaliacaoAula">
                             <div className="avaliacaoAulaPositiva">
-                                <p><FontAwesomeIcon icon={faThumbsUp}/>{ informacoesAula[0].avaliacaoPositiva}</p>
+                                <p><FontAwesomeIcon icon={faThumbsUp}/>{informacoesAula[0].idCurso[0].avaliacaoPositiva}</p>
                             </div>
 
                             <div className="avaliacaoAulaNegativa">
-                                <p><FontAwesomeIcon icon={faThumbsDown}/>{ informacoesAula[0].avaliacaoNegativa}</p>
+                                <p><FontAwesomeIcon icon={faThumbsDown}/>{informacoesAula[0].idCurso[0].avaliacaoNegativa}</p>
                             </div>
                         </div>
                     </div>
