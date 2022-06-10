@@ -2,12 +2,14 @@ import React from "react";
 import MenuAL from "../Modulos/MenuAL"
 import { Navbar } from "react-bootstrap";
 import Rodape from "../Modulos/Rodape";
+import Whats from "../Modulos/Whats";
 
 const Faq = () => {
     require('./Faq.css')
     return ( 
         <div>
             <MenuAL/>
+            <Whats/>
             <div className="corpoAssinaturaFAQ">
                 <div className="meioFAQ">
                     <div className="FAQ1">

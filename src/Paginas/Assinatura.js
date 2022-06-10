@@ -1,6 +1,7 @@
 import React from "react";
 import MenuAL from "../Modulos/MenuAL";
 import Rodape from "../Modulos/Rodape";
+import Whats from "../Modulos/Whats";
 
 
 
@@ -9,6 +10,7 @@ const Assinatura = () => {
     return ( 
         <div>
             <MenuAL/>
+            <Whats/>
             <div className="corpoAssinatura">
                
                 <div className="meio">

@@ -26,12 +26,12 @@
     justify-content: end;
 }
 
-.avaliacaoPositiva{
+.avaliacaoCursoPositiva{
     color: green;
     margin-right: 20px;
 }
 
-.avaliacaoNegativa{
+.avaliacaoCursoNegativa{
     color: red;
     margin-right: 20px;
 }

@@ -2,12 +2,14 @@ import React from "react";
 import MenuAL from "../Modulos/MenuAL";
 import Carousel from 'react-bootstrap/Carousel'
 import Rodape from "../Modulos/Rodape";
+import Whats from "../Modulos/Whats";
 
 const Home = () => {
     require('./Home.css')
     return ( 
         <div>
             <MenuAL/>
+            <Whats/>    
                 <div className="inicio">
                     <div>
                     <br/>
