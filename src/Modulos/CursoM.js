@@ -11,9 +11,10 @@ const CursoM = () => {
         {
             nomeCurso: "HTML - Completo",
             descricaoCurso: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed",
+            imagem: "fa",
             avaliacaoPositiva: "15",
             avaliacaoNegativa: "10",
-            linkAulasCurso: ["HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo"]
+            linkAulasCurso: ["HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo"]
         }
     ];
 
@@ -26,6 +27,9 @@ const CursoM = () => {
                 <div className="cursoLeft">
                     <div className="nomeCurso">
                         <h2>{ informacoesCurso[0].nomeCurso}</h2>
+                    </div>
+                    <div className="imagemCurso">
+                        <img src={require("./Imagens/aulaHTML.png")}/>
                     </div>
                     <div className="descricaoCurso">
                         <p>{ informacoesCurso[0].descricaoCurso}</p>
@@ -46,7 +50,7 @@ const CursoM = () => {
                         {informacoesCurso[0].linkAulasCurso.map( (r) => {
                             return(
                             <div>
-                                <p><Link to={'/AulaM'}><FontAwesomeIcon icon={faThumbtack}/> {r} </Link></p>
+                                <p><Link to={'/AulaM'} className="linkAulas"><FontAwesomeIcon icon={faThumbtack}/> {r} </Link></p>
                             </div>
                             )
                         })}
