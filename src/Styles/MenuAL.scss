@@ -1,4 +1,4 @@
-
+@import "../Variables/Variables.scss";
 
 .logoMenuAL{
     width: 10em
@@ -10,17 +10,17 @@
 }
 
 .editMenuALH1{
-    color: #00ff88;  
+    color: $GreenColor;  
 }
 .editMenuALH2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #00ff88;
+    color: $GreenColor;
 }
 
 .testes01{
-    color: #00ff88;
-    outline: #01ce6e;
-    border: 3px solid #00ff88;
+    color: $GreenColor;
+    outline: $GreenColor;
+    border: 3px solid $GreenColor;
     width: 50px;
     margin-right: 20px;
 

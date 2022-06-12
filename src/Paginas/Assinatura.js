@@ -6,7 +6,7 @@ import Whats from "../Modulos/Whats";
 
 
 const Assinatura = () => {
-    require('./Assinatura.css')
+    require('../Styles/Assinatura.css')
     return ( 
         <div>
             <MenuAL/>

@@ -1,0 +1,98 @@
+.cursoGeral {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #201b2c;
+  height: 70vh;
+}
+
+/* CSS cursoLeft */
+.cursoLeft {
+  width: 45%;
+}
+
+.nomeCurso {
+  text-align: center;
+  color: #00ff88;
+}
+
+.imagemCurso {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.imagemCurso img {
+  width: 100%;
+}
+
+.descricaoCurso {
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+.caixaAvaliacaoCurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.avaliacaoCursoPositiva {
+  color: green;
+  margin-right: 20px;
+}
+
+.avaliacaoCursoNegativa {
+  color: red;
+  margin-right: 20px;
+}
+
+/* CSS cursoRight */
+.cursoRight {
+  margin-top: 10px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: end;
+  overflow-y: auto;
+}
+
+.linkAulasCursos {
+  width: 75%;
+}
+
+.linkAulas {
+  text-decoration: none;
+  color: #00ff88;
+}
+
+.descricaoCurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #201b2c;
+}
+
+.descricaoCurso h2 {
+  font-size: font-size 2em;
+}
+/*# sourceMappingURL=CursoM.css.map */

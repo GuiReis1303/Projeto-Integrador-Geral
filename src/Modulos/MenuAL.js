@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 
 const MenuAL = () => {
-    require('./MenuAL.css');
+    require('../Styles/MenuAL.css');
     return (
         <div className="menuALgeral">
             <Navbar collapseOnSelect expand="md" fixed="top" className="CorMenuAL" variant="#00ff88">

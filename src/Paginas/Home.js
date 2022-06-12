@@ -5,33 +5,34 @@ import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
 
 const Home = () => {
-    require('./Home.css')
+    require('../Styles/Home.css')
     return ( 
         <div>
             <MenuAL/>
             <Whats/>    
                 <div className="inicio">
                     <div>
-                    <br/>
-                    <br/>
-                        <p>
+                        <p className="inicio-p">
                             <h2>
                             Bem-vindo à Station Class uma plataforma 
                             criada para te ajudar a mudar sua vida, 
                             transformando horas perdidas em aula 
                             com conteúdo exclusivo e bem atual.
                             </h2>
-                            <br/>
-                            <br/>
-                            <br/>
+                          
+                   
                             <h2>
                             Criamos essa plataforma com o objetivo 
                             de mudar vidas, trazendo conhecimento e 
                             aprendizado para todas as pessoas, 
                             de todos os gêneros, classes e etnias.
                             </h2>
+                <div className="inicio-botao">
+                            <button>Conheça nossos Cursos!</button>
+                            <button>Conheça nossos Cursos!</button>
+                </div>
                         </p>  
-                    <br/>
+                    
                 </div>
                 <Carousel fade>
                     <Carousel.Item>

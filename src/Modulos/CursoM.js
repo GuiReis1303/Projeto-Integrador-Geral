@@ -9,16 +9,25 @@ const CursoM = () => {
 
     const informacoesCurso = [
         {
-            nomeCurso: "HTML - Completo",
-            descricaoCurso: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed",
+            nomeCurso: "Curso Web Design Completo: HTML5, CSS3 e JS",
+            descricaoCurso: "Webdesign/ Front-end Fundamentos. Aprenda DE VERDADE HTML e CSS (básico ao avançado) e inicie o Javascript. 100% prático. ",
             imagem: "fa",
-            avaliacaoPositiva: "15",
-            avaliacaoNegativa: "10",
-            linkAulasCurso: ["HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo", "HTML Introdução", "HTML Facil", "HTML Dificil", "HTML Completo"]
+            avaliacaoPositiva: "152",
+            avaliacaoNegativa: "26",
+            linkAulasCurso: ["Introdução", 
+            "Estrutura de uma página web - Parte 1 ",
+             "Estrutura de uma página web - Parte 2 ", 
+            "Cabeçalhos",
+             "Parágrafos",
+              "Listas ordenadas e não ordenadas",
+               "Imagens",
+                "Links",
+                 "Tabelas",
+                  "Formulários"]
         }
     ];
 
-    require('./CursoM.css')
+    require('../Styles/CursoM.css')
     return ( 
         <div>
             <MenuAL/>
@@ -57,6 +66,10 @@ const CursoM = () => {
                     </div>
                 </div>
             </div>
+            <div className="descricaoCurso">
+                    <h2> O que você aprenderá: </h2>
+
+                </div>
 
             <Rodape/>
         </div>

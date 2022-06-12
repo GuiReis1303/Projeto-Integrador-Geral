@@ -1,0 +1,44 @@
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ff88;
+}
+
+.inicio {
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  background-color: #28285c;
+}
+
+.inicio-p {
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.inicio-p h2 {
+  margin-bottom: 5%;
+}
+
+.inicio-p-botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+}
+
+.inicio-p button {
+  padding: 1.5rem 2em 1.5rem 2em;
+  font-size: 2rem;
+  border: none;
+  border-radius: 20px;
+  color: #28285c;
+}
+
+.inicio-p button:hover {
+  background-color: #dfdfdf;
+  -webkit-transition: 1.15s;
+  transition: 1.15s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/*# sourceMappingURL=Home.css.map */
