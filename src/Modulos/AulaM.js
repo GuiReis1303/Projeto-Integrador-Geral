@@ -9,18 +9,18 @@ const AulaM = () => {
     const informacoesAula = [
         {
             iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
-            idCurso: [{nomeCurso: "HTML - Completo", avaliacaoPositiva: "20", avaliacaoNegativa: "0"}],
+            idCurso: [{nomeCurso: "Introdução à HTML",  avaliacaoPositiva: " 36", avaliacaoNegativa: " 3"}],
             comentario: [ 
                             {nick:"Guilherme", comentario:"asdasd", registro:"05/07/2003"}, 
                             {nick:"Bruna", comentario:"asdasd", registro:"05/07/2003"},
                             {nick:"Marcos", comentario:"asdasd", registro:"05/07/2003"},
                             {nick:"Paulo", comentario:"asdasd", registro:"05/07/2003"},
-                            {nick:"Conrado", comentario:"asdasd", registro:"05/07/2003"},
+                            {nick:"Conrado", comentario:"Gostei! Pena que não ensina a fazer café! :/", registro:"05/07/2003"},
                         ]
         }
     ]
 
-    require('./AulaM.css')
+    require('../Styles/AulaM.css')
     return ( 
         <div>
             <MenuAL/>
@@ -62,8 +62,14 @@ const AulaM = () => {
                             )
                         })}
                     </div>
-                </div>
+                </div>         
             </div>
+                
+                <div className="descricaoAula">
+                            <h2> Material da Aula </h2>
+                        </div>       
+
+            <Rodape/>
         </div>
      );
 }

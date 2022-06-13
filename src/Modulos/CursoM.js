@@ -31,7 +31,7 @@ const CursoM = () => {
     return ( 
         <div>
             <MenuAL/>
-
+        
             <div className="cursoGeral">
                 <div className="cursoLeft">
                     <div className="nomeCurso">

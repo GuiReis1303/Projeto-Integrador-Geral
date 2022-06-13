@@ -1,0 +1,202 @@
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ff88;
+}
+
+.inicio {
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  background-color: #28285c;
+}
+
+.inicio-p {
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.inicio-p h2 {
+  margin-bottom: 5%;
+}
+
+.inicio-p button {
+  padding: 1.5rem 2em 1.5rem 2em;
+  font-size: 2rem;
+  border: none;
+  border-radius: 20px;
+  color: #28285c;
+}
+
+.inicio-p button:hover {
+  background-color: #dfdfdf;
+  -webkit-transition: 1.15s;
+  transition: 1.15s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-box-shadow: 2px 2px 10px #dfdfdf7c;
+          box-shadow: 2px 2px 10px #dfdfdf7c;
+}
+
+.inicio-botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.aulaGeral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 70vh;
+  background-color: #201b2c;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  -webkit-box-shadow: 3em 3em 3em inset rgba(5, 5, 179, 0.274);
+          box-shadow: 3em 3em 3em inset rgba(5, 5, 179, 0.274);
+}
+
+.aulaLeft {
+  width: 65%;
+  background: #1c1727;
+}
+
+.iframeAula iframe {
+  width: 100%;
+  height: 60vh;
+}
+
+.aulaLeftRodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: font-size 2em;
+}
+
+.nomeAula {
+  margin-left: 5%;
+  color: #00ff88;
+}
+
+.caixaAvaliacaoAula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 5%;
+}
+
+.avaliacaoAulaPositiva {
+  color: #00ff88;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.avaliacaoAulaNegativa {
+  color: #CA0000;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.aulaRight {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #1a1524;
+  overflow-y: auto;
+}
+
+.comentariosAula {
+  color: #ebebeb;
+  width: 90%;
+}
+
+.caixaComentario {
+  width: 100%;
+  background: #201b2c;
+  border: 2px solid #ebebeb;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caixaComentarioMenor {
+  width: 90%;
+  margin-top: 5px;
+}
+
+.comentarioData {
+  text-align: end;
+  opacity: 50%;
+}
+
+@media only screen and (max-width: 950px) {
+  .aulaGeral {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: none;
+  }
+  .aulaLeft {
+    width: 100%;
+  }
+  .iframeAula iframe {
+    width: 100%;
+    height: 40vh;
+  }
+  .aulaRight {
+    width: 100%;
+    height: auto;
+    overflow-y: unset;
+  }
+  .comentariosAula {
+    margin-top: 10px;
+  }
+}
+
+.aulaRight::-webkit-scrollbar {
+  width: 15px;
+  /* width of the entire scrollbar */
+}
+
+.aulaRight::-webkit-scrollbar-track {
+  background: #ebebeb;
+  /* color of the tracking area */
+}
+
+.aulaRight::-webkit-scrollbar-thumb {
+  background-color: #201b2c;
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #adadad;
+  /* creates padding around scroll thumb */
+}
+
+.descricaoAula {
+  background-color: #e4e4e4;
+}
+
+.descricaoAula h2 {
+  color: #28285c;
+  font-size: font-size 2em;
+}
+/*# sourceMappingURL=AulaM.css.map */
