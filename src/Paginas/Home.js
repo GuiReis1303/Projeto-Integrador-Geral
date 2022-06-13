@@ -29,7 +29,7 @@ const Home = () => {
                             </h2>
                 <div className="inicio-botao">
                             <button>Conheça nossos Cursos!</button>
-                            <button>Conheça nossos Cursos!</button>
+                            <button>Confira nossos Planos!</button>
                 </div>
                         </p>  
                     
