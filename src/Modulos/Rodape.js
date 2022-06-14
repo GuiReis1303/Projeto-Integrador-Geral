@@ -4,11 +4,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Rodape = () => {
-    require('./Rodape.css')
-    return ( 
+    require('../Styles/Rodape.css')
+    return ( <div>
         <div className="rodape">
             <div className="rodapeLogo">
                 <img src={require("./Imagens/logobranca.png")}/>
+               
             </div>
 
             <div className="rodapeInformacao">
@@ -23,7 +24,7 @@ const Rodape = () => {
 
                 <div className="rodapeSobrenos">
                     <h3>Sobre-nós</h3><br/>
-                    
+                  
                 </div>
 
                 <div className="rodapeSuporte">
@@ -32,13 +33,17 @@ const Rodape = () => {
                     <Link className="editRodape" to="/Comunidade">Comunidade</Link><br/>
                 </div>
             </div>
-            
+           
             <div className="rodapeSocial">
                 <FontAwesomeIcon icon={faFacebook} className="rodapeicon"/>
                 <FontAwesomeIcon icon={faInstagram} className="rodapeicon"/>
                 <FontAwesomeIcon icon={faYoutube} className="rodapeicon"/>
+               
             </div>
+            <span>Station ®</span>
         </div>   
+        
+      </div>
      );
 }
  

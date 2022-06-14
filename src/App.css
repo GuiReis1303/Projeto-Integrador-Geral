@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;700&family=Lato&display=swap');
 body{
     margin: 0;
     background-color: #ebebeb;
     margin-top: 93px;
-    font-family: Kdam;
+    font-family:Lato;
 }
 

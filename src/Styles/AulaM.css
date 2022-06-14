@@ -77,7 +77,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: font-size 2em;
+  font-size: 2em;
 }
 
 .nomeAula {
@@ -197,6 +197,6 @@ h2 {
 
 .descricaoAula h2 {
   color: #28285c;
-  font-size: font-size 2em;
+  font-size: 2em;
 }
 /*# sourceMappingURL=AulaM.css.map */

@@ -23,7 +23,7 @@ const Curso_DesignC = () => {
                                 </div>
                             </div>
                             <div className="caixatexto">
-                                <h3>Linguagens de Programação</h3>
+                                <h3>Curso de Design Photoshop</h3>
                                 <p>Venha aprender programação conosco, ensinamos desde linguagens front-end até back-end.
                                     Venha aprender a fazer um site do zero com HTML e CSS e fazer ele funcional com JS.
                                 </p>
@@ -42,7 +42,7 @@ const Curso_DesignC = () => {
                             <div className="caixaimagem">
                                 <img
                                 className="carouselImagem"
-                                src={require("./Imagens/html.png")}
+                                src={require("./Imagens/design.png")}
                                 alt="Primeiro slide"
                                 />
                                 <div className="caixa-botao-vermais">
@@ -52,7 +52,7 @@ const Curso_DesignC = () => {
                             <div className="caixatexto">
                                 <h3>HTML Completo</h3>
                                 <p>Curso mais didático e completo de HTML, aprendendo desde o básico até como usar div's</p>
-                                <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>
+                                <p1> Paulo Neto </p1>
                                 
                                 <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
                                 <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 23 artigos</p2>
@@ -68,7 +68,7 @@ const Curso_DesignC = () => {
                             <div className="caixaimagem">
                                 <img
                                 className="carouselImagem"
-                                src={require("./Imagens/css.png")}
+                                src={require("./Imagens/design.png")}
                                 alt="Segundo slide"
                                 />
                                 <div className="caixa-botao-vermais">
@@ -78,7 +78,7 @@ const Curso_DesignC = () => {
                             <div className="caixatexto">
                                 <h3>CSS Completo</h3>
                                 <p>Curso mais didático e completo de CSS, aprendendo como estilizar todas as tags</p>
-                                <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>
+                                <p1> Paulo Neto </p1>
                                 
                                 <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
                                 <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 23 artigos</p2>
@@ -104,7 +104,7 @@ const Curso_DesignC = () => {
                             <div className="caixatexto">
                                 <h3>JavaScript Completo</h3>
                                 <p>Curso mais didático e completo de JS, desde declaração de váriaveis, até ligação com banco de dados</p>
-                                <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>
+                                <p1> Paulo Neto </p1>
                                 
                                 <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
                                 <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 23 artigos</p2>

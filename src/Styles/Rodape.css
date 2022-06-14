@@ -1,0 +1,132 @@
+.rodape {
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
+          box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
+  background-image: -webkit-gradient(linear, right top, left top, from(#201b2c), to(#2f2f6d));
+  background-image: linear-gradient(-90deg, #201b2c, #2f2f6d);
+  color: #FFFFFF;
+}
+
+.rodape span {
+  position: absolute;
+  padding-top: 35vh;
+}
+
+.editRodape {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+
+.editRodape:hover {
+  text-decoration: underline;
+  color: #f0f0f0;
+  font-size: 1.2em;
+}
+
+.rodapeLogo {
+  width: 20%;
+}
+
+.rodapeLogo img {
+  width: 100%;
+  opacity: 25%;
+  padding-top: 7%;
+}
+
+.rodapeInformacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 0.8em;
+  width: 50vw;
+}
+
+.rodapeInicio {
+  width: 150px;
+  padding-top: 0.5em;
+}
+
+.rodapeSobrenos {
+  width: 150px;
+  padding-top: 0.5em;
+}
+
+.rodapeSuporte {
+  width: 150px;
+  padding-top: 0.5em;
+}
+
+.rodapeSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4vw;
+  cursor: pointer;
+}
+
+.rodapeicon {
+  margin-right: 20px;
+}
+
+.rodapeInformacao h3 {
+  font-size: 1.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .rodape {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rodapeLogo {
+    display: none;
+  }
+  .rodapeInformacao {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rodapeInicio, .rodapeSobrenos, .rodapeInformacao {
+    margin-top: 20px;
+  }
+  .rodapeSocial {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  .rodape span {
+    position: absolute;
+    padding-top: 40vh;
+    padding-left: 30vh;
+  }
+}
+/*# sourceMappingURL=Rodape.css.map */
