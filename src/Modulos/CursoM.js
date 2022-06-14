@@ -23,7 +23,8 @@ const CursoM = () => {
                "Imagens",
                 "Links",
                  "Tabelas",
-                  "Formulários"]
+                  "Formulários"
+                ]
         }
     ];
 
@@ -68,7 +69,6 @@ const CursoM = () => {
             </div>
             <div className="descricaoCurso">
                     <h2> O que você aprenderá: </h2>
-
                 </div>
 
             <Rodape/>

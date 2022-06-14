@@ -65,11 +65,7 @@ const AulaM = () => {
                         })}
                     </div>
                 </div>         
-            </div>
-                
-                <div className="descricaoAula">
-                            <h2> Material da Aula </h2>
-                        </div>       
+            </div>   
 
             <Rodape/>
         </div>
