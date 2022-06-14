@@ -15,7 +15,7 @@ const Curso_DesignC = () => {
                             <div className="caixaimagem">
                                 <img
                                 className="carouselImagem"
-                                src={require("./Imagens/design.png")}
+                                src={require("./Imagens/designCarousel.png")}
                                 alt="Slide Inicial"
                                 />
                                 <div className="caixa-botao-vermais">
