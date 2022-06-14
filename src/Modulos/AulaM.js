@@ -9,13 +9,15 @@ const AulaM = () => {
     const informacoesAula = [
         {
             iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
-            idCurso: [{nomeCurso: "Introdução à HTML",  avaliacaoPositiva: " 36", avaliacaoNegativa: " 3"}],
+            nomeAula: "Introdução à HTML",
+            avaliacaoPositiva: " 36",
+            avaliacaoNegativa: " 3",
             comentario: [ 
                             {nick:"Guilherme", comentario:"asdasd", registro:"05/07/2003"}, 
                             {nick:"Bruna", comentario:"asdasd", registro:"05/07/2003"},
                             {nick:"Marcos", comentario:"asdasd", registro:"05/07/2003"},
                             {nick:"Paulo", comentario:"asdasd", registro:"05/07/2003"},
-                            {nick:"Conrado", comentario:"Gostei! Pena que não ensina a fazer café! :/", registro:"05/07/2003"},
+                            {nick:"Conrado", comentario:"Gostei! Pena que não ensina a fazer café! :/", registro:"05/07/2003"}
                         ]
         }
     ]
@@ -33,16 +35,16 @@ const AulaM = () => {
 
                     <div className="aulaLeftRodape">
                         <div className="nomeAula">
-                            <p>{informacoesAula[0].idCurso[0].nomeCurso}</p>
+                            <p>{informacoesAula[0].nomeAula}</p>
                         </div>
 
                         <div className="caixaAvaliacaoAula">
                             <div className="avaliacaoAulaPositiva">
-                                <p><FontAwesomeIcon icon={faThumbsUp}/>{informacoesAula[0].idCurso[0].avaliacaoPositiva}</p>
+                                <p><FontAwesomeIcon icon={faThumbsUp}/>{informacoesAula[0].avaliacaoPositiva}</p>
                             </div>
 
                             <div className="avaliacaoAulaNegativa">
-                                <p><FontAwesomeIcon icon={faThumbsDown}/>{informacoesAula[0].idCurso[0].avaliacaoNegativa}</p>
+                                <p><FontAwesomeIcon icon={faThumbsDown}/>{informacoesAula[0].avaliacaoNegativa}</p>
                             </div>
                         </div>
                     </div>
