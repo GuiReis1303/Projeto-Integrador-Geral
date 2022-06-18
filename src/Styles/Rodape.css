@@ -11,7 +11,7 @@
           box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
   background-image: -webkit-gradient(linear, right top, left top, from(#201b2c), to(#2f2f6d));
   background-image: linear-gradient(-90deg, #201b2c, #2f2f6d);
-  color: #FFFFFF;
+  color: #cfcfe8;
 }
 
 .rodape span {
@@ -21,7 +21,7 @@
 
 .editRodape {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #cfcfe8;
   font-size: 1.2em;
 }
 
@@ -122,6 +122,9 @@
   .rodapeSocial {
     margin-top: 20px;
     font-size: 40px;
+  }
+  .rodapeSocialrodapeicon {
+    background-color: #cfcfe8;
   }
   .rodape span {
     position: absolute;

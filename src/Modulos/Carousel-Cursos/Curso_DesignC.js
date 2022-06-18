@@ -41,7 +41,7 @@ const Curso_DesignC = () => {
                         <div className="caixa">
                             <div className="caixaimagem">
                                 <img
-                                className="carouselImagem"
+                                className="carousel"
                                 src={require("./Imagens/design.png")}
                                 alt="Primeiro slide"
                                 />

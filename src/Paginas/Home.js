@@ -36,8 +36,9 @@ const Home = () => {
                 </div>
                 <Carousel fade>
                     <Carousel.Item>
-                        <img
-                        className="d-block w-100 "
+                        <div className="caixaimagem">
+                        <img 
+                        className="caixaimagem-carousel"
                         src="https://i.imgur.com/IDmIhUe.png"
                         alt="First slide"
                         />
@@ -45,33 +46,71 @@ const Home = () => {
                         <h3></h3>
                         <p></p>
                         </Carousel.Caption>
+                        </div>
                     </Carousel.Item>
                     <Carousel.Item>
+                        <div className="caixaimagem">
                         <img
-                        className="d-block w-100"
-                        src="https://wallpapercave.com/wp/wp3631558.jpg"
+                       className="caixaimagem-carousel"
+                        src="https://i.imgur.com/9FFP5bk.png"
                         alt="Second slide"
                         />
 
                         <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3></h3>
+                        <p></p>
                         </Carousel.Caption>
+                        </div>
                     </Carousel.Item>
                     <Carousel.Item>
+                    <div className="caixaimagem">
                         <img
-                        className="d-block w-100"
-                        src="https://cdn.wallpapersafari.com/80/63/hX2FYe.jpg"
+                       className="caixaimagem-carousel"
+                        src="https://i.imgur.com/kevxzDz.png"
                         alt="Third slide"
                         />
 
                         <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3></h3>
+                        <p></p>
                         </Carousel.Caption>
+                        </div>
                     </Carousel.Item>
+                    
                 </Carousel>
             </div>
+            <main>
+          
+        <div className="gallery">
+         <div className="gallery-card" id="card-01">
+           <h2 className="gallery-card-title">Design</h2>
+            <a href="" className="gallery-card-btn">Mais cursos</a>
+         </div>
+         <div className="gallery-card" id="card-02">
+           <h2 className="gallery-card-title">Programação</h2>
+            <a href="" className="gallery-card-btn">Mais cursos</a>
+         </div>
+         <div className="gallery-card" id="card-03">
+           <h2 className="gallery-card-title">Finanças</h2>
+            <a href="" className="gallery-card-btn">Mais cursos</a>
+         </div>
+         <div className="gallery-card" id="card-04">
+           <h2 className="gallery-card-title">Marketing</h2>
+            <a href="" className="gallery-card-btn">Mais cursos</a>
+         </div>
+         <div className="gallery-card" id="card-05">
+           <h2 className="gallery-card-title">Fotografia</h2>
+            <a href="" className="gallery-card-btn">Mais cursos</a>
+         </div>
+         <div className="gallery-card" id="card-06">
+           <h2 className="gallery-card-title">Música</h2>
+            <a href="" className="gallery-card-btn">Mais cursos</a>
+         </div>
+      </div>
+        
+
+
+            </main>
          <Rodape/>   
         </div>
      );

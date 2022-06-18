@@ -1,7 +1,40 @@
 h2 {
   font-size: 2rem;
-  text-align: center;
-  color: #00ff88;
+}
+
+.caixaimagem {
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .caixaimagem .carousel {
+    width: 100%;
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.459));
+            filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.459));
+    border-radius: 10px;
+  }
+}
+
+.caixaimagem-carousel {
+  width: 75%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.459));
+          filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.459));
+  border-radius: 10px;
 }
 
 .inicio {
@@ -13,28 +46,44 @@ h2 {
 .inicio-p {
   padding: 5%;
   margin: 0 auto;
+  color: #28285c;
 }
 
 .inicio-p h2 {
+  color: #00ff88;
   margin-bottom: 5%;
 }
 
+@media (max-width: 425px) {
+  .inicio-p h2 {
+    font-size: 1.1rem;
+  }
+}
+
 .inicio-p button {
+  letter-spacing: 1px;
   padding: 1.5rem 2em 1.5rem 2em;
   font-size: 2rem;
   border: none;
   border-radius: 20px;
   color: #28285c;
+  background-color: #cfcfe8;
 }
 
 .inicio-p button:hover {
-  background-color: #dfdfdf;
-  -webkit-transition: 1.15s;
-  transition: 1.15s;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-box-shadow: 2px 2px 10px #dfdfdf7c;
-          box-shadow: 2px 2px 10px #dfdfdf7c;
+  background-color: #cfcfe8;
+  -webkit-transition: 1.35s;
+  transition: 1.35s;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+  -webkit-box-shadow: 2px 2px 5px #dfdfdf;
+          box-shadow: 2px 2px 5px #dfdfdf;
+}
+
+@media (max-width: 425px) {
+  .inicio-p button {
+    display: none;
+  }
 }
 
 .inicio-botao {
@@ -43,5 +92,202 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 8rem;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.11));
+          filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.11));
+}
+
+@media (max-width: 425px) {
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 6rem;
+    margin: 0 auto;
+  }
+}
+
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+}
+
+@media (max-width: 425px) {
+  .gallery-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 150%;
+    margin-bottom: 6%;
+  }
+}
+
+.gallery-card-title {
+  color: #1c1729;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 12.5rem;
+}
+
+@media (max-width: 425px) {
+  .gallery-card-title {
+    margin-bottom: 11.5rem;
+  }
+}
+
+.gallery-card-btn {
+  text-decoration: none;
+  padding: .6rem 2rem;
+  border: 2px solid #201b2c;
+  color: #201b2c;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 425px) {
+  .gallery-card-btn {
+    padding: .6rem 2rem;
+    font-weight: 300;
+  }
+}
+
+.gallery-card-btn:hover {
+  background-color: #28285c;
+  color: #e00cb2;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.gallery-card #a {
+  color: red;
+}
+
+.gallery-card#card-01 {
+  background-image: url("../img/carddesign.png");
+  background-size: 50%;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gallery-card#card-01:hover {
+  background-size: 52.5%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.gallery-card#card-02 {
+  background-image: url("../img/cardprogramacao.png");
+  background-size: 50%;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gallery-card#card-02:hover {
+  background-size: 52.5%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.gallery-card#card-03 {
+  background-image: url("../img/cardfinancas.png");
+  background-size: 50%;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gallery-card#card-03:hover {
+  background-size: 52.5%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.gallery-card#card-04 {
+  background-image: url("../img/cardmarketing.png");
+  background-size: 50%;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gallery-card#card-04:hover {
+  background-size: 52.5%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.gallery-card#card-05 {
+  background-image: url("../img/cardfotografia.png");
+  background-size: 50%;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gallery-card#card-05:hover {
+  background-size: 52.5%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.gallery-card#card-06 {
+  background-image: url("../img/cardmusica.png");
+  background-size: 50%;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gallery-card#card-06:hover {
+  background-size: 52.5%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+@media (max-width: 425px) {
+  .caixaimagem-carousel {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

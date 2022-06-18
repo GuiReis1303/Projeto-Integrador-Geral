@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: $BackgroundBlack;
+    background: #332c58;
     height: 70vh;
 }
 
@@ -29,8 +29,8 @@
 
 
 
-.descricaoCurso{
-    color: #FFF;
+.boxCurso{
+    color: $WhiteColor;
     font-size: 1.2em;
 }
 
@@ -74,9 +74,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $BackgroundBlack ;
+    background-color: $WhiteColor ;
     h2{ 
         font-size: $h2FontSize ;
     }
-
+   
 }

@@ -1,6 +1,5 @@
 h2 {
   font-size: 2rem;
-  text-align: center;
   color: #00ff88;
 }
 
@@ -25,16 +24,17 @@ h2 {
   border: none;
   border-radius: 20px;
   color: #28285c;
+  background-color: #cfcfe8;
 }
 
 .inicio-p button:hover {
-  background-color: #dfdfdf;
-  -webkit-transition: 1.15s;
-  transition: 1.15s;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-box-shadow: 2px 2px 10px #dfdfdf7c;
-          box-shadow: 2px 2px 10px #dfdfdf7c;
+  background-color: #cfcfe8;
+  -webkit-transition: 1.35s;
+  transition: 1.35s;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+  -webkit-box-shadow: 2px 2px 5px #dfdfdf;
+          box-shadow: 2px 2px 5px #dfdfdf;
 }
 
 .inicio-botao {
@@ -43,6 +43,72 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.gallery {
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+}
+
+.gallery-card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.gallery-card-btn {
+  text-decoration: none;
+  padding: .6rem 2rem;
+  border: 2px solid #201b2c;
+  color: #00ff88;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gallery-card-btn:hover {
+  background-color: red;
+  color: chartreuse;
+}
+
+.gallery-card#card-01 {
+  background-image: url("../img/carddesign.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gallery-card#card-01:hover {
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/carddesign.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carddesign.png");
 }
 
 .aulaGeral {
@@ -120,14 +186,14 @@ h2 {
 }
 
 .comentariosAula {
-  color: #ebebeb;
+  color: #cfcfe8;
   width: 90%;
 }
 
 .caixaComentario {
   width: 100%;
   background: #201b2c;
-  border: 2px solid #ebebeb;
+  border: 2px solid #cfcfe8;
   border-radius: 15px;
   margin-bottom: 5px;
   display: -webkit-box;
@@ -179,7 +245,7 @@ h2 {
 }
 
 .aulaRight::-webkit-scrollbar-track {
-  background: #ebebeb;
+  background: #cfcfe8;
   /* color of the tracking area */
 }
 
@@ -189,14 +255,5 @@ h2 {
   /* roundness of the scroll thumb */
   border: 3px solid #adadad;
   /* creates padding around scroll thumb */
-}
-
-.descricaoAula {
-  background-color: #e4e4e4;
-}
-
-.descricaoAula h2 {
-  color: #28285c;
-  font-size: 2em;
 }
 /*# sourceMappingURL=AulaM.css.map */

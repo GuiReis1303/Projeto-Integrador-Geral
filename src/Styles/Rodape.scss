@@ -1,3 +1,6 @@
+@import "../Variables/Variables.scss";
+
+
 .rodape{
     width: 100%;
     height: 30vh;
@@ -5,7 +8,7 @@
     justify-content: space-between;
     box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
     background-image: linear-gradient(-90deg, #201b2c, #2f2f6d);
-    color: #FFFFFF;
+    color: $WhiteColor;
     
 }
 .rodape span{
@@ -18,7 +21,7 @@
 }
 .editRodape{
     text-decoration: none;
-    color: #FFFFFF;
+    color: $WhiteColor;
     font-size: 1.2em;
 }
 .editRodape:hover{
@@ -104,6 +107,12 @@
     .rodapeSocial{
         margin-top: 20px;
         font-size: 40px;
+
+        &rodapeicon{
+        
+            background-color: $WhiteColor;
+            
+       }
     }
     .rodape span{
 

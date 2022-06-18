@@ -35,15 +35,17 @@ const CursoM = () => {
         
             <div className="cursoGeral">
                 <div className="cursoLeft">
-                    <div className="nomeCurso">
-                        <h2>{ informacoesCurso[0].nomeCurso}</h2>
-                    </div>
-                    <div className="imagemCurso">
-                        <img src={require("./Imagens/aulaHTML.png")}/>
-                    </div>
-                    <div className="descricaoCurso">
-                        <p>{ informacoesCurso[0].descricaoCurso}</p>
-                    </div>
+                    
+                        <div className="nomeCurso">
+                            <h2>{ informacoesCurso[0].nomeCurso}</h2>
+                        </div>
+                        <div className="imagemCurso">
+                            <img src={require("./Imagens/aulaHTML.png")}/>
+                        </div>
+                        <div className="boxCurso">
+                            <p>{ informacoesCurso[0].descricaoCurso}</p>
+                        </div>
+                    
 
                     <div className="caixaAvaliacaoCurso">
                         <div className="avaliacaoCursoPositiva">
