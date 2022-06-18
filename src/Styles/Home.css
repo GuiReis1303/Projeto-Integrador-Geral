@@ -94,6 +94,10 @@ h2 {
       justify-content: space-around;
 }
 
+.h2principaiscategorias {
+  padding: 2%;
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +143,7 @@ h2 {
             flex-direction: column;
     width: 150%;
     margin-bottom: 6%;
+    height: 240px;
   }
 }
 
@@ -168,7 +173,7 @@ h2 {
 @media (max-width: 425px) {
   .gallery-card-btn {
     padding: .6rem 2rem;
-    font-weight: 300;
+    display: none;
   }
 }
 
@@ -288,6 +293,10 @@ h2 {
 @media (max-width: 425px) {
   .caixaimagem-carousel {
     width: 95%;
+  }
+  .h2principaiscategorias {
+    padding: 2rem 0.5rem;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=Home.css.map */

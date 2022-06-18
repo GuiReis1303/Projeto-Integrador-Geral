@@ -80,7 +80,10 @@ const Home = () => {
                 </Carousel>
             </div>
             <main>
-          
+          <div>
+            <h2 className="h2principaiscategorias"><b>Principais categorias</b></h2>
+            <hr></hr>
+          </div>
         <div className="gallery">
          <div className="gallery-card" id="card-01">
            <h2 className="gallery-card-title">Design</h2>
@@ -107,6 +110,7 @@ const Home = () => {
             <a href="" className="gallery-card-btn">Mais cursos</a>
          </div>
       </div>
+      <hr></hr>
         
 
 
