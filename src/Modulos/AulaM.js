@@ -4,7 +4,9 @@ import Rodape from "./Rodape";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentAlt, faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
-const AulaM = () => {
+const AulaM = (props) => {
+
+    const aula = 0;
 
     const informacoesAula = [
         {
@@ -19,7 +21,33 @@ const AulaM = () => {
                             {nick:"Paulo", comentario:"asdasd", registro:"05/07/2003"},
                             {nick:"Conrado", comentario:"Gostei! Pena que não ensina a fazer café! :/", registro:"05/07/2003"}
                         ]
-        }
+        },
+        {
+            iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
+            nomeAula: "Introdução à CSS",
+            avaliacaoPositiva: " 36",
+            avaliacaoNegativa: " 3",
+            comentario: [ 
+                            {nick:"Guilherme", comentario:"asdasd", registro:"05/07/2003"}, 
+                            {nick:"Bruna", comentario:"asdasd", registro:"05/07/2003"},
+                            {nick:"Marcos", comentario:"asdasd", registro:"05/07/2003"},
+                            {nick:"Paulo", comentario:"asdasd", registro:"05/07/2003"},
+                            {nick:"Conrado", comentario:"Gostei! Pena que não ensina a fazer café! :/", registro:"05/07/2003"}
+                        ]
+        },
+        {
+            iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
+            nomeAula: "Introdução à JavaScript",
+            avaliacaoPositiva: " 36",
+            avaliacaoNegativa: " 3",
+            comentario: [ 
+                            {nick:"Guilherme", comentario:"asdasd", registro:"05/07/2003"}, 
+                            {nick:"Bruna", comentario:"asdasd", registro:"05/07/2003"},
+                            {nick:"Marcos", comentario:"asdasd", registro:"05/07/2003"},
+                            {nick:"Paulo", comentario:"asdasd", registro:"05/07/2003"},
+                            {nick:"Conrado", comentario:"Gostei! Pena que não ensina a fazer café! :/", registro:"05/07/2003"}
+                        ]
+        },
     ]
 
     require('../Styles/AulaM.css')
@@ -30,21 +58,21 @@ const AulaM = () => {
             <div className="aulaGeral">
                 <div className="aulaLeft">
                     <div className="iframeAula">
-                        <iframe src={informacoesAula[0].iframeAula} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+                        <iframe src={informacoesAula[aula].iframeAula} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
                     </div>
 
                     <div className="aulaLeftRodape">
                         <div className="nomeAula">
-                            <p>{informacoesAula[0].nomeAula}</p>
+                            <p>{informacoesAula[aula].nomeAula}</p>
                         </div>
 
                         <div className="caixaAvaliacaoAula">
                             <div className="avaliacaoAulaPositiva">
-                                <p><FontAwesomeIcon icon={faThumbsUp}/>{informacoesAula[0].avaliacaoPositiva}</p>
+                                <p><FontAwesomeIcon icon={faThumbsUp}/>{informacoesAula[aula].avaliacaoPositiva}</p>
                             </div>
 
                             <div className="avaliacaoAulaNegativa">
-                                <p><FontAwesomeIcon icon={faThumbsDown}/>{informacoesAula[0].avaliacaoNegativa}</p>
+                                <p><FontAwesomeIcon icon={faThumbsDown}/>{informacoesAula[aula].avaliacaoNegativa}</p>
                             </div>
                         </div>
                     </div>
@@ -52,7 +80,7 @@ const AulaM = () => {
 
                 <div className="aulaRight">
                     <div className="comentariosAula">
-                        {informacoesAula[0].comentario.map( (r) => {
+                        {informacoesAula[aula].comentario.map( (r) => {
                             return(
                             <div className="caixaComentario">
                                 <div className="caixaComentarioMenor">
