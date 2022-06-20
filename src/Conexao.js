@@ -11,14 +11,16 @@ const Conexao = () => {
     .catch(function (error) {
         console.log(error);
     })
-
+    require('./Styles/Comunidade.css')
     return ( 
-        <div>
-            <h1>Cadastro de usuario</h1>
+        
+        <div className="conexao">
+            
+            <h2>Cadastro de usuario</h2>
             <p>Último usuário cadastrado: <strong>?</strong></p>
-            <form>
-                <input placeholder="Digite seu nome" /><br/><br/>
-                <input placeholder="digite seu email" /><br/><br/>
+            <form className="conexao-form">
+                <input placeholder="Digite seu nome..." />
+                <input placeholder="Digite seu e-mail..." />
                 <button>Salvar</button>
             </form>
         </div>

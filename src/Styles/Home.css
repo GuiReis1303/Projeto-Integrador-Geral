@@ -1,8 +1,14 @@
+.geral {
+  padding: 2% 7%;
+  margin: 0 auto;
+}
+
 h2 {
   font-size: 2rem;
 }
 
 .caixaimagem {
+  background-image: radial-gradient(circle, #2d2d86, #28285c);
   padding: 1.5rem 0;
   margin: 0 auto;
   display: -webkit-box;
@@ -40,6 +46,7 @@ h2 {
 .inicio {
   padding: 1.5rem 0;
   margin: 0 auto;
+  height: 65vh;
   background-image: radial-gradient(circle, #2d2d86, #28285c);
 }
 
@@ -92,6 +99,11 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.branco {
+  background-color: #cfcfe8;
+  padding: 40px;
 }
 
 .h2principaiscategorias {

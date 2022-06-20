@@ -22,8 +22,8 @@ const MenuAL = () => {
                             <Nav.Link href="/FAQ" className="editMenuALH1">FAQ</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="/Cadastro" className="editMenuALH2">Cadastro</Nav.Link>
-                            <Nav.Link href="/Login2" className="editMenuALH2">Login</Nav.Link>
+                            <Nav.Link href="/Cadastro" className="editMenuALH2"><button className="editMenuALH2-button1">Cadastro</button></Nav.Link>
+                            <Nav.Link href="/Login2" className="editMenuALH2"><button className="editMenuALH2-button2">Login</button></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

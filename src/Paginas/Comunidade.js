@@ -4,6 +4,7 @@ import MenuAL from "../Modulos/MenuAL";
 import Whats from "../Modulos/Whats";
 
 const Comunidade = () => {
+    require('../Styles/Comunidade.css')
     return ( 
         <div>
             <MenuAL/>

@@ -11,10 +11,49 @@
 
 .editMenuALH1{
     color: $GreenColor;  
+    &:visited{
+        color: $GreenColor; 
+    }
+    &:hover{
+        color: $WhiteColor;  
+      transition: .4s;
+    }
+  
+    
 }
 .editMenuALH2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: $GreenColor;
+    
+    button{
+        
+        text-decoration: none;
+        padding: .6rem 1rem ;
+        border: 2px solid $BackgroundBlack ;
+        background-color: $BackgroundDarkBlue;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 10px;
+    }
+    &-button1{
+        color: #e91899;
+        border: 2px #fff;
+        &:hover{
+           
+            color: $BackgroundDarkBlue;
+            background-color: $WhiteColor;
+            transition: .3s;
+    }
+}
+    &-button2{
+        color:$GreenColor;
+        &:hover{
+          
+            color: $BackgroundDarkBlue;
+            background-color: $WhiteColor;
+            transition: .3s;
+    }
+    }
 }
 
 .testes01{
@@ -23,5 +62,26 @@
     border: 3px solid $GreenColor;
     width: 50px;
     margin-right: 20px;
-
 }
+
+@media (max-width: 768px){
+    .editMenuALH2{
+       button{
+        text-decoration: none;
+        padding: 0px ;
+        border: 0px solid $BackgroundBlack ;
+        font-weight: 0px;
+        color: $GreenColor;
+        font-size: 1.5rem;
+        text-transform:none;
+        letter-spacing: 1px;
+        border-radius: 0px;
+        &:hover{
+           padding-left: 150px;
+            background-color: $BackgroundDarkBlue;
+            transition: .3s;
+               }
+         }
+     }
+}
+    

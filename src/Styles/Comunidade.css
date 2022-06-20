@@ -1,0 +1,49 @@
+.conexao {
+  padding: 1.5rem 3rem;
+  margin: 0 auto;
+}
+
+.conexao h2 {
+  font-size: 2rem;
+}
+
+.conexao-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+}
+
+.conexao-form input {
+  margin-bottom: 0.5%;
+  padding-right: 4rem;
+  text-align: start;
+}
+
+.conexao-form button {
+  letter-spacing: 1px;
+  padding: 1.5rem 2em 1.5rem 2em;
+  font-size: 2rem;
+  border: none;
+  border-radius: 20px;
+  color: #28285c;
+}
+
+.conexao-form button:hover {
+  background-color: #28285c;
+  color: #dfdfee;
+  -webkit-transition: 1.35s;
+  transition: 1.35s;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+  -webkit-box-shadow: 2px 2px 5px #dfdfdf;
+          box-shadow: 2px 2px 5px #dfdfdf;
+}
+/*# sourceMappingURL=Comunidade.css.map */

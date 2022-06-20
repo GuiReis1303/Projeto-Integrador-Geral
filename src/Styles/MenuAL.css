@@ -13,9 +13,52 @@
   color: #00ff88;
 }
 
+.editMenuALH1:visited {
+  color: #00ff88;
+}
+
+.editMenuALH1:hover {
+  color: #cfcfe8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 .editMenuALH2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.editMenuALH2 button {
+  text-decoration: none;
+  padding: .6rem 1rem;
+  border: 2px solid #201b2c;
+  background-color: #28285c;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.editMenuALH2-button1 {
+  color: #e91899;
+  border: 2px #fff;
+}
+
+.editMenuALH2-button1:hover {
+  color: #28285c;
+  background-color: #cfcfe8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.editMenuALH2-button2 {
   color: #00ff88;
+}
+
+.editMenuALH2-button2:hover {
+  color: #28285c;
+  background-color: #cfcfe8;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .testes01 {
@@ -24,5 +67,25 @@
   border: 3px solid #00ff88;
   width: 50px;
   margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .editMenuALH2 button {
+    text-decoration: none;
+    padding: 0px;
+    border: 0px solid #201b2c;
+    font-weight: 0px;
+    color: #00ff88;
+    font-size: 1.5rem;
+    text-transform: none;
+    letter-spacing: 1px;
+    border-radius: 0px;
+  }
+  .editMenuALH2 button:hover {
+    padding-left: 150px;
+    background-color: #28285c;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
 }
 /*# sourceMappingURL=MenuAL.css.map */

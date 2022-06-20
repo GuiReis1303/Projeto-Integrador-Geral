@@ -9,7 +9,9 @@ const Home = () => {
     return ( 
         <div>
             <MenuAL/>
-            <Whats/>    
+            <Whats/>   
+            <div className="geral">
+           
                 <div className="inicio">
                     <div>
                         <p className="inicio-p">
@@ -32,8 +34,9 @@ const Home = () => {
                             <button>Confira nossos Planos!</button>
                 </div>
                         </p>  
-                    
+                        </div>
                 </div>
+                <div className="branco"></div>
                 <Carousel fade>
                     <Carousel.Item>
                         <div className="caixaimagem">
@@ -78,7 +81,8 @@ const Home = () => {
                     </Carousel.Item>
                     
                 </Carousel>
-            </div>
+                
+           
             <main>
           <div>
             <h2 className="h2principaiscategorias"><b>Principais categorias</b></h2>
@@ -115,6 +119,7 @@ const Home = () => {
 
 
             </main>
+            </div> 
          <Rodape/>   
         </div>
      );
