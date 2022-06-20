@@ -93,7 +93,7 @@ h2
 .inicio{
 @include container();
 
-    background-color: $BackgroundDarkBlue;
+background-image: radial-gradient(circle, #2d2d86, $BackgroundDarkBlue);
     &-p{
         padding: 5%;
         margin: 0 auto;

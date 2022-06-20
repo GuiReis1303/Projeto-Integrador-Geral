@@ -5,14 +5,14 @@ import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
 
 const Faq = () => {
-    require('./Faq.css')
+    require('../Styles/Faq.css')
     return ( 
         <div>
             <MenuAL/>
             <Whats/>
             <div className="corpoAssinaturaFAQ">
-                <div className="meioFAQ">
-                    <div className="FAQ1">
+                <div className="meiofaq">
+                    <div className="meiofaq-plano">
                         <div>
                             <br/>
                             <br/>
@@ -34,7 +34,7 @@ const Faq = () => {
                        
                     </div>
 
-                    <div className="FAQ2">
+                    <div className="meiofaq-contato">
                         <div>
                             <br/>
                             <h2>Plano Gold</h2>
@@ -48,7 +48,7 @@ const Faq = () => {
 
                  
 
-                    <div className="FAQ3">
+                    <div className="meiofaq-gerais">
                 <h2> oi </h2>
                         
                     </div>

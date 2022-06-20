@@ -1,35 +1,48 @@
+@import "../Variables/Variables.scss";
 
-.corpoAssinaturaFAQ{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.corpoAssinaturaFAQ b{
+
+// Mixins
+
+@mixin bFaq{
     font-size: 1.0em;
     color: #000000;
     text-shadow: 0.3px 0.3px black;
     padding-left: 3em;
 }
-.corpoAssinaturaFAQ h2{
+@mixin h2Faq{
     font-size: 2.75em;
     padding-left: 1em;
 }
-.corpoAssinaturaFAQ ul{
+@mixin ulFaq{
     font-size: 2.5vw;
     padding-left: 25%;
     margin: 5% 0% 0% 1%;
 }
-.corpoAssinaturaFAQ li{
+@mixin liFaq{
     text-align: start;
 }
-.corpoAssinaturaFAQ p{
+@mixin pfaq{
     font-size: 1.0em;
     color: #242424;
    text-shadow: 0.3px 0.3px  #b3b3b3;
    padding-left: 0.75em;
+
 }
+// ------------------------------------------------------------
 
+// Corpo incluindo os Mixins
+.corpoAssinaturaFAQ{
 
+p { @include pfaq(); }
+li {@include liFaq();}
+ul {@include ulFaq();}
+h2 {@include h2Faq();}
+b {@include bFaq();}
+}
+// ----------------------------------------------
 
-.meioFAQ{
+// Estrutura incluindo os grids e suas abas.
+.meiofaq{
     
     display: grid;
     grid-template-columns: 3fr 3fr;
@@ -37,34 +50,25 @@
     grid-template-areas:    "c1 c1"
                             "c2   c2 "
                             "inf inf "
-                           
                                ;
     text-align:start;
     
-    
-   
-}
-.FAQ1{
-    
-   color: #1d1d1d;
-   background-color: #bebebe;
-    grid-area: c1 ;
-  
-}
-.FAQ2{
-    
-    color: #e2850b ;
-    background-color: #e0dada;
-    grid-area: c2 ;
+    &-plano{
+            color: #1d1d1d;
+            grid-area: c1 ;
+     }
+    &-contato{
+            color: #e2850b ;
+            background-color: #e0dada;
+            grid-area: c2 ;
+    }
+    &-gerais{
+            color: #cdd3d3;
+            background-color: #f00606;
+            grid-area: inf ;
+    }
 }
 
-.FAQ3{
-
-    color: #cdd3d3;
-    background-color: #f00606;
-    grid-area: inf ;
-
-}
 @media only screen and (max-width:400px){
     .corpoAssinaturaFAQ{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

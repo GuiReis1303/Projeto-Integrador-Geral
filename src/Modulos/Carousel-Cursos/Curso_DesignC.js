@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCertificate, faClapperboard, faDownload, faMobileAndroid, faNewspaper,  } from "@fortawesome/free-solid-svg-icons";
-import { faCss3, faHtml5, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faCertificate, faClapperboard, faDownload, faMobileAndroid, faNewspaper, faCamera, faFileVideo, faPenToSquare   } from "@fortawesome/free-solid-svg-icons";
+import { faCss3, faHtml5, faJs, faReact, } from "@fortawesome/free-brands-svg-icons";
 
 const Curso_DesignC = () => {
     require('./CarouselCursos.css');
@@ -23,16 +23,15 @@ const Curso_DesignC = () => {
                                 </div>
                             </div>
                             <div className="caixatexto">
-                                <h3>Curso de Design Photoshop</h3>
-                                <p>Venha aprender programação conosco, ensinamos desde linguagens front-end até back-end.
-                                    Venha aprender a fazer um site do zero com HTML e CSS e fazer ele funcional com JS.
+                                <h3>Curso de Design</h3>
+                                <p> Aqui você aprenderá Photoshop, Adobe After Effects, Adobe Premiere Pro e os conceitos para se integrar no mercado do Design.
                                 </p>
-                                <p1>Guilherme F. dos Reis </p1>
+                                <p1>Paulo de Souza C. Neto</p1>
                                 
-                                <p2><FontAwesomeIcon icon={faHtml5} className="iconCursos"/>Curso de HTML Completo</p2>
-                                <p2><FontAwesomeIcon icon={faCss3} className="iconCursos"/> Curso de CSS - Completo</p2>
-                                <p2><FontAwesomeIcon icon={faJs} className="iconCursos"/> Curso de JavaScript - Completo </p2>
-                                <p2><FontAwesomeIcon icon={faReact} className="iconCursos"/> Curso de React - Iniciante</p2>
+                                <p2><FontAwesomeIcon icon={faCamera} className="iconCursos"/>Curso de Photoshop Completo</p2>
+                                <p2><FontAwesomeIcon icon={faFileVideo} className="iconCursos"/> Curso de Premiere - Completo</p2>
+                                <p2><FontAwesomeIcon icon={faPenToSquare} className="iconCursos"/> Curso de After Effects - Completo </p2>
+                               
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>       
                             </div>
                         </div>
@@ -41,7 +40,7 @@ const Curso_DesignC = () => {
                         <div className="caixa">
                             <div className="caixaimagem">
                                 <img
-                                className="carousel"
+                                className="carouselImagem"
                                 src={require("./Imagens/design.png")}
                                 alt="Primeiro slide"
                                 />
@@ -50,13 +49,13 @@ const Curso_DesignC = () => {
                                 </div>
                             </div>
                             <div className="caixatexto">
-                                <h3>HTML Completo</h3>
-                                <p>Curso mais didático e completo de HTML, aprendendo desde o básico até como usar div's</p>
+                                <h3>Photoshop Completo</h3>
+                                <p>Aprenda a recortar imagens, utilizar paletas de cores e criação de logos profissionais.</p>
                                 <p1> Paulo Neto </p1>
                                 
                                 <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
-                                <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 23 artigos</p2>
-                                <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>43 recursos para download </p2>
+                                <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 26 artigos</p2>
+                                <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>48 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
                                 <button>Ver mais</button>                            
@@ -68,7 +67,7 @@ const Curso_DesignC = () => {
                             <div className="caixaimagem">
                                 <img
                                 className="carouselImagem"
-                                src={require("./Imagens/design.png")}
+                                src={require("./Imagens/designpr.png")}
                                 alt="Segundo slide"
                                 />
                                 <div className="caixa-botao-vermais">
@@ -76,13 +75,13 @@ const Curso_DesignC = () => {
                                 </div>
                             </div>
                             <div className="caixatexto">
-                                <h3>CSS Completo</h3>
-                                <p>Curso mais didático e completo de CSS, aprendendo como estilizar todas as tags</p>
+                                <h3>Premiere Pro Completo</h3>
+                                <p>Aprenda no Adobe Premiere Pro a editar vídeos e introduções de forma profissional.</p>
                                 <p1> Paulo Neto </p1>
                                 
-                                <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
-                                <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 23 artigos</p2>
-                                <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>43 recursos para download </p2>
+                                <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>27 horas de vídeo sob demanda</p2>
+                                <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 20 artigos</p2>
+                                <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>17 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
                                 <button>Ver mais</button>                            
@@ -94,7 +93,7 @@ const Curso_DesignC = () => {
                             <div className="caixaimagem">
                                 <img
                                 className="carouselImagem"
-                                src={require("./Imagens/js.png")}
+                                src={require("./Imagens/designae.png")}
                                 alt="Terceiro slide"
                                 />
                                 <div className="caixa-botao-vermais">
@@ -102,13 +101,13 @@ const Curso_DesignC = () => {
                                 </div>
                             </div>
                             <div className="caixatexto">
-                                <h3>JavaScript Completo</h3>
-                                <p>Curso mais didático e completo de JS, desde declaração de váriaveis, até ligação com banco de dados</p>
+                                <h3>After Effects Completo</h3>
+                                <p>Aprenda do zero Adobe After Effects de forma didática passo a passo!</p>
                                 <p1> Paulo Neto </p1>
                                 
-                                <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
-                                <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 23 artigos</p2>
-                                <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>43 recursos para download </p2>
+                                <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>25 horas de vídeo sob demanda</p2>
+                                <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 15 artigos</p2>
+                                <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>31 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
                                 <button>Ver mais</button>                            
