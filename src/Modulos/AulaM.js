@@ -6,7 +6,7 @@ import { faCommentAlt, faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-
 
 const AulaM = (props) => {
 
-    const aula = 0;
+    const aula = props;
 
     const informacoesAula = [
         {
