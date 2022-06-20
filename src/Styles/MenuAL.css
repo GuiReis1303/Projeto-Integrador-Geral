@@ -18,45 +18,40 @@
 }
 
 .editMenuALH1:hover {
-  color: #cfcfe8;
+  color: #10854e;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 .editMenuALH2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2.50vh;
 }
 
 .editMenuALH2 button {
   text-decoration: none;
-  padding: .6rem 1rem;
+  padding: .5rem 1rem;
   border: 2px solid #201b2c;
-  background-color: #28285c;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   border-radius: 10px;
 }
 
 .editMenuALH2-button1 {
   color: #e91899;
+  background-color: #28285c;
   border: 2px #fff;
-}
-
-.editMenuALH2-button1:hover {
-  color: #28285c;
-  background-color: #cfcfe8;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 .editMenuALH2-button2 {
   color: #00ff88;
+  background-color: #201831;
 }
 
 .editMenuALH2-button2:hover {
-  color: #28285c;
-  background-color: #cfcfe8;
+  color: #00ff22;
+  background-color: #28285c;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -79,6 +74,7 @@
     font-size: 1.5rem;
     text-transform: none;
     letter-spacing: 1px;
+    background-color: #28285c;
     border-radius: 0px;
   }
   .editMenuALH2 button:hover {

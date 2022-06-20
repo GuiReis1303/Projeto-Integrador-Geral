@@ -1,6 +1,5 @@
 .geral {
-  padding: 2% 7%;
-  margin: 0 auto;
+  padding: 0% 0%;
 }
 
 h2 {
@@ -46,8 +45,14 @@ h2 {
 .inicio {
   padding: 1.5rem 0;
   margin: 0 auto;
-  height: 65vh;
+  height: 35rem;
   background-image: radial-gradient(circle, #2d2d86, #28285c);
+}
+
+@media (max-width: 425px) {
+  .inicio {
+    height: 21rem;
+  }
 }
 
 .inicio-p {

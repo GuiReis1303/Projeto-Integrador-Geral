@@ -15,7 +15,7 @@
         color: $GreenColor; 
     }
     &:hover{
-        color: $WhiteColor;  
+        color: #10854e;  
       transition: .4s;
     }
   
@@ -23,34 +23,32 @@
 }
 .editMenuALH2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-size: 2.50vh;
     button{
         
         text-decoration: none;
-        padding: .6rem 1rem ;
+        padding: .5rem 1rem ;
         border: 2px solid $BackgroundBlack ;
-        background-color: $BackgroundDarkBlue;
+     
         font-weight: 400;
-        text-transform: uppercase;
+        text-transform: none;
         letter-spacing: 1px;
         border-radius: 10px;
+       
     }
     &-button1{
         color: #e91899;
+        background-color: $BackgroundDarkBlue;
         border: 2px #fff;
-        &:hover{
-           
-            color: $BackgroundDarkBlue;
-            background-color: $WhiteColor;
-            transition: .3s;
-    }
+       
 }
     &-button2{
         color:$GreenColor;
+        background-color: #201831;
         &:hover{
           
-            color: $BackgroundDarkBlue;
-            background-color: $WhiteColor;
+            color: #00ff22;
+            background-color: $BackgroundDarkBlue;
             transition: .3s;
     }
     }
@@ -75,10 +73,11 @@
         font-size: 1.5rem;
         text-transform:none;
         letter-spacing: 1px;
+        background-color: $BackgroundDarkBlue;
         border-radius: 0px;
         &:hover{
            padding-left: 150px;
-            background-color: $BackgroundDarkBlue;
+           background-color: $BackgroundDarkBlue;
             transition: .3s;
                }
          }
