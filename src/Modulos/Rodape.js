@@ -35,9 +35,9 @@ const Rodape = () => {
             </div>
            
             <div className="rodapeSocial">
-                <FontAwesomeIcon icon={faFacebook} className="rodapeicon"/>
-                <FontAwesomeIcon icon={faInstagram} className="rodapeicon"/>
-                <FontAwesomeIcon icon={faYoutube} className="rodapeicon"/>
+                <a href=""><FontAwesomeIcon icon={faFacebook} className="rodapeicon"/></a>
+                <a href=""><FontAwesomeIcon icon={faInstagram} className="rodapeicon"/></a>
+                <a href=""><FontAwesomeIcon icon={faYoutube} className="rodapeicon"/></a>
                
             </div>
             <span>Station ®</span>

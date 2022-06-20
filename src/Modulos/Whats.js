@@ -6,7 +6,7 @@ const Whats = () => {
     require('./Whats.css')
     return ( 
         <div className="fab">
-            <button className="main"><FontAwesomeIcon icon={faWhatsapp} className="iconWhatsapp"/></button>
+            <a href=""><button className="main"><FontAwesomeIcon icon={faWhatsapp} className="iconWhatsapp"/></button></a>
         </div>
      );
 }
