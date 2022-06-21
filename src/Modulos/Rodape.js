@@ -24,13 +24,13 @@ const Rodape = () => {
 
                 <div className="rodapeSobrenos">
                     <h3>Sobre-nós</h3><br/>
-                    <Link className="editRodape" to="/Faq">FAQ</Link><br/>
+                    <Link className="editRodape" to="/Historia">Historia</Link><br/>
                 </div>
 
                 <div className="rodapeSuporte">
                     <h3>Suporte</h3><br/>
                     <Link className="editRodape" to="/Faq">FAQ</Link><br/>
-                    <Link className="editRodape" to="/Historia">Historia</Link><br/>
+                    <Link className="editRodape" to="/Comunidade">Comunidade</Link><br/>
                 </div>
             </div>
            
