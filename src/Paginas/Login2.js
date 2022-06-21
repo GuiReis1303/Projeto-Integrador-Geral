@@ -23,7 +23,7 @@ const Login2 = (props) => {
         console.log(email, usuariocadastro, senhacadastro)
       }
 
-    require('./Login2.css')
+    require('../Styles/Cadastro.css')
     return ( 
         <div className="body">
             <div className={"main-login" + (props.cadastro ? " invisivel" : "")} id="login">

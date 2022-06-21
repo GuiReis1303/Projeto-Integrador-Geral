@@ -19,8 +19,8 @@
 
 .editMenuALH1:hover {
   color: #10854e;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .editMenuALH2 {
@@ -50,7 +50,7 @@
 }
 
 .editMenuALH2-button2:hover {
-  color: #00ff22;
+  color: #00ff0d;
   background-color: #28285c;
   -webkit-transition: .3s;
   transition: .3s;

@@ -6,7 +6,7 @@ import { faUser, faLock, faAt} from "@fortawesome/free-solid-svg-icons";
 
 
 const Cadastro = () => {
-    require('./Cadastro.css')
+    require('../Styles/Cadastro.css')
     return ( 
     <div className="bodyCadastro">  
 

@@ -50,8 +50,6 @@
         transition: 1.35s; 
         transition: 0.45s; 
         box-shadow: 2px 2px 5px #dfdfdf;
-
-
         }
   
 }
@@ -64,12 +62,10 @@
 }
 .geral{
   padding: 0% 0%;
- 
 }
 h2
 {
     font-size: 2rem;
-  
 }
 .caixaimagem{
   background-image: radial-gradient(circle, #2d2d86, $BackgroundDarkBlue);
@@ -80,28 +76,23 @@ h2
 @include mobile(){
   
   .carousel{
-    
     width: 100%;
   filter: grayscale(0%);
   filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.459));
   border-radius: 10px
 }
-  
 }
     &-carousel{
       width: 75%;
     filter: grayscale(0%);
     filter: drop-shadow(8px 8px 10px rgba(34, 34, 34, 0.459));
     border-radius: 10px
-    
-
     }
   }
 .inicio{
 @include container();
 @include mobile(){
   height: 21rem;
-
 }
 height: 35rem;
 background-image: radial-gradient(circle, #2d2d86, $BackgroundDarkBlue);
@@ -109,24 +100,19 @@ background-image: radial-gradient(circle, #2d2d86, $BackgroundDarkBlue);
         padding: 5%;
         margin: 0 auto;
         color: $BackgroundDarkBlue;
-       
-       
           h2{
             color:$GreenColor;
             margin-bottom: 5%;
             @include mobile(){
              font-size: 1.1rem; 
-
             }
           }
-         
                 button{
                   @include botaoStyleHome();
                   background-color: #cfcfe8;
                   @include mobile(){
-                    display:none;
-                    
-                                  }
+                 display:none;    
+             }
                 }
   
         }
