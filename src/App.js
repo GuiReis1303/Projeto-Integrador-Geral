@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Login2 from './Paginas/Login2';
 import CursoM from "./Modulos/CursoM";
 import AulaM from "./Modulos/AulaM";
+import Historia from "./Paginas/Historia"
 
 function App() {
     require('./App.css')
@@ -23,6 +24,7 @@ function App() {
                 <Route path='Login2' element={<Login2/>} /> 
                 <Route path='CursoM' element={<CursoM/>} />
                 <Route path='AulaM' element={<AulaM/>} />
+                <Route path='Historia' element={<Historia/>} />
             </Routes>
         </div>
   );
