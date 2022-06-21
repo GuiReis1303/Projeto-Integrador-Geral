@@ -11,7 +11,7 @@ const Home = () => {
             <MenuAL/>
             <Whats/>   
             <div className="geral">
-           
+           <div className="promocao"><p> Planos com até 35% de desconto! </p></div>
                 <div className="inicio">
                     <div>
                         <p className="inicio-p">

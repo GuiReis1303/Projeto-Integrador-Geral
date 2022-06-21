@@ -4,8 +4,7 @@ import Assinatura from './Paginas/Assinatura';
 import Cursos from './Paginas/Cursos';
 import Comunidade from './Paginas/Comunidade';
 import Faq from './Paginas/Faq';
-import Cadastro from './Paginas/Cadastro';
-import Login from './Paginas/Login';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Login2 from './Paginas/Login2';
 import CursoM from "./Modulos/CursoM";
 import AulaM from "./Modulos/AulaM";

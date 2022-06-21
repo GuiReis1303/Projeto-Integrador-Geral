@@ -18,9 +18,10 @@
 }
 
 .editMenuALH1:hover {
-  color: #10854e;
+  color: #169b5d;
   -webkit-transition: .3s;
   transition: .3s;
+  padding-left: 5%;
 }
 
 .editMenuALH2 {

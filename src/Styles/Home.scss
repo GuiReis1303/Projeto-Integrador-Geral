@@ -47,9 +47,10 @@
     color: $BackgroundDarkBlue;
         &:hover{
         background-color: #cfcfe8;
-        transition: 1.35s; 
-        transition: 0.45s; 
-        box-shadow: 2px 2px 5px #dfdfdf;
+        transition: .4s; 
+        color: $PinkColor;
+        font-size: 2.05rem;
+        letter-spacing: 2px;
         }
   
 }

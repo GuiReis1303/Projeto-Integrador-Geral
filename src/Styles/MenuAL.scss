@@ -15,8 +15,9 @@
         color: $GreenColor; 
     }
     &:hover{
-        color: #10854e;  
+        color: #169b5d;  
       transition: .3s;
+      padding-left: 5%;
     }
   
     
@@ -37,7 +38,7 @@
        
     }
     &-button1{
-        color: #e91899;
+        color: $PinkColor;
         background-color: $BackgroundDarkBlue;
         border: 2px #fff;
        
