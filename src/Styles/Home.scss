@@ -60,10 +60,34 @@
     @content
   }
    
+
+
 }
 .geral{
   padding: 0% 0%;
+  &-promocao{
+    background-color: $BackgroundBlack;
+  color: $GreenColor;
+
+    p{
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  &-linkpromocao{
+    color: $GreenColor;  
+    text-decoration: none;
+    &:visited{
+        color: $GreenColor; 
+    }
+    &:hover{
+        color: #169b5d;  
+      transition: .3s;
+      padding-left: 5%;
+    }
+  }
 }
+
 h2
 {
     font-size: 2rem;

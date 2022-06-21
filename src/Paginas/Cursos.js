@@ -7,7 +7,7 @@ import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
 
 const Cursos = () => {
-    require('../Styles/Cursos.css')
+    
     return ( 
         <div className="geral-curso">
             <MenuAL/>

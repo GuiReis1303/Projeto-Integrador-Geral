@@ -10,11 +10,11 @@ const Curso_DesignC = () => {
         <div>
             <div className="design">
                 <Carousel variant="dark" interval={null} className="carousel-tamanho">
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/designCarousel.png")}
                                 alt="Slide Inicial"
                                 />
@@ -22,7 +22,7 @@ const Curso_DesignC = () => {
                                     <h6>Design</h6>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>Curso de Design</h3>
                                 <p> Aqui você aprenderá Photoshop, Adobe After Effects, Adobe Premiere Pro e os conceitos para se integrar no mercado do Design.
                                 </p>
@@ -36,11 +36,11 @@ const Curso_DesignC = () => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/design.png")}
                                 alt="Primeiro slide"
                                 />
@@ -48,7 +48,7 @@ const Curso_DesignC = () => {
                                     <button className="botao-ver-mais">Ver mais</button>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>Photoshop Completo</h3>
                                 <p>Aprenda a recortar imagens, utilizar paletas de cores e criação de logos profissionais.</p>
                                 <p1> Paulo Neto </p1>
@@ -62,11 +62,11 @@ const Curso_DesignC = () => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/designpr.png")}
                                 alt="Segundo slide"
                                 />
@@ -74,7 +74,7 @@ const Curso_DesignC = () => {
                                     <button className="botao-ver-mais">Ver mais</button>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>Premiere Pro Completo</h3>
                                 <p>Aprenda no Adobe Premiere Pro a editar vídeos e introduções de forma profissional.</p>
                                 <p1> Paulo Neto </p1>
@@ -88,11 +88,11 @@ const Curso_DesignC = () => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/designae.png")}
                                 alt="Terceiro slide"
                                 />
@@ -100,7 +100,7 @@ const Curso_DesignC = () => {
                                     <button className="botao-ver-mais">Ver mais</button>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>After Effects Completo</h3>
                                 <p>Aprenda do zero Adobe After Effects de forma didática passo a passo!</p>
                                 <p1> Paulo Neto </p1>

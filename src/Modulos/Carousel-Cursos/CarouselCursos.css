@@ -9,16 +9,12 @@
   height: auto;
 }
 
-.carouselImagem {
-  width: 80%;
-}
-
-.itemcarousel {
+.itemcarouselcursos {
   width: 100%;
   height: auto;
 }
 
-.caixa {
+.caixacursos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,23 +25,26 @@
   margin-right: 8%;
 }
 
+.caixacursos-imagem {
+  width: 45%;
+  height: auto;
+}
+
+.caixacursos-carouselImagem {
+  width: 80%;
+}
+
 .caixaimagem {
   width: 45%;
   height: auto;
 }
 
-.caixatexto {
+.caixatextocursos {
   width: 45%;
   text-align: left;
 }
 
-.caixa-botao-vermais {
-  display: none;
-  padding-top: 10px;
-  padding-bottom: 50px;
-}
-
-.caixatexto button {
+.caixatextocursos button {
   width: 100%;
   padding: 1.5vw;
   border-radius: 15px;
@@ -56,19 +55,19 @@
   margin-bottom: 50px;
 }
 
-.caixatexto button:hover {
+.caixatextocursos button:hover {
   background-color: #d4661d;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
-.caixatexto p1 {
+.caixatextocursos p1 {
   font-size: 0.8em;
-  color: #757572;
+  color: #757272;
   padding-top: 15px;
 }
 
-.caixatexto p2 {
+.caixatextocursos p2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,6 +77,12 @@
   font-size: 0.8em;
   /*margin-left: 300px;*/
   color: #757572;
+}
+
+.caixa-botao-vermais {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
 .iconCursos {
@@ -142,7 +147,7 @@
   .geral-curso {
     width: 100%;
   }
-  .caixatexto {
+  .caixatextocursos {
     display: none;
   }
   .caixa-botao-vermais {

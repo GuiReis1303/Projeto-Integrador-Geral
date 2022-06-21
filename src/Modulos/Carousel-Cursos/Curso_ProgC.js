@@ -11,11 +11,11 @@ const Curso_ProgC = () => {
         <div>
             <div className="programacao">
                 <Carousel variant="dark" interval={null} className="carousel-tamanho">
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/linguagens.png")}
                                 alt="Slide Inicial"
                                 />
@@ -23,7 +23,7 @@ const Curso_ProgC = () => {
                                     <h6>Programação</h6>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>Linguagens de Programação</h3>
                                 <p>Venha aprender programação conosco, ensinamos desde linguagens front-end até back-end.
                                     Venha aprender a fazer um site do zero com HTML e CSS e fazer ele funcional com JS.
@@ -38,11 +38,11 @@ const Curso_ProgC = () => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/html.png")}
                                 alt="Primeiro slide"
                                 />
@@ -50,7 +50,7 @@ const Curso_ProgC = () => {
                                     <button className="botao-ver-mais">Ver mais</button>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>HTML Completo</h3>
                                 <p>Curso mais didático e completo de HTML, aprendendo desde o básico até como usar div's</p>
                                 <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>
@@ -64,11 +64,11 @@ const Curso_ProgC = () => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/css.png")}
                                 alt="Segundo slide"
                                 />
@@ -76,7 +76,7 @@ const Curso_ProgC = () => {
                                     <button className="botao-ver-mais">Ver mais</button>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>CSS Completo</h3>
                                 <p>Curso mais didático e completo de CSS, aprendendo como estilizar todas as tags</p>
                                 <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>
@@ -90,11 +90,11 @@ const Curso_ProgC = () => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="itemcarousel">
-                        <div className="caixa">
-                            <div className="caixaimagem">
+                    <Carousel.Item className="itemcarouselcursos">
+                        <div className="caixacursos">
+                            <div className="caixacursos-imagem">
                                 <img
-                                className="carouselImagem"
+                                className="caixacursos-carouselImagem"
                                 src={require("./Imagens/js.png")}
                                 alt="Terceiro slide"
                                 />
@@ -102,7 +102,7 @@ const Curso_ProgC = () => {
                                     <button className="botao-ver-mais">Ver mais</button>
                                 </div>
                             </div>
-                            <div className="caixatexto">
+                            <div className="caixatextocursos">
                                 <h3>JavaScript Completo</h3>
                                 <p>Curso mais didático e completo de JS, desde declaração de váriaveis, até ligação com banco de dados</p>
                                 <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>

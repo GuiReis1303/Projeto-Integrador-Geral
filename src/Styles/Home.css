@@ -2,6 +2,32 @@
   padding: 0% 0%;
 }
 
+.geral-promocao {
+  background-color: #201b2c;
+  color: #00ff88;
+}
+
+.geral-promocao p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.geral-linkpromocao {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+.geral-linkpromocao:visited {
+  color: #00ff88;
+}
+
+.geral-linkpromocao:hover {
+  color: #169b5d;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-left: 5%;
+}
+
 h2 {
   font-size: 2rem;
 }

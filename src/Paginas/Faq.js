@@ -17,7 +17,7 @@ const Faq = () => {
                             <br/>
                             <br/>
                             
-                            <h2 className="">Funcionamento do Planos</h2>
+                            <h2>Funcionamento do Planos</h2>
                             <br/>
                           
                            <b> Os valores são mensais ou anuais? </b>
@@ -29,27 +29,76 @@ const Faq = () => {
                             <b> Uma vez assinado posso ter acesso para sempre? </b>
                            
                             <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
+                            <br/>
+
+                            <b> Uma vez assinado posso ter acesso para sempre? </b>
+                           
+                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
+
+
                         </div>
 
                        
                     </div>
 
                     <div className="meiofaq-contato">
-                        <div>
+                    <div>
                             <br/>
-                            <h2>Plano Gold</h2>
+                            <br/>
+                            
+                            <h2>Contato</h2>
+                            <br/>
+                          
+                           <b> Os valores são mensais ou anuais? </b>
                            
+                            <p> R: Os valores do site são mensais. O valor muda conforme o plano que você selecionar. </p>
+                            <br/>
+                            
+                            
+                            <b> Uma vez assinado posso ter acesso para sempre? </b>
+                           
+                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
+                            <br/>
+
+                            <b> Uma vez assinado posso ter acesso para sempre? </b>
+                           
+                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
+
+
                         </div>
 
-                      
+                       
                     </div>
 
-                   
-
-                 
-
                     <div className="meiofaq-gerais">
-                <h2> oi </h2>
+               
+                        
+                    <div>
+                            <br/>
+                            <br/>
+                            
+                            <h2>Dúvidas Gerais</h2>
+                            <br/>
+                          
+                           <b> Os valores são mensais ou anuais? </b>
+                           
+                            <p> R: Os valores do site são mensais. O valor muda conforme o plano que você selecionar. </p>
+                            <br/>
+                            
+                            
+                            <b> Uma vez assinado posso ter acesso para sempre? </b>
+                           
+                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
+                            <br/>
+
+                            <b> Uma vez assinado posso ter acesso para sempre? </b>
+                           
+                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
+
+
+                        </div>
+
+
                         
                     </div>
                     

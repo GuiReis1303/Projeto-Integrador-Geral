@@ -3,6 +3,7 @@ import MenuAL from "../Modulos/MenuAL";
 import Carousel from 'react-bootstrap/Carousel'
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     require('../Styles/Home.css')
@@ -11,8 +12,9 @@ const Home = () => {
             <MenuAL/>
             <Whats/>   
             <div className="geral">
-           <div className="promocao"><p> Planos com até 35% de desconto! </p></div>
+            <div className="geral-promocao"><p><Link to="/Assinatura" className="geral-linkpromocao">*  Planos com até 35% de desconto!  *</Link></p></div>
                 <div className="inicio">
+             
                     <div>
                         <p className="inicio-p">
                             <h2>
@@ -30,8 +32,8 @@ const Home = () => {
                             de todos os gêneros, classes e etnias.
                             </h2>
                 <div className="inicio-botao">
-                            <button>Conheça nossos Cursos!</button>
-                            <button>Confira nossos Planos!</button>
+                      <Link to="/Assinatura">   <button>Confira nossos Planos!</button> </Link>   
+                      <Link to="/Cursos" ><button> Conheça nossos Cursos! </button> </Link>
                 </div>
                         </p>  
                         </div>
@@ -91,27 +93,27 @@ const Home = () => {
         <div className="gallery">
          <div className="gallery-card" id="card-01">
            <h2 className="gallery-card-title">Design</h2>
-            <a href="" className="gallery-card-btn">Mais cursos</a>
+            <a href="/Cursos" className="gallery-card-btn">Mais cursos</a>
          </div>
          <div className="gallery-card" id="card-02">
            <h2 className="gallery-card-title">Programação</h2>
-            <a href="" className="gallery-card-btn">Mais cursos</a>
+            <a href="/Cursos" className="gallery-card-btn">Mais cursos</a>
          </div>
          <div className="gallery-card" id="card-03">
            <h2 className="gallery-card-title">Finanças</h2>
-            <a href="" className="gallery-card-btn">Mais cursos</a>
+            <a href="/Cursos" className="gallery-card-btn">Mais cursos</a>
          </div>
          <div className="gallery-card" id="card-04">
            <h2 className="gallery-card-title">Marketing</h2>
-            <a href="" className="gallery-card-btn">Mais cursos</a>
+            <a href="/Cursos" className="gallery-card-btn">Mais cursos</a>
          </div>
          <div className="gallery-card" id="card-05">
            <h2 className="gallery-card-title">Fotografia</h2>
-            <a href="" className="gallery-card-btn">Mais cursos</a>
+            <a href="/Cursos" className="gallery-card-btn">Mais cursos</a>
          </div>
          <div className="gallery-card" id="card-06">
            <h2 className="gallery-card-title">Música</h2>
-            <a href="" className="gallery-card-btn">Mais cursos</a>
+            <a href="/Cursos" className="gallery-card-btn">Mais cursos</a>
          </div>
       </div>
       <hr></hr>
