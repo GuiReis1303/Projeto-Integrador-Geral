@@ -7,7 +7,36 @@ import Rodape from "./Rodape";
 
 const CursoM = () => {
 
-    const informacoesCurso = [
+    const [ curso, alteraCurso] = React.useState([]);
+    const [ modulo, alteraModulo] = React.useState([]);
+
+    const axios = require('axios').default;
+
+    React.useEffect( () => {
+        axios.get('http://localhost:3001/CursoM')
+        .then(function (response) {
+            const dados = response.data;
+            alteraCurso(dados);
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
+        axios.get('http://localhost:3001/CursoModulos')
+        .then(function (response) {
+            const cmodulos = response.data;
+            alteraModulo(cmodulos);
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
+    }, [])
+
+    /*const informacoesCurso = [
+
         {
             nomeCurso: "Curso Web Design Completo: HTML5, CSS3 e JS",
             descricaoCurso: "Webdesign/ Front-end Fundamentos. Aprenda DE VERDADE HTML e CSS (básico ao avançado) e inicie o Javascript. 100% prático. ",
@@ -26,7 +55,7 @@ const CursoM = () => {
                   "Formulários"
                 ]
         }
-    ];
+    ];*/
 
     require('../Styles/CursoM.css')
     return ( 
@@ -37,41 +66,38 @@ const CursoM = () => {
                 <div className="cursoLeft">
                     
                         <div className="nomeCurso">
-                            <h2>{ informacoesCurso[0].nomeCurso}</h2>
+                            <h2>{curso == 0 ? "Carregando" : curso[0].nome}</h2>
                         </div>
                         <div className="imagemCurso">
                             <img src={require("./Imagens/aulaHTML.png")}/>
                         </div>
                         <div className="boxCurso">
-                            <p>{ informacoesCurso[0].descricaoCurso}</p>
+                            <p>{curso == 0 ? "Carregando" : curso[0].descricao}</p>
                         </div>
                     
 
                     <div className="caixaAvaliacaoCurso">
                         <div className="avaliacaoCursoPositiva">
-                            <p><FontAwesomeIcon icon={faThumbsUp}/>{ informacoesCurso[0].avaliacaoPositiva}</p>
+                            <p><FontAwesomeIcon icon={faThumbsUp}/>{curso == 0 ? "Carregando" : curso[0].avaliacaoPositiva}</p>
                         </div>
                         <div className="avaliacaoCursoNegativa">
-                            <p><FontAwesomeIcon icon={faThumbsDown}/>{ informacoesCurso[0].avaliacaoNegativa}</p>
+                            <p><FontAwesomeIcon icon={faThumbsDown}/>{curso == 0 ? "Carregando" : curso[0].avaliacaoNegativa}</p>
                         </div>
                     </div>
                 </div>
 
                 <div className="cursoRight">
                     <div className="linkAulasCursos">
-                        {informacoesCurso[0].linkAulasCurso.map( (r) => {
+                    {modulo == 0 ? "Carregando" : modulo.map( r => {
                             return(
-                            <div>
-                                <p><Link to={'/AulaM'} className="linkAulas"><FontAwesomeIcon icon={faThumbtack}/> {r} </Link></p>
+                            <div className="caixaComentario">
+                                <p><Link to={'/AulaM'} className="linkAulas"><FontAwesomeIcon icon={faThumbtack}/> {r.nome} </Link></p> 
                             </div>
                             )
                         })}
                     </div>
                 </div>
             </div>
-            <div className="descricaoCurso">
-                    <h2> O que você aprenderá: </h2>
-                </div>
 
             <Rodape/>
         </div>
