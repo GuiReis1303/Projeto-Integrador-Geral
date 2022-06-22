@@ -72,6 +72,11 @@
 
 .rodapeicon{
     margin-right: 20px;
+    color:$WhiteColor;
+        :hover{
+            color: #d8d8d8;
+            transition: .4s;
+        }
 }
 
 .rodapeInformacao h3{
@@ -113,6 +118,14 @@
             background-image: red;
             
        }
+    }
+    .rodapeicon{
+        
+        color:$WhiteColor;
+        :hover{
+            color: #d8d8d8;
+        }
+
     }
     .rodape span{
 
