@@ -4,11 +4,36 @@ import Rodape from "./Rodape";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentAlt, faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
-const AulaM = (props) => {
+const AulaM = () => {
+    const modulo = 0
+    const [ aula, alteraAula] = React.useState([]);
+    const [ comment, alteraComment] = React.useState([]);
 
-    const aula = 0;
+    const axios = require('axios').default;
 
-    const informacoesAula = [
+    React.useEffect( () => {
+        axios.get('http://localhost:3001/AulaM')
+        .then(function (response) {
+            const dados = response.data;
+            alteraAula(dados);
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
+        axios.get('http://localhost:3001/AulaMComentarios')
+        .then(function (response) {
+            const comentarios = response.data;
+            alteraComment(comentarios);
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+    }, [])
+
+    /*const informacoesAula = [
         {
             iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
             nomeAula: "Introdução à HTML",
@@ -25,7 +50,7 @@ const AulaM = (props) => {
         {
             iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
             nomeAula: "Introdução à CSS",
-            avaliacaoPositiva: " 36",
+            avaliacaoPositiva: " 100",
             avaliacaoNegativa: " 3",
             comentario: [ 
                             {nick:"Guilherme", comentario:"asdasd", registro:"05/07/2003"}, 
@@ -38,7 +63,7 @@ const AulaM = (props) => {
         {
             iframeAula: "https://www.youtube-nocookie.com/embed/uCyVx1vYDz8",
             nomeAula: "Introdução à JavaScript",
-            avaliacaoPositiva: " 36",
+            avaliacaoPositiva: " 200",
             avaliacaoNegativa: " 3",
             comentario: [ 
                             {nick:"Guilherme", comentario:"asdasd", registro:"05/07/2003"}, 
@@ -48,7 +73,7 @@ const AulaM = (props) => {
                             {nick:"Conrado", comentario:"Gostei! Pena que não ensina a fazer café! :/", registro:"05/07/2003"}
                         ]
         },
-    ]
+    ]*/
 
     require('../Styles/AulaM.css')
     return ( 
@@ -58,21 +83,21 @@ const AulaM = (props) => {
             <div className="aulaGeral">
                 <div className="aulaLeft">
                     <div className="iframeAula">
-                        <iframe src={informacoesAula[aula].iframeAula} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+                        <iframe src={aula == 0 ? "Carregando" : aula[modulo].urlvideo} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
                     </div>
 
                     <div className="aulaLeftRodape">
                         <div className="nomeAula">
-                            <p>{informacoesAula[aula].nomeAula}</p>
+                            <p>{aula == 0 ? "Carregando" : aula[modulo].nome}</p>
                         </div>
 
                         <div className="caixaAvaliacaoAula">
                             <div className="avaliacaoAulaPositiva">
-                                <p><FontAwesomeIcon icon={faThumbsUp}/>{informacoesAula[aula].avaliacaoPositiva}</p>
+                                <p><FontAwesomeIcon icon={faThumbsUp}/>{aula == 0 ? "Carregando" : aula[modulo].avaliacaoPositiva}</p>
                             </div>
 
                             <div className="avaliacaoAulaNegativa">
-                                <p><FontAwesomeIcon icon={faThumbsDown}/>{informacoesAula[aula].avaliacaoNegativa}</p>
+                                <p><FontAwesomeIcon icon={faThumbsDown}/>{aula == 0 ? "Carregando" : aula[modulo].avaliacaoNegativa}</p>
                             </div>
                         </div>
                     </div>
@@ -80,7 +105,7 @@ const AulaM = (props) => {
 
                 <div className="aulaRight">
                     <div className="comentariosAula">
-                        {informacoesAula[aula].comentario.map( (r) => {
+                        {comment == 0 ? "Carregando" : comment.map( r => {
                             return(
                             <div className="caixaComentario">
                                 <div className="caixaComentarioMenor">

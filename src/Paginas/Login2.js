@@ -5,7 +5,7 @@ import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Login2 = (props) => {
 
-    
+        
     const mudarCadastro = () =>{
         document.getElementById('cadastro').classList.remove('invisivel');
         document.getElementById('login').classList.add('invisivel')
@@ -16,11 +16,36 @@ const Login2 = (props) => {
         document.getElementById('cadastro').classList.add('invisivel')
     }
 
+    const verificarDados = (obj) => {
+        if (obj.email == '' && obj.nick == '' && obj.senha == ''){
+
+        }
+    }
+
     const enviarCadastro = () =>{
         const email = document.querySelector("input[name='email']").value
         const usuariocadastro = document.querySelector("input[name='usuariocadastro']").value
         const senhacadastro = document.querySelector("input[name='senhacadastro']").value
         console.log(email, usuariocadastro, senhacadastro)
+        const obj = {
+            email: email,
+            nick: usuariocadastro,
+            senha: senhacadastro
+        }
+
+        verificarDados(obj);
+
+        const axios = require('axios').default;
+
+        axios.post('http://localhost:3001/Usuario', obj)
+        .then(function (response) {
+            
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
       }
 
     require('../Styles/Cadastro.css')
