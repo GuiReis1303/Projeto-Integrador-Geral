@@ -1,4 +1,5 @@
 @import "../Variables/Variables.scss";
+@import '../Styles/mixins.scss';
 
 @mixin BorderRadiusCaixa{
     border-radius:2.5em 2.5em  0em 0em ;

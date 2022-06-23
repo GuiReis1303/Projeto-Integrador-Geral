@@ -1,0 +1,62 @@
+@import "../Variables/Variables.scss";
+
+@mixin container{
+  
+    padding: 1.5rem 0;
+    margin: 0 auto;
+  }
+  @mixin botaoStyleHome {
+    letter-spacing: 1px;
+      padding: 1.5rem 2em 1.5rem 2em;
+      font-size: 2rem;
+      border: none;
+      border-radius: 20px ;
+      color: $BackgroundDarkBlue;
+          &:hover{
+          background-color: #cfcfe8;
+          transition: .4s; 
+          color: $PinkColor;
+          font-size: 2.05rem;
+          letter-spacing: 2px;
+          }
+  }
+
+  @mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @mixin bg-img($img){
+    background-image: url('../img/#{$img}');
+    background-size: 50%;
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: .6s; 
+  
+        &:hover{
+        background-size: 52.5%;
+        filter: grayscale(0%);
+        
+        }
+  }
+  
+  @mixin containerpadding{
+    padding: 4rem 8rem;
+    margin: 0 auto;
+  }
+
+  @mixin containermobile{
+    padding: 1rem 6rem;
+    margin: 0 auto;
+  }
+  
+  @mixin mobile{
+  
+    @media(max-width: 425px){
+      @content
+
+     }
+
+  }
