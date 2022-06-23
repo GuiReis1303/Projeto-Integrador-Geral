@@ -17,8 +17,19 @@ const Login2 = (props) => {
     }
 
     const verificarDados = (obj) => {
-        if (obj.email == '' && obj.nick == '' && obj.senha == ''){
+        if (obj.email == ''|| obj.nick == '' || obj.senha == ''){
+            alert("Erro: Algum Campo está Vazio!")
+        } else{
+            const axios = require('axios').default;
 
+            axios.post('http://localhost:3001/Usuario', obj)
+            .then(function (response) {
+                
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
         }
     }
 
@@ -34,17 +45,6 @@ const Login2 = (props) => {
         }
 
         verificarDados(obj);
-
-        const axios = require('axios').default;
-
-        axios.post('http://localhost:3001/Usuario', obj)
-        .then(function (response) {
-            
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
 
       }
 

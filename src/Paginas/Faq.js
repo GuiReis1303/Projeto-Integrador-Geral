@@ -3,6 +3,8 @@ import MenuAL from "../Modulos/MenuAL"
 import { Navbar } from "react-bootstrap";
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbtack, faThumbTack } from "@fortawesome/free-solid-svg-icons";
 
 const Faq = () => {
     require('../Styles/Faq.css')
@@ -10,104 +12,56 @@ const Faq = () => {
         <div>
             <MenuAL/>
             <Whats/>
+
             <div className="corpoAssinaturaFAQ">
                 <div className="meiofaq">
                     <div className="meiofaq-plano">
                         <div>
-                            <br/>
-                            <br/>
-                            
-                            <h2>Funcionamento do Planos</h2>
-                            <br/>
-                          
-                           <b> Os valores são mensais ou anuais? </b>
-                           
-                            <p> R: Os valores do site são mensais. O valor muda conforme o plano que você selecionar. </p>
-                            <br/>
-                            
-                            
-                            <b> Uma vez assinado posso ter acesso para sempre? </b>
-                           
-                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
-                            <br/>
+                            <h4> Dúvidas Frequentes</h4>
+                            <p>
+                                <strong>
+                                    <FontAwesomeIcon icon={faThumbTack}/> Como posso Assistir as Aulas?
+                                </strong><br/>
+                                Caso já tenha uma conta, basta clicar em "Cursos" e depois escolher qual curso você
+                                <br/>você deseja fazer. Logo depois irá abrir o "hub" do curso escolhido, então 
+                                selecione o <br/>modulo que deseja fazer e irá aparecer a aula. 
+                                Não esqueça de curtir.
+                            </p><br/><br/>
 
-                            <b> Uma vez assinado posso ter acesso para sempre? </b>
-                           
-                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
+                            <p>
+                                <strong>
+                                    <FontAwesomeIcon icon={faThumbTack}/> Todos podem usar a Comunidade?
+                                </strong><br/>
+                                Sim, a comunidade foi feita para que os alunos interajam entre si, comentando se <br/>
+                                estão ou não gostando do curso ou tirando dúvidas
+                            </p><br/><br/>
 
-
+                            <p>
+                                <strong>
+                                    <FontAwesomeIcon icon={faThumbTack}/> Minha Assinatura terminou e Agora?
+                                </strong><br/>
+                                Isso irá depender do plano escolhido. Os planos Básico e Padrão só disponibilizam o <br/>
+                                acesso as aulas enquanto o prazo da assinatura for válido. O Plano Premium permite Assistir
+                                <br/> aos cursos ja inscritos mesmo após o vencimento da assinatura.
+                            </p><br/><br/>
                         </div>
-
-                       
                     </div>
 
                     <div className="meiofaq-contato">
-                    <div>
-                            <br/>
-                            <br/>
-                            
-                            <h2>Contato</h2>
-                            <br/>
-                          
-                           <b> Os valores são mensais ou anuais? </b>
-                           
-                            <p> R: Os valores do site são mensais. O valor muda conforme o plano que você selecionar. </p>
-                            <br/>
-                            
-                            
-                            <b> Uma vez assinado posso ter acesso para sempre? </b>
-                           
-                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
-                            <br/>
-
-                            <b> Uma vez assinado posso ter acesso para sempre? </b>
-                           
-                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
-
-
+                        <div>
+                            .
                         </div>
-
-                       
                     </div>
 
                     <div className="meiofaq-gerais">
-               
-                        
-                    <div>
-                            <br/>
-                            <br/>
-                            
-                            <h2>Dúvidas Gerais</h2>
-                            <br/>
-                          
-                           <b> Os valores são mensais ou anuais? </b>
-                           
-                            <p> R: Os valores do site são mensais. O valor muda conforme o plano que você selecionar. </p>
-                            <br/>
-                            
-                            
-                            <b> Uma vez assinado posso ter acesso para sempre? </b>
-                           
-                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
-                            <br/>
-
-                            <b> Uma vez assinado posso ter acesso para sempre? </b>
-                           
-                            <p> R: Não. O acesso é apenas garantido com o plano em vigor. </p>
-
-
-                        </div>
-
-
-                        
+                        <div>
+                            .
+                        </div> 
                     </div>
                     
                 </div>
-
-                
-                
-
             </div>
+
             <Rodape/>
         </div>
      );

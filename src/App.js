@@ -6,9 +6,11 @@ import Comunidade from './Paginas/Comunidade';
 import Faq from './Paginas/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Login2 from './Paginas/Login2';
-import CursoM from "./Modulos/CursoM";
+import Curso_HTML from "./Modulos/Cursos/Curso_HTML";
 import AulaM from "./Modulos/AulaM";
 import Historia from "./Paginas/Historia"
+import Curso_Financas from "./Modulos/Cursos/Curso_Financas";
+import Curso_Photoshop from "./Modulos/Cursos/Curso_Photoshop";
 
 function App() {
     require('./App.css')
@@ -22,7 +24,9 @@ function App() {
                 <Route path='Faq' element={<Faq />} />
                 <Route path='Cadastro' element={<Login2 cadastro={true}/>} />
                 <Route path='Login2' element={<Login2/>} /> 
-                <Route path='CursoM' element={<CursoM/>} />
+                <Route path='Curso_HTML' element={<Curso_HTML/>} />
+                <Route path='Curso_Financas' element={<Curso_Financas/>} />
+                <Route path='Curso_Photoshop' element={<Curso_Photoshop/>} />
                 <Route path='AulaM' element={<AulaM/>} />
                 <Route path='Historia' element={<Historia/>} />
             </Routes>

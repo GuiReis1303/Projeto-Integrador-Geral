@@ -47,7 +47,7 @@ const Curso_ProgC = () => {
                                 alt="Primeiro slide"
                                 />
                                 <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Ver mais</button>
+                                    <Link to={'/Curso_HTML'}><button className="botao-ver-mais">Ver mais</button></Link>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -60,7 +60,7 @@ const Curso_ProgC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>43 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <Link to={'/CursoM'}><button>Ver mais</button></Link>                           
+                                <Link to={'/Curso_HTML'}><button>Ver mais</button></Link>                           
                             </div>
                         </div>
                     </Carousel.Item>
@@ -73,7 +73,7 @@ const Curso_ProgC = () => {
                                 alt="Segundo slide"
                                 />
                                 <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Ver mais</button>
+                                    <button className="botao-ver-mais">Em breve</button>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -86,7 +86,7 @@ const Curso_ProgC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>43 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Ver mais</button>                            
+                                <button>Em breve</button>                            
                             </div>
                         </div>
                     </Carousel.Item>
@@ -99,7 +99,7 @@ const Curso_ProgC = () => {
                                 alt="Terceiro slide"
                                 />
                                 <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Ver mais</button>
+                                    <button className="botao-ver-mais">Em breve</button>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -112,7 +112,7 @@ const Curso_ProgC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>43 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Ver mais</button>                            
+                                <button>Em breve</button>                            
                             </div>
                         </div>
                     </Carousel.Item>
