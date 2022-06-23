@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Login2 = (props) => {
+        const navigate = useNavigate()
+    
 
-        
     const mudarCadastro = () =>{
         document.getElementById('cadastro').classList.remove('invisivel');
         document.getElementById('login').classList.add('invisivel')
@@ -20,20 +21,29 @@ const Login2 = (props) => {
         if (obj.email == ''|| obj.nick == '' || obj.senha == ''){
             alert("Erro: Algum Campo está Vazio!")
         } else{
+
             const axios = require('axios').default;
 
             axios.post('http://localhost:3001/Usuario', obj)
             .then(function (response) {
-                
                 console.log(response);
+                console.log(response.status)
+                if (response.status == 200){
+                    navigate("/")
+                    navigate("/Login2")
+                    console.log("Fez o Cadastro!")
+                }
             })
             .catch(function (error) {
                 console.log(error);
+                alert("Error: Algo de Errado Não Está Certo!")
             })
+
+           
         }
     }
 
-    const enviarCadastro = () =>{
+    const enviarCadastro = () => {
         const email = document.querySelector("input[name='email']").value
         const usuariocadastro = document.querySelector("input[name='usuariocadastro']").value
         const senhacadastro = document.querySelector("input[name='senhacadastro']").value
@@ -43,10 +53,45 @@ const Login2 = (props) => {
             nick: usuariocadastro,
             senha: senhacadastro
         }
+        
 
         verificarDados(obj);
 
       }
+
+    const enviarLogin = () => {
+        const usuario = document.querySelector("input[name='usuario']").value
+        const senha = document.querySelector("input[name='senha']").value
+        console.log(usuario, senha)
+        const obj = {
+            nick: usuario,
+            senha: senha
+
+        }
+
+        const axios = require('axios').default;
+
+            if (obj.nick == '' || obj.senha == ''){
+                alert("Erro: Algum Campo está Vazio!")
+            } else{
+
+                axios.post('http://localhost:3001/Verifica', obj)
+                .then(function (response) {
+                    if (response.data == 0){
+                        alert("Usuario ou Senha Incorretos!")
+                    } else{
+                        navigate("/")
+                    }
+                    
+                    console.log(response);
+
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+            }
+
+    }
 
     require('../Styles/Cadastro.css')
     return ( 
@@ -67,7 +112,7 @@ const Login2 = (props) => {
                             <label for="senha"> Senha</label>
                             <input type="password" name="senha" placeholder="Senha" />
                         </div>
-                        <button className="btn-login">Login</button>
+                        <button className="btn-login" onClick={() => enviarLogin()}>Login</button>
                         <p className="criar-conta">Não possui conta? <a className="criar-conta-a" onClick={() => mudarCadastro()}>Cadastre-se</a></p>
                     </div>
                 </div>
@@ -80,6 +125,7 @@ const Login2 = (props) => {
                 <div className="left-cadastro">
                     <div className="card-cadastro">
                         <h2><Link className="link-icon" to={'/'}><FontAwesomeIcon icon={faCircleArrowLeft} className="icon-voltar"/></Link> CADASTRO</h2>
+                        <form className="formularioteste">
                         <div className="textfield">
                             <label for="email"> Email</label>
                             <input type="email" name="email" placeholder="Email" />
@@ -92,6 +138,7 @@ const Login2 = (props) => {
                             <label for="senha"> Senha</label>
                             <input type="password" name="senhacadastro" placeholder="Senha" />
                         </div>
+                        </form>
                         <button className="btn-cadastro" onClick={() => enviarCadastro()}>Cadastre-se</button>
                         <p className="logar-conta">Já possui conta? <a className="criar-conta-a" onClick={() => mudarLogin()}>Login</a></p>
                     </div>

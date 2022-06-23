@@ -1,17 +1,17 @@
 import React from "react";
-import Conexao from "../Conexao";
 import MenuAL from "../Modulos/MenuAL";
 import Whats from "../Modulos/Whats";
+import Rodape from "../Modulos/Rodape";
 
 const Comunidade = () => {
+
     require('../Styles/Comunidade.css')
     return ( 
         <div>
             <MenuAL/>
             <Whats/>
 
-            <h1>Pagina de Testes</h1>
-            <Conexao/>
+            <Rodape/>
         </div>
      );
 }
