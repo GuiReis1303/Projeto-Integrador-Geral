@@ -9,83 +9,72 @@
     box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
     background-image: linear-gradient(-90deg, #201b2c, #2f2f6d);
     color: $WhiteColor;
+
+    &-logo{
+        width: 20%;
+
+        img{
+            width: 100%;
+            opacity: 25%;
+            padding-top: 7%;
+            }
+
+    }
+        &-informacao{
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.8em;
+            width: 50vw;
+                h3{
+                    font-size: 1.8em;
+                  }
+                   }
+
+                &-inicio{
+                    width: 150px;
+                    padding-top: 0.5em;
+                       }
+
+                        &-edit{
+                       text-decoration: none;
+                       color: $WhiteColor;
+                       font-size: 1.2em;
+                  &:hover{
+                        text-decoration: underline;
+                        color: #f0f0f0;
+                        font-size: 1.2em;
+                         }
+                              }
+
+            span{
+                position: absolute;
+                padding-top: 25vh;
+                }
+         &-sobrenos{
+              width: 150px;
+              padding-top: 0.5em;
+                   }
+           &-suporte{
+            width: 150px;
+            padding-top: 0.5em;
+                    }
+        &-social{
+            display: flex;
+            align-items: center;
+            font-size: 4vw;
+            cursor: pointer;
+               }
+        &-icon{
+            margin-right: 20px;
+            color:$WhiteColor;
+                 }
     
 }
-.rodape span{
 
 
-
-    position: absolute;
-    padding-top: 25vh;
-
-}
-.editRodape{
-    text-decoration: none;
-    color: $WhiteColor;
-    font-size: 1.2em;
-}
-.editRodape:hover{
-    text-decoration: underline;
-    color: #f0f0f0;
-    font-size: 1.2em;
-}
-
-.rodapeLogo{
-    width: 20%;
-}
-
-.rodapeLogo img{
-    width: 100%;
-    opacity: 25%;
-    padding-top: 7%;
-
-}
-
-.rodapeInformacao{
-    display: flex;
-    justify-content: space-around;
-    font-size: 0.8em;
-    width: 50vw;
-}
-
-.rodapeInicio{
-    width: 150px;
-    padding-top: 0.5em;
-}
-
-.rodapeSobrenos{
-    width: 150px;
-    padding-top: 0.5em;
-}
-
-.rodapeSuporte{
-    width: 150px;
-    padding-top: 0.5em;
-}
-
-.rodapeSocial{
-    display: flex;
-    align-items: center;
-    font-size: 4vw;
-    cursor: pointer;
-}
-
-.rodapeicon{
-    margin-right: 20px;
-    color:$WhiteColor;
-        :hover{
-            color: #d8d8d8;
-            transition: .4s;
-        }
-}
-
-.rodapeInformacao h3{
-
-    font-size: 1.8em;
-
-}
 
 @media only screen and (max-width: 600px){
+   
     .rodape{
         margin-top: 10px;
         width: 100%;
@@ -93,48 +82,68 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
+    
+        &-logo{
+            display: none;
+    
+            img{
+                width: 100%;
+                opacity: 25%;
+                padding-top: 7%;
+                }
+    
+              }
 
-    .rodapeLogo{
-        display: none;
-    }
+            &-informacao{
+                justify-content: center;
+                 align-items: center;
+                 flex-direction: column;
+                    h3{
+                        font-size: 1.5rem;
+                      }
 
-    .rodapeInformacao{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .rodapeInicio, .rodapeSobrenos, .rodapeInformacao{
-        margin-top: 20px;
-    }
-
-    .rodapeSocial{
-        margin-top: 20px;
-        font-size: 40px;
-
-        &rodapeicon{
+                       }
+    
+                    &-inicio{
+                        margin-top: 20px;
+                           }
+    
+                            &-edit{
+                           text-decoration: none;
+                           color: $WhiteColor;
+                           font-size: 1.2em;
+                      &:hover{
+                            text-decoration: underline;
+                            color: #f0f0f0;
+                            font-size: 1.2em;
+                             }
+                                  }
+    
+                span{
+                    position: absolute;
+                     padding-top: 40vh;
+                    padding-left: 30vh;
+                    }
+             &-sobrenos{
+                margin-top: 20px;
+                       }
+               &-suporte{
+                margin-top: 20px;
+                        }
+            &-social{
+                display: flex;
+                align-items: center;
+                font-size: 8vw;
+                cursor: pointer;
+                margin-top: 20px;
+                   }
+            &-icon{
+               
+                color:$WhiteColor;
+                
+                  }
         
-            background-image: red;
-            
-       }
-    }
-    .rodapeicon{
-        
-        color:$WhiteColor;
-        :hover{
-            color: #d8d8d8;
-        }
-
-    }
-    .rodape span{
-
-
-
-        position: absolute;
-        padding-top: 40vh;
-        padding-left: 30vh;
-    }
+     }
 }
 
 
