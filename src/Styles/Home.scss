@@ -32,7 +32,7 @@ h2
     font-size: 2rem;
 }
 .caixaimagem{
-  background-image: radial-gradient(circle, #c717b8, $BackgroundDarkBlue);
+  background-image: radial-gradient(circle, #75276f, $BackgroundDarkBlue);
   
   @include container();
   @include flex-center();

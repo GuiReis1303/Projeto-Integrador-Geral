@@ -47,7 +47,7 @@ const Curso_ProgC = () => {
                                 alt="Primeiro slide"
                                 />
                                 <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Ver mais</button>
+                                <Link to={'/CursoM'}><button className="botao-ver-mais">Ver mais</button></Link>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
