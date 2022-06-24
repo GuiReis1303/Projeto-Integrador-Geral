@@ -1,5 +1,9 @@
 @import "../Variables/Variables.scss";
 
+
+
+
+
 @mixin container{
   
     padding: 1.5rem 0;
@@ -52,6 +56,8 @@
     margin: 0 auto;
   }
   
+
+  
   @mixin mobile{
   
     @media(max-width: 425px){
@@ -59,4 +65,6 @@
 
      }
 
+
+     
   }

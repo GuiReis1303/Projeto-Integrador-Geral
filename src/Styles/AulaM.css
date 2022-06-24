@@ -48,18 +48,6 @@
   margin-right: 5%;
 }
 
-.avaliacaoAulaPositiva {
-  color: #00ff88;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.avaliacaoAulaNegativa {
-  color: #CA0000;
-  padding: 5px;
-  cursor: pointer;
-}
-
 .aulaRight {
   width: 45%;
   display: -webkit-box;

@@ -17,7 +17,7 @@ const Home = () => {
             
             <Whats/>   
             <div className="geral">
-            <div className="geral-promocao"><p><Link to="/Assinatura" className="geral-linkpromocao">*  Planos com até 35% de desconto!  *</Link></p></div>
+           
                 <div className="inicio">
              
                     <div>

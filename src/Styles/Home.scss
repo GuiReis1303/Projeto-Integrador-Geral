@@ -2,6 +2,14 @@
 @import '../Styles/mixins.scss';
 
 
+@mixin m280{
+  @media(max-width: 280px){
+    @content
+
+   }
+
+  }
+
 .geral{
   padding: 0% 0%;
   &-promocao{
@@ -113,13 +121,25 @@ padding: 2%;
     
     width: 31%;
     height: 400px;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
     @include mobile(){
       flex-direction: column;
-      width: 150%;
-      margin-bottom: 6%;
-      height: 240px;
+      width: 100%;
+      background-position-x: center;
+      height: 200px;
+      text-align: center;
+      margin-bottom: 1px;
     }
+    // só pra 280 px -- galaxy fold
+    @include m280(){
+      flex-direction: column;
+      width: 180%;
+      background-position-x: 20px;
+      height: 120px;
+      text-align:start;
+      margin-bottom: 1px;
+    }
+    ///////////////////
         &-title{
       
           color: #1c1729;
@@ -127,8 +147,8 @@ padding: 2%;
           font-weight: 300 ;
           margin-bottom: 12.5rem;
           @include mobile(){
-            margin-bottom: 11.5rem;
-           
+            margin-bottom: 10rem;
+            font-size: 1.5rem;
           }
           }
     &-btn{
@@ -143,7 +163,7 @@ padding: 2%;
       
        @include mobile(){
        
-        padding: .6rem 2rem ;
+       
        display: none;
     
         

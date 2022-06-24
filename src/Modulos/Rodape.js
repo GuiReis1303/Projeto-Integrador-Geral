@@ -7,37 +7,37 @@ const Rodape = () => {
     require('../Styles/Rodape.css')
     return ( <div>
         <div className="rodape">
-            <div className="rodapeLogo">
+            <div className="rodape-logo">
                 <img src={require("./Imagens/logobranca.png")}/>
                
             </div>
 
-            <div className="rodapeInformacao">
-                <div className="rodapeInicio">
+            <div className="rodape-informacao">
+                <div className="rodape-inicio">
                     <h3>Inicio</h3><br/>
                     
                     
-                    <Link className="editRodape" to="/">Home</Link><br/>
-                    <Link className="editRodape" to="/Assinatura">Assinatura</Link><br/>
-                    <Link className="editRodape" to="/Cursos">Cursos</Link><br/>
+                    <Link className="rodape-edit" to="/">Home</Link><br/>
+                    <Link className="rodape-edit" to="/Assinatura">Assinatura</Link><br/>
+                    <Link className="rodape-edit" to="/Cursos">Cursos</Link><br/>
                 </div>
 
-                <div className="rodapeSobrenos">
+                <div className="rodape-sobrenos">
                     <h3>Sobre-nós</h3><br/>
-                    <Link className="editRodape" to="/Historia">Historia</Link><br/>
+                    <Link href="/Historia" className="rodape-edit" to="/Historia">Historia</Link><br/>
                 </div>
 
-                <div className="rodapeSuporte">
+                <div className="rodape-suporte">
                     <h3>Suporte</h3><br/>
-                    <Link className="editRodape" to="/Faq">FAQ</Link><br/>
-                    <Link className="editRodape" to="/Comunidade">Comunidade</Link><br/>
+                    <Link href="/Faq" className="rodape-edit" to="/Faq">FAQ</Link><br/>
+                    <Link href="/Comunidade" className="rodape-edit" to="/Comunidade">Comunidade</Link><br/>
                 </div>
             </div>
            
-            <div className="rodapeSocial">
-                <a href=""><FontAwesomeIcon icon={faFacebook} className="rodapeicon"/></a>
-                <a href=""><FontAwesomeIcon icon={faInstagram} className="rodapeicon"/></a>
-                <a href=""><FontAwesomeIcon icon={faYoutube} className="rodapeicon"/></a>
+            <div className="rodape-social">
+                <a href=""><FontAwesomeIcon icon={faFacebook} className="rodape-icon"/></a>
+                <a href=""><FontAwesomeIcon icon={faInstagram} className="rodape-icon"/></a>
+                <a href=""><FontAwesomeIcon icon={faYoutube} className="rodape-icon"/></a>
                
             </div>
             <span>Station ®</span>
