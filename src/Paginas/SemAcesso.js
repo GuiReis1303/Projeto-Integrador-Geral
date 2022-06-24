@@ -11,7 +11,7 @@ const SemAcesso = () => {
                 </div>
             <div className="semacesso-left">
                 <div className="semacesso-left-texto">
-                    <h2> Parrece que você não tem acesso para ver isso!</h2>
+                    <h2> Parece que você não tem acesso para ver isso!</h2>
                     <p>Logue para conseguir acessar essa página</p>
                     
                     <div className="semacesso-left-botao">
