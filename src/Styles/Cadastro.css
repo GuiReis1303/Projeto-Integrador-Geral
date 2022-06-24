@@ -181,6 +181,10 @@
           align-items: center;
 }
 
+.formularioteste{
+  width: 100%;
+}
+
 .right-cadastro {
   width: 50vw;
   height: 100vh;

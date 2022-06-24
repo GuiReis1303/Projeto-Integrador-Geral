@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCertificate, faClapperboard, faDownload, faMobileAndroid, faNewspaper, faCamera, faFileVideo, faPenToSquare   } from "@fortawesome/free-solid-svg-icons";
 import { faCss3, faHtml5, faJs, faReact, } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Curso_DesignC = () => {
     require('./CarouselCursos.css');
@@ -45,7 +46,7 @@ const Curso_DesignC = () => {
                                 alt="Primeiro slide"
                                 />
                                 <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Ver mais</button>
+                                    <Link to={'/Curso_Photoshop'}><button className="botao-ver-mais">Ver mais</button></Link>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -58,7 +59,7 @@ const Curso_DesignC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>48 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Ver mais</button>                            
+                                <Link to={'/Curso_Photoshop'}><button>Ver mais</button></Link>                           
                             </div>
                         </div>
                     </Carousel.Item>
@@ -71,7 +72,7 @@ const Curso_DesignC = () => {
                                 alt="Segundo slide"
                                 />
                                 <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Ver mais</button>
+                                    <button className="botao-ver-mais">Em breve</button>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -84,7 +85,7 @@ const Curso_DesignC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>17 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Ver mais</button>                            
+                                <button>Em breve</button>                            
                             </div>
                         </div>
                     </Carousel.Item>
@@ -97,7 +98,7 @@ const Curso_DesignC = () => {
                                 alt="Terceiro slide"
                                 />
                                 <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Ver mais</button>
+                                    <button className="botao-ver-mais">Em breve</button>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -110,7 +111,7 @@ const Curso_DesignC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>31 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Ver mais</button>                            
+                                <button>Em breve</button>                            
                             </div>
                         </div>
                     </Carousel.Item>

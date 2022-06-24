@@ -1,8 +1,11 @@
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { ReactNotifications } from 'react-notifications-component'
+import { Store } from 'react-notifications-component';
 
 const Whats = () => {
+
     require('./Whats.css')
     return ( 
         <div className="fab">

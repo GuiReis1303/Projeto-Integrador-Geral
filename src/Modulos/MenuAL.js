@@ -5,6 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 
 const MenuAL = () => {
+
     require('../Styles/MenuAL.css');
     return (
         <div className="menuALgeral">
@@ -15,11 +16,11 @@ const MenuAL = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto"/>
                         <Nav className="me-auto testes13">
-                            <Nav.Link href="/" className="editMenuALH1">Home</Nav.Link>
-                            <Nav.Link href="/Assinatura" className="editMenuALH1">Assinatura</Nav.Link>
-                            <Nav.Link href="/Cursos" className="editMenuALH1">Cursos</Nav.Link>
-                            <Nav.Link href="/Comunidade" className="editMenuALH1">Comunidade</Nav.Link>
-                            <Nav.Link href="/FAQ" className="editMenuALH1">FAQ</Nav.Link>
+                            <Nav.Link href="/" className="editMenuALH1" id="Home">Home</Nav.Link>
+                            <Nav.Link href="/Assinatura" className="editMenuALH1" id="Assinatura">Assinatura</Nav.Link>
+                            <Nav.Link href="/Cursos" className="editMenuALH1" id="Cursos">Cursos</Nav.Link>
+                            <Nav.Link href="/Comunidade" className="editMenuALH1" id="Comunidade">Comunidade</Nav.Link>
+                            <Nav.Link href="/FAQ" className="editMenuALH1" id="FAQ">FAQ</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link href="/Cadastro" className="editMenuALH2"><button className="editMenuALH2-button1">Cadastro</button></Nav.Link>
