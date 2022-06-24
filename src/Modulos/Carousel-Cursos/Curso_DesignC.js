@@ -19,7 +19,7 @@ const Curso_DesignC = () => {
                                 src={require("./Imagens/designCarousel.png")}
                                 alt="Slide Inicial"
                                 />
-                                <div className="caixa-botao-vermais">
+                                <div className="botaocursos-celular">
                                     <h6>Design</h6>
                                 </div>
                             </div>
@@ -45,8 +45,8 @@ const Curso_DesignC = () => {
                                 src={require("./Imagens/design.png")}
                                 alt="Primeiro slide"
                                 />
-                                <div className="caixa-botao-vermais">
-                                    <Link to={'/Curso_Photoshop'}><button className="botao-ver-mais">Ver mais</button></Link>
+                                <div className="botaocursos-celular">
+                                    <Link to={'/Curso_Photoshop'}><button id="botaopscolor" className="botao-ver-mais">Ver mais</button></Link>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -59,7 +59,7 @@ const Curso_DesignC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>48 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <Link to={'/Curso_Photoshop'}><button>Ver mais</button></Link>                           
+                                <Link to={'/Curso_Photoshop'}><button id="botaopscolor">Ver mais</button></Link>                           
                             </div>
                         </div>
                     </Carousel.Item>
@@ -71,8 +71,8 @@ const Curso_DesignC = () => {
                                 src={require("./Imagens/designpr.png")}
                                 alt="Segundo slide"
                                 />
-                                <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Em breve</button>
+                                <div className="botaocursos-celular">
+                                    <button id="botaafftercolor" className="botao-ver-mais">Em breve</button>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -85,7 +85,7 @@ const Curso_DesignC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>17 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Em breve</button>                            
+                                <button id="botaopremierecolor">Em breve</button>                            
                             </div>
                         </div>
                     </Carousel.Item>
@@ -97,8 +97,8 @@ const Curso_DesignC = () => {
                                 src={require("./Imagens/designae.png")}
                                 alt="Terceiro slide"
                                 />
-                                <div className="caixa-botao-vermais">
-                                    <button className="botao-ver-mais">Em breve</button>
+                                <div className="botaocursos-celular">
+                                    <button id="botaopremierecolor" className="botao-ver-mais">Em breve</button>
                                 </div>
                             </div>
                             <div className="caixatextocursos">
@@ -111,7 +111,7 @@ const Curso_DesignC = () => {
                                 <p2><FontAwesomeIcon icon={faDownload} className="iconCursos"/>31 recursos para download </p2>
                                 <p2><FontAwesomeIcon icon={faMobileAndroid} className="iconCursos"/>Acesso no dispositivo móvel</p2>
                                 <p2><FontAwesomeIcon icon={faCertificate} className="iconCursos"/>Certificado de conclusão </p2>
-                                <button>Em breve</button>                            
+                                <button id="botaafftercolor">Em breve</button>                            
                             </div>
                         </div>
                     </Carousel.Item>

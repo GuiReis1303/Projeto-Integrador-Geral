@@ -48,7 +48,7 @@
   width: 100%;
   padding: 1.5vw;
   border-radius: 15px;
-  background-color: #f1721e;
+  background-color: #00ff88;
   font-size: 1.15em;
   border: none;
   margin-top: 20px;
@@ -56,9 +56,11 @@
 }
 
 .caixatextocursos button:hover {
-  background-color: #d4661d;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  background-color: #00df77;
+  -webkit-transition: .2s;
+  transition: .2s;
+  padding: 2vw;
+  font-size: 1.20em;
 }
 
 .caixatextocursos p1 {
@@ -79,7 +81,31 @@
   color: #757572;
 }
 
-.caixa-botao-vermais {
+.caixatextocursos #botaopremierecolor {
+  background-color: #fa68ff;
+}
+
+.caixatextocursos #botaafftercolor {
+  background-color: #fc9fff;
+}
+
+.caixatextocursos #botaopscolor {
+  background-color: #64eef8;
+}
+
+.caixatextocursos #bjavascriptcolor {
+  background-color: #FFD83A;
+}
+
+.caixatextocursos #bhtmlcolor {
+  background-color: #F16529;
+}
+
+.caixatextocursos #bcsscolor {
+  background-color: #29A8E0;
+}
+
+.botaocursos-celular {
   display: none;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -150,15 +176,32 @@
   .caixatextocursos {
     display: none;
   }
-  .caixa-botao-vermais {
+  .botaocursos-celular {
     display: block;
   }
   .botao-ver-mais {
     width: 100%;
     border-radius: 15px;
-    background-color: #f1721e;
     font-size: 1.1em;
     border: none;
+  }
+  #bjavascriptcolor {
+    background-color: #FFD83A;
+  }
+  #botaopremierecolor {
+    background-color: #fa68ff;
+  }
+  #botaafftercolor {
+    background-color: #fc9fff;
+  }
+  #botaopscolor {
+    background-color: #64eef8;
+  }
+  #bhtmlcolor {
+    background-color: #F16529;
+  }
+  #bcsscolor {
+    background-color: #29A8E0;
   }
 }
 /*# sourceMappingURL=CarouselCursos.css.map */
