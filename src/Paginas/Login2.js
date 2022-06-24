@@ -18,25 +18,28 @@ const Login2 = (props) => {
     }
 
     const verificarDados = (obj) => {
+        console.log("Antes do IF")
         if (obj.email == ''|| obj.nick == '' || obj.senha == ''){
             alert("Erro: Algum Campo está Vazio!")
         } else{
-
+            console.log("Antes do AXIOS")
             const axios = require('axios').default;
+
+            console.log(obj)
 
             axios.post('http://localhost:3001/Usuario', obj)
             .then(function (response) {
                 console.log(response);
                 console.log(response.status)
                 if (response.status == 200){
+                    console.log("Fez o Cadastro!")
                     navigate("/")
                     navigate("/Login2")
-                    console.log("Fez o Cadastro!")
                 }
             })
             .catch(function (error) {
                 console.log(error);
-                alert("Error: Algo de Errado Não Está Certo!")
+                alert("Algo de Errado Não está Certo!5966666")
             })
 
            
