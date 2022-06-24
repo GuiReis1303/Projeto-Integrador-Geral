@@ -1,0 +1,44 @@
+.semacesso{
+    margin-top: -93px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.semacesso-right{
+    width: 50%;
+    text-align: center;
+}
+
+.semacesso-right img{
+    width: 70%;
+}
+
+.semacesso-left{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.semacesso-left-texto{
+    width: 80%;
+    color: white;
+}
+
+.semacesso-left-botao{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.semacesso-left-botao button{
+    width: 10vw;
+    padding: 10px;
+    border-radius: 37px;
+    border: none;
+}

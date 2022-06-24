@@ -23,7 +23,7 @@ const MenuAL = () => {
                             <Nav.Link href="/" className="editMenuALH1" id="Home">Home</Nav.Link>
                             <Nav.Link href="/Assinatura" className="editMenuALH1" id="Assinatura">Assinatura</Nav.Link>
                             <Nav.Link href="/Cursos" className="editMenuALH1" id="Cursos">Cursos</Nav.Link>
-                            <Nav.Link href="/Comunidade" className="editMenuALH1" id="Comunidade">Comunidade</Nav.Link>
+                            <Nav.Link href="/SemAcesso" className="editMenuALH1" id="Comunidade">Comunidade</Nav.Link>
                             <Nav.Link href="/FAQ" className="editMenuALH1" id="FAQ">FAQ</Nav.Link>
                         </Nav>
                         <Nav>

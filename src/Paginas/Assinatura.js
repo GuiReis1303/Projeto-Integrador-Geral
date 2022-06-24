@@ -47,7 +47,7 @@ const Assinatura = () => {
 
                     <div className="preco1">
                        
-                            <button>Assine agora</button>
+                            <a href="https://www.mercadopago.com.br/"><button>Assine agora</button></a>
                             <p> <b>R$8,90</b>/mês <b>R$89,90</b>/ano </p>
                                 <ul className="descricao">
                                     <li>Acesso a todos os CURSOS*</li>
@@ -60,7 +60,7 @@ const Assinatura = () => {
 
                     <div className="preco2">
                        
-                            <button>Assine agora</button>
+                            <a href="https://www.mercadopago.com.br/"><button>Assine agora</button></a>
                                 <p> <b>R$14,90</b>/mês <b>R$149,90</b>/ano </p>
                                 <ul className="descricao">
                                     <li>Acesso a todos os CURSOS*</li>
@@ -74,7 +74,7 @@ const Assinatura = () => {
                             
                     <div className="preco3">
                             
-                            <button>Assine agora</button>
+                            <a href="https://www.mercadopago.com.br/"><button>Assine agora</button></a>
                                 <p> <b>R$29,90</b>/mês <b>R$299,90</b>/ano </p>
                                     <ul className="descricao">
                                         <li>Acesso a todos os CURSOS*</li>

@@ -12,6 +12,7 @@ import Historia from "./Paginas/Historia"
 import Curso_Financas from "./Modulos/Cursos/Curso_Financas";
 import Curso_Photoshop from "./Modulos/Cursos/Curso_Photoshop";
 import MenuALogin from "./Modulos/MenuALogin"
+import SemAcesso from "./Paginas/SemAcesso";
 
 function App() {
     require('./App.css')
@@ -31,6 +32,7 @@ function App() {
                 <Route path='AulaM' element={<AulaM/>} />
                 <Route path='Historia' element={<Historia/>} />
                 <Route path="MenuALogin" element={<MenuALogin/>} />
+                <Route path="SemAcesso" element={<SemAcesso/>} />
             </Routes>
         </div>
   );

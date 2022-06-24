@@ -37,7 +37,7 @@ const Home = () => {
                             de todos os gêneros, classes e etnias.
                             </h2>
                 <div className="inicio-botao">
-                      <Link to="/Assinatura">   <button>Confira nossos Planos!</button> </Link>   
+                      <Link to="/Assinatura"><button>Confira nossos Planos!</button> </Link>   
                       <Link to="/Cursos" ><button> Conheça nossos Cursos! </button> </Link>
                 </div>
                         </p>  
