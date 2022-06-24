@@ -2,13 +2,16 @@ import React from "react";
 import MenuAL from "../Modulos/MenuAL";
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
-
+import MenuALogin from "../Modulos/MenuALogin"
 
 
 const Assinatura = () => {
+    const id = localStorage.getItem("id")
     require('../Styles/Assinatura.css')
     return ( 
         <div>
+            {id == null ? <MenuALogin/> : <MenuAL/>}
+
             <MenuAL/>
             <Whats/>
             <div className="corpoAssinatura">

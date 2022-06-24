@@ -39,7 +39,7 @@ const Login2 = (props) => {
             })
             .catch(function (error) {
                 console.log(error);
-                alert("Algo de Errado Não está Certo!5966666")
+                alert("Algo de Errado Não está Certo!")
             })
 
            
@@ -71,7 +71,7 @@ const Login2 = (props) => {
             senha: senha
 
         }
-
+        
         const axios = require('axios').default;
 
             if (obj.nick == '' || obj.senha == ''){
@@ -83,6 +83,10 @@ const Login2 = (props) => {
                     if (response.data == 0){
                         alert("Usuario ou Senha Incorretos!")
                     } else{
+
+                        const idusuario = response.data
+                        console.log(idusuario[0])
+                        localStorage.setItem("id", idusuario[0].iduser)
                         navigate("/")
                     }
                     

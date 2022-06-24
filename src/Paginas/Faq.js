@@ -5,11 +5,15 @@ import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbtack, faThumbTack } from "@fortawesome/free-solid-svg-icons";
+import MenuALogin from "../Modulos/MenuALogin"
 
 const Faq = () => {
+    const id = localStorage.getItem("id")
     require('../Styles/Faq.css')
     return ( 
         <div>
+            {id == null ? <MenuALogin/> : <MenuAL/>}
+
             <MenuAL/>
             <Whats/>
 

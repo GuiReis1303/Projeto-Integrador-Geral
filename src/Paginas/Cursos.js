@@ -5,11 +5,15 @@ import Curso_ProgC from "../Modulos/Carousel-Cursos/Curso_ProgC";
 import MenuAL from "../Modulos/MenuAL";
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
+import MenuALogin from "../Modulos/MenuALogin"
 
 const Cursos = () => {
-    
+    const id = localStorage.getItem("id")
     return ( 
+        
         <div className="geral-curso">
+            {id == null ? <MenuALogin/> : <MenuAL/>}
+
             <MenuAL/>
             <Whats/>
 
