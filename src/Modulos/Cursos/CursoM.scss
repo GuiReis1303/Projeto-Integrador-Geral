@@ -1,52 +1,54 @@
-@import "../Variables/Variables.scss";
-@import '../Styles/mixins.scss';
+@import '../../Variables/Variables.scss';
+@import '../../Styles/mixins.scss';
+
+
+.cursoRight-mobile{
+    display: none;
+}
 
 .cursoGeral{
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #332c58;
+    background:$BackgroundDarkBlue;
     height: 70vh;
-}
-
-/* CSS cursoLeft */
-
-.cursoLeft{
-    width: 45%;
-}
-
-.nomeCurso{
-    text-align: center;
-    color: $GreenColor;
-}
-
-.imagemCurso{
-    width: 40%;
-    margin: 0 auto;
-    img{
-        width: 100%;
+    &-Left{
+        width: 45%;
+       
     }
-}
-
-
-
-.boxCurso{
-    color: $WhiteColor;
-    font-size: 1.2em;
+    &-nomeCurso{
+        text-align: center;
+        color: $GreenColor;
+    }
+    &-imagemCurso{
+        width: 40%;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    &-boxCursoMobile{
+        display: none;
+    }
+        &-boxCurso{
+            color: $WhiteColor;
+            font-size: 1.2em;
+        }
 }
 
 .caixaAvaliacaoCurso{
     display: flex;
     justify-content: end;
+    &-Positiva{
+        color: green;
+        margin-right: 20px;
+    }
+
 }
 
-.avaliacaoCursoPositiva{
-    color: green;
-    margin-right: 20px;
-}
 
 .avaliacaoCursoNegativa{
-    color: red;
+    color: $GreenColor;
     margin-right: 20px;
 }
 
@@ -60,16 +62,22 @@
     align-items: center;
     text-align: end;
     overflow-y: auto;
+    &-linkAulasCursos{
+        width: 75%;
+        &-linkAulas{
+            text-decoration: none;
+            color: $GreenColor;
+            &:hover{
+                color: $GreenDarkColor;
+                transition: .3s;
+                font-size: 2rem;
+            }
+        }
+    }
 }
 
-.linkAulasCursos{
-    width: 75%;
-}
 
-.linkAulas{
-    text-decoration: none;
-    color: #00ff88;
-}
+
 
 .descricaoCurso{
     display: flex;
@@ -80,4 +88,108 @@
         font-size: $h2FontSize ;
     }
    
+}
+
+@media only screen and (max-width:450px){
+
+
+    .cursoGeral{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background:$BackgroundDarkBlue;
+        height: 190vw;
+        font-size: 4.4vw;
+        &-Left{
+            width: 60%;
+            letter-spacing: 1.5px;
+      
+           
+        }
+        &-nomeCurso{
+            font-size: 2em;
+            text-align: center;
+            color: $GreenColor;
+        }
+        &-imagemCurso{
+            width: 100%;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+        &-boxCursoMobile{
+           
+        }
+            &-boxCurso{
+                color: $WhiteColor;
+                font-size: 1.2em;
+            }
+    }
+    
+.descricaoCurso{
+display: none;
+}
+
+    .caixaAvaliacaoCurso{
+        display: flex;
+        justify-content: end;
+        &-Positiva{
+            color: green;
+            margin-right: 20px;
+        }
+    
+    }
+    
+    
+    .avaliacaoCursoNegativa{
+        color: $GreenColor;
+        margin-right: 20px;
+    }
+    
+    /* CSS cursoRight */
+    
+
+    .cursoRight-mobile{
+        margin-top: -10vw;
+        width: 45%;
+        align-items: center;
+        text-align: end;
+        overflow-y: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background:$BackgroundDarkBlue;
+        height: 70vh;
+        &-linkAulasCursos{
+            width: 75%;
+            &-linkAulas{
+                font-size: 6.5vw;
+                text-decoration: none;
+                color: $GreenColor;
+               
+            }
+        }
+    }
+
+    .cursoRight{
+      display: none;
+       
+    }
+    
+    
+    
+    
+    .descricaoCurso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $WhiteColor ;
+        h2{ 
+            font-size: $h2FontSize ;
+        }
+       
+    }
+
+
 }

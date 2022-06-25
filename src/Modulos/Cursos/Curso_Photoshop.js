@@ -12,15 +12,22 @@ const Curso_Photoshop = () => {
             <MenuAL/>
         
             <div className="cursoGeral">
-                <div className="cursoLeft">
+                <div className="cursoGeral-Left">
                     
-                        <div className="nomeCurso">
+                        <div className="cursoGeral-nomeCurso">
                             <h2>Photoshop Completo</h2>
                         </div>
-                        <div className="imagemCurso">
+                        <div className="cursoGeral-imagemCurso">
                             <img src={require("./aulaPhotoshop.png")}/>
                         </div>
-                        <div className="boxCurso">
+                        <div className="cursoGeral-boxCurso">
+                            <p>
+                                No curso de Photoshop da StationClass você poderá criar efeitos e recursos 
+                                visuais incríveis, obtendo resultados impressionantes no trabalho com design 
+                                gráfico e para web, tratamento de fotos e vídeos.
+                            </p>
+                        </div>
+                        <div className="cursoGeral-boxCursoMobile">
                             <p>
                                 No curso de Photoshop da StationClass você poderá criar efeitos e recursos 
                                 visuais incríveis, obtendo resultados impressionantes no trabalho com design 
@@ -30,15 +37,15 @@ const Curso_Photoshop = () => {
                     
 
                     <div className="caixaAvaliacaoCurso">
-                        <div className="avaliacaoCursoPositiva">
+                        <div className="caixaAvaliacaoCurso-Positiva">
                             <p><FontAwesomeIcon icon={faHeart}/>200</p>
                         </div>
                     </div>
                 </div>
 
                 <div className="cursoRight">
-                    <div className="linkAulasCursos">
-                    <p><Link to={'/AulaM'} className="linkAulas"><FontAwesomeIcon icon={faThumbtack}/> Photoshop Introdução</Link></p>
+                    <div className="cursoRight-linkAulasCursos">
+                    <p><Link to={'/AulaM'} className="cursoRight-linkAulasCursos-linkAulas"><FontAwesomeIcon icon={faThumbtack}/> Photoshop Introdução</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
@@ -46,7 +53,15 @@ const Curso_Photoshop = () => {
                     </div>
                 </div>
             </div>
-
+            <div className="cursoRight-mobile">
+                    <div className="cursoRight-mobile-linkAulasCursos">
+                    <p><Link to={'/AulaM'} className="cursoRight-mobile-linkAulasCursos-linkAulas"><FontAwesomeIcon icon={faThumbtack}/> Photoshop Introdução</Link></p>
+                    <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
+                    <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
+                    <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
+                    <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
+                    </div>
+                </div>
             <Rodape/>
         </div>
      );
