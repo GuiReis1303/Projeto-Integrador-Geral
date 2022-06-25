@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Manutencao = () => {
-    require('./SemAcesso.css')
+    require('../Styles/SemAcesso.css')
     return ( 
         <div className="semacesso">
 

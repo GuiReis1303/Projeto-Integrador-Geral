@@ -1,7 +1,6 @@
 .body {
   font-family: sans-serif;
   margin-top: -93px;
-  background: #201b2c;
 }
 
 .body * {
@@ -42,10 +41,16 @@
           flex-direction: column;
 }
 
-.left-login > h1 {
+.left-login h1 {
   font-size: 3vw;
-  color: #77ffc0;
+  color: #2f2841;
   cursor: default;
+}
+
+.left-login a {
+  font-size: 4.25vw;
+  background-color: #00ff88;
+  border-radius: 2%;
 }
 
 .left-login-image {
@@ -199,10 +204,16 @@
           flex-direction: column;
 }
 
-.right-cadastro > h1 {
+.right-cadastro h1 {
   font-size: 3vw;
-  color: #77ffc0;
+  color: #2f2841;
   cursor: default;
+}
+
+.right-cadastro a {
+  font-size: 4.25vw;
+  background-color: #00ff88;
+  border-radius: 2%;
 }
 
 .right-cadastro-image {
