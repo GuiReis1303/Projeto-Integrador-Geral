@@ -27,13 +27,7 @@ const Curso_Photoshop = () => {
                                 gráfico e para web, tratamento de fotos e vídeos.
                             </p>
                         </div>
-                        <div className="cursoGeral-boxCursoMobile">
-                            <p>
-                                No curso de Photoshop da StationClass você poderá criar efeitos e recursos 
-                                visuais incríveis, obtendo resultados impressionantes no trabalho com design 
-                                gráfico e para web, tratamento de fotos e vídeos.
-                            </p>
-                        </div>
+                        
                     
 
                     <div className="caixaAvaliacaoCurso">

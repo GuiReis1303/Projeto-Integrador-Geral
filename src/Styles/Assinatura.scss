@@ -1,5 +1,5 @@
 @import "../Variables/Variables.scss";
-@import '../Styles/mixins.scss';
+@use '../Styles/mixins.scss';
 
 @mixin BorderRadiusCaixa{
     border-radius:2.5em 2.5em  0em 0em ;
@@ -22,60 +22,21 @@
    
 }
 @mixin widthImagemASS{
-    width: 100%;
-    border-radius: 50%;
+    width: 60%;
+  
 
 }
 @mixin effectImgASS{
+  
+    width: 62%; 
+    transition: .5s; 
+}
+@mixin HoverBotaoPreco{
     transition: 0.15s;
     border: none; 
-    transition: 1.25s; 
+    transition: 0.25s; 
 }
-
-
-
-.corpoAssinatura{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-.corpoAssinatura b{
-    font-size: 1.25vw;
-}
-.corpoAssinatura h2{
-    font-size: 2.5vw;
-}
-.corpoAssinatura ul{
-
-    font-size: 1.75vw;
-    padding-left: 10%;
-    margin: 5% 0% 0% 1%;
-}
-.corpoAssinatura li{
-    text-align: start;
-    font-size: 1.25vw;
-}
-
-
-.imgCP{
-   @include widthImagemASS();
-}
-.imgCP:hover{
-    box-shadow: 7px 7px #36cab6a8;
-   @include effectImgASS();
-    
-}
-.imgCG{
-    @include widthImagemASS();
-   
-}
-.imgCG:hover{
-    box-shadow: 7px 7px #ca8012;
-    @include effectImgASS();
-}
-
-
-.meio{
-    
+@mixin MeioGrid{
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 40vh 47.50vh 10vh;
@@ -86,433 +47,189 @@
     text-align: center;
     padding: 3% 6%;
     margin:10% ;
-    
-   
+}
+
+.corpoAssinatura{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    b{ font-size: 1.5vw;  }
+    h2{  font-size: 2.5vw;  }
+    ul{ font-size: 1.75vw;  padding-left: 10%;  margin: 5% 0% 0% 1%;  }
+    li{  text-align: start;  font-size: 1.25vw;  }
+    p {font-size: 1.3vw;}
 }
 
 
-.caixa1{
-    
-   color: #cdd3d3;
-   text-shadow: 2px 2px #81818157;
-    background-color: #2b2b2b;
-    grid-area: c1 ;
-    @include BorderRadiusCaixa();
-    
-     
-
+.imgCG{
+    @include widthImagemASS();
+&:hover{
+    @include effectImgASS();
 }
-.caixa2{
-    
-    color: #001e80 ;
-    text-shadow: 2px 2px #ffffff57;
-    background-color: #9C528B ;
-    grid-area: c2 ;
-    @include BorderRadiusCaixa();
-    
-   
-    
-    
 }
-.caixa3{
-    color: #cccccc ;
-    text-shadow: 1.5px 1.5px #120583;
-    background-color: #2f2f6d;
-    grid-area: c3 ;
-    @include BorderRadiusCaixa();
-   
-    
-}
-
-
-/* preço Plano Prata e o funcionamento do botão */
-.preco1{
-    text-shadow: 1px 1px #131313b2;
-    color:#cccccc ;
-    background-color: #222222;
-    grid-area: preco1 ;
-         @include BorderRadiusPreco();
-        button{
-            background-color: $NavyBlueColor;
-            @include botaoPreco();
-                &:hover {
-                    background: #38a193; 
-                    transition: 0.15s;
-                    border: none; 
-                    transition: 0.25s; 
-                }
-        }
-}
-.preco2{
-    color:#cccccc ;
-    text-shadow: 1px 1px #131313b2;
-    background-color: #934D83;
-    grid-area: preco2 ;
-    @include BorderRadiusPreco();
-        button{
-            background-color: #001e80;
-            @include botaoPreco();
-
-                &:hover{
-                    background: #001353; 
-                    transition: 0.15s;
-                    border: none; 
-                    transition: 0.25s;  
-                }
-        }
-}
-
-.preco3{
-    text-shadow: 1px 1px #131313b2;
-    color: #cccccc ;
-    background-color: #28285c;
-    grid-area: preco3 ;
-    @include BorderRadiusPreco();
-        button{
-            background-color: #0dbe75;
-            @include botaoPreco();
-                &:hover{
-                    background: #0a945a; 
-                    transition: 0.15s;
-                    border: none; 
-                    transition: 0.25s; 
-                }
-        }
-
-
-}
-    @media only screen and (max-width:450px){
-        .corpoAssinatura b{
-            font-size: 4.5vw;
-        }
-        .corpoAssinatura h2{
-            font-size: 7.5vw;
-        }
-        .corpoAssinatura ul{
-            font-size: 3vw;
-            
-            margin: 0 auto;
-        }
-        .corpoAssinatura li{
-           width: 80%;
-           margin: 0% 0% 7.5px;
-            font-size: 3.25vw;
-        }
-    
-    
-    .meio{
-        display: grid;
-        grid-template-columns: 3fr 3fr ;
-        grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
-        grid-template-areas:   "c1  c1"
-                                "preco1 preco1"
-                                "c3 c3"
-                                "preco3 preco3"
-                                "c2 c2"
-                                "preco2 preco2" ;
-        text-align: center;
-        padding: 3% 5%;
-        margin:8% ;
-    }    
-    .preco1{
-        
-        color:#e9e9e9 ;
-        background-color: #222222;
-        grid-area: preco1 ;
-        border-radius: 0em 0em 2.5em 2.5em;
-        
-    }
-    .preco1 button{
-        
-        font-size: 8vw;
-        border-radius: 35px;
-        border: none;
-        padding: 2% 8% 2% 8%;
-        background-color: #36cab6 ;
-        color: #e9e9e9;
-        cursor: pointer;
-        text-shadow: 2px 2px #92929248;
-       
-        
-        
-    }
-    .preco2{
-        
-        
-        background-color: #ffffff;
-        grid-area: preco2 ;
-        border-radius: 0em 0em 2.5em 2.5em;
-    }
-    
-    .preco2 button{
-      
-        font-size: 8vw;
-        border-radius: 35px;
-        border: none;
-        padding: 2% 8% 2% 8%;
-        background-color: #cf9a36 ;
-        color: #e9e9e9;
-        cursor: pointer;
-        text-shadow: 2px 2px #92929248;
-        box-shadow: 4px 4px #e9e9e9;
-    }
-    .preco2 button:hover{
-       
-        background: #b6852c; 
-        transition: 0.15s;
-        border: none; 
-        transition: 0.25s; 
-        
-    }
-    .preco3{
-        
-        color: var(--avançadoPremium) ;
-        background-color: #28285c;
-        grid-area: preco3 ;
-        border-radius: 0em 0em 2.5em 2.5em;
-    }
-    
-    .preco3 button{
-      
-        font-size: 8vw;
-        border-radius: 35px;
-        border: none;
-        padding: 2% 8% 2% 8%;
-        background-color: var(--avançadoPremium) ;
-        color: #e9e9e9;
-        cursor: pointer;
-        text-shadow: 2px 2px #92929248;
-        box-shadow: 4px 4px #e9e9e9;
-    }
-    .preco3 button:hover{
-       
-        background: #b6852c; 
-        transition: 0.15s;
-        border: none; 
-        transition: 0.25s; 
-    }
-    
-    .caixa1{
-        
-        color: #cdd3d3;
-         background-color: #2b2b2b;
-         grid-area: c1 ;
-         border-radius: 2.5em 2.5em 0em 0em;
-         margin-top: 2em;
-         box-shadow: none;
-     
-     }
-     .caixa2{
-         
-         color: #cf9a36 ;
-         background-color: var(--avançadoCor);
-         grid-area: c2 ;
-         border-radius: 2.5em 2.5em 0em 0em;
-         box-shadow: none;
-         margin-top: 2em;
-        
-         
-         
-     }
-     .caixa3{
-         
-         color: var(--avançadoPremium) ;
-         background-color: #2f2f6d;
-         grid-area: c3 ;
-         border-radius: 2.5em 2.5em 0em 0em;
-         box-shadow: none;
-         margin-top: 2em;
-     }
-     .imgCP{
-        width: 55vw;
-        border-radius: 50%;
-        opacity: 15%;
-    }
-    .imgCP:hover{
-        box-shadow: 7px 7px #36cab6a8;
-        transition: 0.15s;
-        border: none; 
-        transition: 1.25s; 
-        
-    }
-    .imgCG{
-        width: 55vw;
-        border-radius: 50%;
-       
-    }
-    .imgCG:hover{
-        box-shadow: 7px 7px #ca8012;
-        transition: 0.15s;
-        border: none; 
-        transition: 1.25s; 
-
-    }
-}
-
-@media only screen and (max-width:950px){
-    .corpoAssinatura b{
-        font-size: 5vw;
-    }
-    .corpoAssinatura h2{
-        font-size: 7.5vw;
-    }
-    .corpoAssinatura ul{
-        font-size: 3vw;
-        
-        margin: 0 auto;
-    }
-    .corpoAssinatura li{
-       width: 80%;
-       margin: 0% 0% 7.5px;
-        font-size: 3.25vw;
-    }
 
 
 .meio{
-    display: grid;
-    grid-template-columns: 3fr 3fr ;
-    grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
-    grid-template-areas:   "c1  c1"
-                            "preco1 preco1"
-                            "c3 c3"
-                            "preco3 preco3"
-                            "c2 c2"
-                            "preco2 preco2" ;
-    text-align: center;
-    padding: 3% 5%;
-    margin:8% ;
-}    
-.preco1{
-    
-    color:#e9e9e9 ;
-    background-color: #222222;
-    grid-area: preco1 ;
-    border-radius: 0em 0em 2.5em 2.5em;
-    
-}
-.preco1 button{
-    
-    font-size: 6vw;
-    border-radius: 35px;
-    border: none;
-    padding: 2% 8% 2% 8%;
-    background-color: #36cab6 ;
-    color: #e9e9e9;
-    cursor: pointer;
-    text-shadow: 2px 2px #92929248;
-   
-    
-    
-}
-.preco2{
-    
-    
-    background-color: #ffffff;
-    grid-area: preco2 ;
-    border-radius: 0em 0em 2.5em 2.5em;
+    @include MeioGrid();
+    button{@include botaoPreco(); @include HoverBotaoPreco();}
+
+            &-caixa1{
+                color: #cdd3d3;
+                background-color: #255b60;
+                grid-area: c1 ;
+                @include BorderRadiusCaixa();
+            }
+
+                    &-caixa2{
+                        color: #adafb2 ;
+                        background-color: #2b3541 ;
+                        grid-area: c2 ;
+                        @include BorderRadiusCaixa();
+                    }
+
+                            &-caixa3{
+                                color: #994a00 ;
+                                background-color: #FAEBD7;
+                                grid-area: c3 ;
+                                @include BorderRadiusCaixa();
+                            }
+
+            &-preco1{
+                text-shadow: 1px 1px #131313b2;
+                color:#cccccc ;
+                background-color: #1f5055;
+                grid-area: preco1 ;
+                    @include BorderRadiusPreco();
+                    button{ background-color: #977044;
+                            &:hover { background: #875835;  }
+                        }
+            }
+
+                    &-preco2{
+                        color:#cccccc ;
+                        text-shadow: 1px 1px #131313b2;
+                        background-color: #222a35;
+                        grid-area: preco2 ;
+                        @include BorderRadiusPreco();
+                            button{ background-color: #adafb2;
+                                    &:hover{  background: #828487;  }
+                                }
+                    }
+
+                            &-preco3{
+                                text-shadow: 0.5px 0.5px #994a00;
+                                color: #cccccc ;
+                                background-color: #ebdbc7;
+                                grid-area: preco3 ;
+                                li,b{     color: #994a00; }
+                                p{ color: black }
+                                @include BorderRadiusPreco();
+                                    button{  background-color: #ebbf31;
+                                            &:hover{  background: #cc9d2a;   }
+                                        }
+
+                            }
 }
 
-.preco2 button{
-  
-    font-size: 6vw;
-    border-radius: 35px;
-    border: none;
-    padding: 2% 8% 2% 8%;
-    background-color: #cf9a36 ;
-    color: #e9e9e9;
-    cursor: pointer;
-    text-shadow: 2px 2px #92929248;
-    box-shadow: 4px 4px #e9e9e9;
-}
-.preco2 button:hover{
-   
-    background: #b6852c; 
-    transition: 0.15s;
-    border: none; 
-    transition: 0.25s; 
+
+    @media only screen and (max-width:450px){
+        .imgCG{
+            @include widthImagemASS();
+           
+        }
+        .imgCG:hover{
+            
+            @include effectImgASS();
+        }
+
+        .corpoAssinatura{
+            b{ font-size: 6.5vw;   }
+            h2{  font-size: 7.5vw; }
+            ul{ font-size: 4vw;   margin: 0 auto;   }
+            li{  width: 80%;  margin: 0% 0% 7.5px; font-size: 3.5vw;  }
+            p {font-size: 5.3vw;}
+        }
+        
     
-}
-.preco3{
     
-    color: var(--avançadoPremium) ;
-    background-color: #28285c;
-    grid-area: preco3 ;
-    border-radius: 0em 0em 2.5em 2.5em;
+    
+        
+    .meio{
+        display: grid;
+        grid-template-columns: 3fr 3fr ;
+        grid-template-rows: 63vw 90vw 63vw 90vw 63vw 90vw;
+        grid-template-areas:   "c1  c1"
+                                "preco1 preco1"
+                                "c2 c2"
+                                "preco2 preco2"
+                                "c3 c3"
+                                "preco3 preco3" ;
+        text-align: center;
+        padding: 3% 5%;
+        margin:8% ;
+
+      
+        button{@include botaoPreco();
+            font-size: 8vw;
+             @include HoverBotaoPreco();}
+           
+                &-caixa1{
+                    color: #cdd3d3;
+                    background-color: #255b60;
+                    grid-area: c1 ;
+                    @include BorderRadiusCaixa();
+                }
+    
+                        &-caixa2{
+                            color: #adafb2 ;
+                            background-color: #2b3541 ;
+                            grid-area: c2 ;
+                            @include BorderRadiusCaixa();
+                        }
+    
+                                &-caixa3{
+                                    color: #994a00 ;
+                                    background-color: #FAEBD7;
+                                    grid-area: c3 ;
+                                    @include BorderRadiusCaixa();
+                                }
+    
+                &-preco1{
+                    text-shadow: 1px 1px #131313b2;
+                    color:#cccccc ;
+                    background-color: #1f5055;
+                    grid-area: preco1 ;
+                        @include BorderRadiusPreco();
+                        button{ background-color: #977044;
+                           
+                                &:hover { background: #875835;  }
+                            }
+                }
+    
+                        &-preco2{
+                            color:#cccccc ;
+                            text-shadow: 1px 1px #131313b2;
+                            background-color: #222a35;
+                            grid-area: preco2 ;
+                            @include BorderRadiusPreco();
+                                button{ background-color: #adafb2;
+                                        &:hover{  background: #828487;  }
+                                    }
+                        }
+    
+                                &-preco3{
+                                    text-shadow: 1px 1px #131313b2;
+                                    color: #cccccc ;
+                                    background-color: #ebdbc7;
+                                    grid-area: preco3 ;
+                                    li,b{     color: #994a00; }
+                                    p{ color: black }
+                                    @include BorderRadiusPreco();
+                                        button{  background-color: #ebbf31;
+                                                &:hover{  background: #cc9d2a;   }
+                                            }
+    
+                                }
+    }
+    
 }
 
-.preco3 button{
-  
-    font-size: 6vw;
-    border-radius: 35px;
-    border: none;
-    padding: 2% 8% 2% 8%;
-    background-color: var(--avançadoPremium) ;
-    color: #e9e9e9;
-    cursor: pointer;
-    text-shadow: 2px 2px #92929248;
-    box-shadow: 4px 4px #e9e9e9;
-}
-.preco3 button:hover{
-   
-    background: #b6852c; 
-    transition: 0.15s;
-    border: none; 
-    transition: 0.25s; 
-}
 
-.caixa1{
-    
-    color: #cdd3d3;
-     background-color: #2b2b2b;
-     grid-area: c1 ;
-     border-radius: 2.5em 2.5em 0em 0em;
-     margin-top: 2em;
-     box-shadow: none;
- 
- }
- .caixa2{
-     
-     color: #cf9a36 ;
-     background-color: var(--avançadoCor);
-     grid-area: c2 ;
-     border-radius: 2.5em 2.5em 0em 0em;
-     box-shadow: none;
-     margin-top: 2em;
-    
-     
-     
- }
- .caixa3{
-     
-     color: var(--avançadoPremium) ;
-     background-color: #2f2f6d;
-     grid-area: c3 ;
-     border-radius: 2.5em 2.5em 0em 0em;
-     box-shadow: none;
-     margin-top: 2em;
- }
- .imgCP{
-    width: 55vw;
-    border-radius: 50%;
-    opacity: 15%;
-}
-.imgCP:hover{
-    box-shadow: 7px 7px #36cab6a8;
-    transition: 0.15s;
-    border: none; 
-    transition: 1.25s; 
-    
-}
-.imgCG{
-    width: 55vw;
-    border-radius: 50%;
-   
-}
-.imgCG:hover{
-    box-shadow: 7px 7px #ca8012;
-    transition: 0.15s;
-    border: none; 
-    transition: 1.25s; 
-
-}
-}

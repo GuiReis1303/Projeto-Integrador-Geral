@@ -17,7 +17,7 @@ const Home = () => {
             
             <Whats/>   
             <div className="geral">
-           
+            <div className="branco"></div>
                 <div className="inicio">
              
                     <div>
@@ -44,12 +44,13 @@ const Home = () => {
                         </div>
                 </div>
                 <div className="branco"></div>
+               
                 <Carousel fade>
                     <Carousel.Item>
                         <div className="caixaimagem">
                         <img 
                         className="caixaimagem-carousel"
-                        src="https://i.imgur.com/IDmIhUe.png"
+                        src="https://i.imgur.com/4zMQL28.png"
                         alt="First slide"
                         />
                         <Carousel.Caption>
