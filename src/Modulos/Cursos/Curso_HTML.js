@@ -6,6 +6,11 @@ import MenuAL from "../MenuAL";
 import Rodape from "../Rodape";
 
 const Curso_HTML = () => {
+
+    const colocarIDAula = () => {
+        localStorage.setItem("idaula", 1)
+    }
+
     require('./CursoM.css')
     return ( 
         <div>
@@ -24,8 +29,7 @@ const Curso_HTML = () => {
                             <p>
                                 Curso de HTML Básico da StationClass. O HTML é uma linguagem de marcação 
                                 utilizada para a criação de páginas na web. Sua principal finalidade é 
-                                estruturar o conteúdo  disponibilizado em uma página. O Objetivo deste curso
-                                é guiar você pelos principais elementos do HTML na prática.
+                                estruturar o conteúdo  disponibilizado em uma página.
                             </p>
                         </div>
                        
@@ -39,7 +43,7 @@ const Curso_HTML = () => {
 
                 <div className="cursoRight">
                     <div className="cursoRight-linkAulasCursos">
-                    <p><Link to={'/AulaM'} className="cursoRight-linkAulasCursos-linkAulas"><FontAwesomeIcon icon={faThumbtack}/> HTML Introdução</Link></p>
+                    <p onClick={() => colocarIDAula()}><Link to={'/AulaM'} className="cursoRight-linkAulasCursos-linkAulas"><FontAwesomeIcon icon={faThumbtack}/> HTML Introdução</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>

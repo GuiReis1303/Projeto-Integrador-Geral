@@ -6,6 +6,11 @@ import MenuAL from "../MenuAL";
 import Rodape from "../Rodape";
 
 const Curso_Financas = () => {
+
+    const colocarIDAula = () => {
+        localStorage.setItem("idaula", 2)
+    }
+
     require('./CursoM.css')
     return ( 
         <div>
@@ -37,7 +42,7 @@ const Curso_Financas = () => {
 
                 <div className="cursoRight">
                     <div className="cursoRight-linkAulasCursos">
-                    <p><Link to={'/AulaM'} className="cursoRight-linkAulasCursos-linkAulas"><FontAwesomeIcon icon={faThumbtack}/> HTML Introdução</Link></p>
+                    <p onClick={() => colocarIDAula()}><Link to={'/AulaM'} className="cursoRight-linkAulasCursos-linkAulas"><FontAwesomeIcon icon={faThumbtack}/> HTML Introdução</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
                     <p><Link to={''} className="linkAulasD"><FontAwesomeIcon icon={faThumbtack}/> Em Breve</Link></p>
