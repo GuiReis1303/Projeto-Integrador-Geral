@@ -1,8 +1,7 @@
 import React from "react";
-import MenuAL from "../Modulos/MenuAL";
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
-import MenuALogin from "../Modulos/MenuALogin"
+import VerificaMenu from "../Modulos/VerificaMenu";
 
 
 const Assinatura = () => {
@@ -10,9 +9,7 @@ const Assinatura = () => {
     require('../Styles/Assinatura.css')
     return ( 
         <div>
-            {id == null ? <MenuALogin/> : <MenuAL/>}
-
-            <MenuAL/>
+            <VerificaMenu/>
             <Whats/>
             <div className="corpoAssinatura">
                

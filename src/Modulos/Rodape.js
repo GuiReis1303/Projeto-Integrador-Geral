@@ -24,7 +24,7 @@ const Rodape = () => {
 
                 <div className="rodape-sobrenos">
                     <h3>Sobre-nós</h3><br/>
-                    <Link href="/Historia" className="rodape-edit" to="/Historia">Historia</Link><br/>
+                    <Link href="/Manutencao" className="rodape-edit" to="/Manutencao">Historia</Link><br/>
                 </div>
 
                 <div className="rodape-suporte">

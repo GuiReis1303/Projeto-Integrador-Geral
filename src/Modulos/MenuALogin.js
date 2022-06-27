@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 
-const MenuAL = () => {
+const MenuALogin = () => {
 
     require('../Styles/MenuAL.css');
     return (
@@ -18,6 +18,8 @@ const MenuAL = () => {
                         <Nav className="me-auto testes13">
                             <Nav.Link href="/" className="editMenuALH1" id="Home">Home</Nav.Link>
                             <Nav.Link href="/Assinatura" className="editMenuALH1" id="Assinatura">Assinatura</Nav.Link>
+                            <Nav.Link href="/Cursos" className="editMenuALH1" id="Cursos">Cursos</Nav.Link>
+                            <Nav.Link href="/Comunidade" className="editMenuALH1" id="Comunidade">Comunidade</Nav.Link>
                             <Nav.Link href="/FAQ" className="editMenuALH1" id="FAQ">FAQ</Nav.Link>
                         </Nav>
                         <Nav>
@@ -31,4 +33,4 @@ const MenuAL = () => {
      );
 }
  
-export default MenuAL;
+export default MenuALogin;

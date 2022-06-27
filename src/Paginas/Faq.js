@@ -1,20 +1,16 @@
 import React from "react";
-import MenuAL from "../Modulos/MenuAL"
-import { Navbar } from "react-bootstrap";
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbtack, faThumbTack } from "@fortawesome/free-solid-svg-icons";
-import MenuALogin from "../Modulos/MenuALogin"
+import VerificaMenu from "../Modulos/VerificaMenu";
 
 const Faq = () => {
     const id = localStorage.getItem("id")
     require('../Styles/Faq.css')
     return ( 
         <div>
-            {id == null ? <MenuALogin/> : <MenuAL/>}
-
-            <MenuAL/>
+            <VerificaMenu/>
             <Whats/>
 
             <div className="corpoAssinaturaFAQ">

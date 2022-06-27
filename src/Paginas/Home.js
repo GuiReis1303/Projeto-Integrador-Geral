@@ -1,20 +1,17 @@
 import React from "react";
-import MenuAL from "../Modulos/MenuAL";
 import Carousel from 'react-bootstrap/Carousel'
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
 import { Link } from "react-router-dom";
-import MenuALogin from "../Modulos/MenuALogin"
+import VerificaMenu from "../Modulos/VerificaMenu";
 
 const Home = () => {
-        
-    const id = localStorage.getItem("id")
 
     require('../Styles/Home.css')
     return ( 
-        <div>   
-            {id == null ? <MenuALogin/> : <MenuAL/>}
-            
+        <div>
+            <VerificaMenu/>
+
             <Whats/>   
             <div className="geral">
             <div className="branco"></div>
