@@ -3,6 +3,10 @@
   margin-top: -93px;
 }
 
+.formularioteste {
+  width: 100%;
+}
+
 .body * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

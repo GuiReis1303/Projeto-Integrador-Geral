@@ -76,7 +76,15 @@
     }
 }
 
-
+.linkAulasD{
+    text-decoration: none;
+    color: $GreenColor;
+    &:hover{
+        color: $GreenDarkColor;
+        transition: .3s;
+        font-size: 1.1rem;
+    }
+}
 
 
 .descricaoCurso{
@@ -167,11 +175,21 @@ display: none;
         &-linkAulasCursos{
             width: 75%;
             &-linkAulas{
-                font-size: 4.5vw;
+                font-size: 6.5vw;
                 text-decoration: none;
                 color: $GreenColor;
                
             }
+        }
+    }
+
+    .linkAulasD{
+        text-decoration: none;
+        color: $GreenColor;
+        &:hover{
+            color: $GreenDarkColor;
+            transition: .3s;
+            font-size: 1.1rem;
         }
     }
 

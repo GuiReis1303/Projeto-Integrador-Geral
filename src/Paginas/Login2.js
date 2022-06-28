@@ -126,7 +126,7 @@ const Login2 = (props) => {
             </div>
             <div className={"main-cadastro" + (props.cadastro ? "" : " invisivel")} id="cadastro">
             <div className="rigth-cadastro" id="imgCadastroCima">
-                    <h1>  Cadastre-se<br/> E comece a estudar</h1>
+                    <h1>  Cadastre-se<br/> E comece a estudar!</h1>
                     <img src={require("./Imagens/aulaonline.png")} alt="Aula Online Animação" className="left-login-image"/>
                 </div>
                 <div className="left-cadastro">
@@ -151,7 +151,7 @@ const Login2 = (props) => {
                     </div>
                 </div>
                 <div className="right-cadastro" id="imgCadastroBaixo">
-                    <h1> <a> Cadastre-se </a><br/> E comece a estudar</h1>
+                    <h1> <a> Cadastre-se </a><br/> E comece a estudar!</h1>
                     <img src={require("./Imagens/aulaonline.png")} alt="Aula Online Animação" className="left-login-image"/>
                 </div>
             </div>

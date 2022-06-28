@@ -93,6 +93,18 @@
   font-size: 2rem;
 }
 
+.linkAulasD {
+  text-decoration: none;
+  color: #00ff88;
+}
+
+.linkAulasD:hover {
+  color: #017244;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 1.1rem;
+}
+
 .descricaoCurso {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,9 +202,19 @@
     width: 75%;
   }
   .cursoRight-mobile-linkAulasCursos-linkAulas {
-    font-size: 4.5vw;
+    font-size: 6.5vw;
     text-decoration: none;
     color: #00ff88;
+  }
+  .linkAulasD {
+    text-decoration: none;
+    color: #00ff88;
+  }
+  .linkAulasD:hover {
+    color: #017244;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-size: 1.1rem;
   }
   .cursoRight {
     display: none;

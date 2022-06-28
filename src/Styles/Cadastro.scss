@@ -6,6 +6,9 @@
   
 }
 
+.formularioteste{
+    width: 100%;
+    }
 .body * {
     box-sizing: border-box;
 }
@@ -273,7 +276,6 @@
 .link-icon:hover{
     color: #01ce6e;
 }
-
 
 @media only screen and (max-width: 950px){
     .card-login{
