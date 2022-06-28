@@ -39,6 +39,13 @@
   border: none;
 }
 
+.botaoPositivo:hover {
+  color: #00ff88;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 33px;
+}
+
 .nomeAula {
   margin-left: 5%;
   color: #00ff88;
