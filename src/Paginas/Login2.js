@@ -3,9 +3,121 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
+import { ReactNotifications, Store } from 'react-notifications-component';
+import "animate.css"
+import 'react-notifications-component/dist/theme.css'
+
 const Login2 = (props) => {
-        const navigate = useNavigate()
-    
+    const navigate = useNavigate()
+
+    const botaoSucessoLogin = () =>{
+        Store.addNotification({
+            title: "--- Login Sucesso ---",
+            message: "Logado com Sucesso!",
+            type: "success",
+            container: "top-right",
+            insert: "top",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
+
+            dismiss: {
+                duration: 2000,
+                showIcon: true
+            },
+            width: 600
+        })
+    }
+
+    const botaoErroLoginoVazio = () =>{
+        Store.addNotification({
+            title: "--- Login Vazio ---",
+            message: "Algum Campo está Vazio! Preencha e tente novamente!",
+            type: "warning",
+            container: "top-right",
+            insert: "top",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
+
+            dismiss: {
+                duration: 2000,
+                showIcon: true
+            },
+            width: 600
+        })
+    }
+
+    const botaoErroLogin = () =>{
+        Store.addNotification({
+            title: "--- Login Erro ---",
+            message: "Usuário ou Senha Incorretos!",
+            type: "danger",
+            container: "top-right",
+            insert: "top",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
+
+            dismiss: {
+                duration: 2000,
+                showIcon: true
+            },
+            width: 600
+        })
+    }
+
+
+    const botaoSucessoCadastro = () =>{
+        Store.addNotification({
+            title: "--- Cadastro Sucesso ---",
+            message: "Usuário Cadastrado com Sucesso!",
+            type: "success",
+            container: "top-right",
+            insert: "top",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
+
+            dismiss: {
+                duration: 2000,
+                showIcon: true
+            },
+            width: 600
+        })
+    }
+
+    const botaoErroCadastroVazio = () =>{
+        Store.addNotification({
+            title: "--- Cadastro Vazio ---",
+            message: "Algum Campo está Vazio! Preencha e tente novamente!",
+            type: "warning",
+            container: "top-right",
+            insert: "top",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
+
+            dismiss: {
+                duration: 2000,
+                showIcon: true
+            },
+            width: 600
+        })
+    }
+
+    const botaoErroCadastro = () =>{
+        Store.addNotification({
+            title: "--- Cadastro Erro ---",
+            message: "Não foi Possível Cadastrar o Usuário!",
+            type: "danger",
+            container: "top-right",
+            insert: "top",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
+
+            dismiss: {
+                duration: 2000,
+                showIcon: true
+            },
+            width: 600
+        })
+    }
 
     const mudarCadastro = () =>{
         document.getElementById('cadastro').classList.remove('invisivel');
@@ -20,7 +132,7 @@ const Login2 = (props) => {
     const verificarDados = (obj) => {
         console.log("Antes do IF")
         if (obj.email == ''|| obj.nick == '' || obj.senha == ''){
-            alert("Erro: Algum Campo está Vazio!")
+            botaoErroCadastroVazio();
         } else{
             console.log("Antes do AXIOS")
             const axios = require('axios').default;
@@ -32,14 +144,15 @@ const Login2 = (props) => {
                 console.log(response);
                 console.log(response.status)
                 if (response.status == 200){
-                    console.log("Fez o Cadastro!")
-                    navigate("/")
-                    navigate("/Login2")
+                    botaoSucessoCadastro()
+                    setTimeout(() => {
+                        navigate("/")
+                    }, 1000);
                 }
             })
             .catch(function (error) {
                 console.log(error);
-                alert("Algo de Errado Não está Certo!")
+                botaoErroCadastro()
             })
 
            
@@ -75,19 +188,23 @@ const Login2 = (props) => {
         const axios = require('axios').default;
 
             if (obj.nick == '' || obj.senha == ''){
-                alert("Erro: Algum Campo está Vazio!")
+                botaoErroLoginoVazio();
             } else{
 
                 axios.post('http://localhost:3001/Verifica', obj)
                 .then(function (response) {
                     if (response.data == 0){
-                        alert("Usuario ou Senha Incorretos!")
+                        botaoErroLogin();
                     } else{
 
                         const idusuario = response.data
                         console.log(idusuario[0])
                         localStorage.setItem("id", idusuario[0].iduser)
-                        navigate("/")
+                        botaoSucessoLogin();
+
+                        setTimeout(() => {
+                            navigate("/")
+                        }, 1000);
                     }
                     
                     console.log(response);
@@ -103,6 +220,7 @@ const Login2 = (props) => {
     require('../Styles/Cadastro.css')
     return ( 
         <div className="body">
+            <ReactNotifications/>
             <div className={"main-login" + (props.cadastro ? " invisivel" : "")} id="login">
                 <div className="left-login">
                     <h1> <a>Faça login</a><br/> e comece a estudar!</h1>
