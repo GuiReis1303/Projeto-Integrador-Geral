@@ -112,12 +112,12 @@ const Login2 = (props) => {
                     <div className="card-login">
                         <h2><Link className="link-icon" to={'/'}><FontAwesomeIcon icon={faCircleArrowLeft} className="icon-voltar"/></Link> LOGIN</h2>
                         <div className="textfield">
-                            <label for="usuario"> Usuário</label>
-                            <input type="text" name="usuario" placeholder="Usuário" />
+                            <label for="usuario">Usuário</label>
+                            <input type="text" name="usuario" placeholder="Usuário..." />
                         </div>
                         <div className="textfield">
-                            <label for="senha"> Senha</label>
-                            <input type="password" name="senha" placeholder="Senha" />
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha..." />
                         </div>
                         <button className="btn-login" onClick={() => enviarLogin()}>Login</button>
                         <p className="criar-conta">Não possui conta? <a className="criar-conta-a" onClick={() => mudarCadastro()}>Cadastre-se</a></p>
@@ -135,15 +135,15 @@ const Login2 = (props) => {
                         <form className="formularioteste">
                         <div className="textfield">
                             <label for="email"> Email</label>
-                            <input type="email" name="email" placeholder="Email" />
+                            <input type="email" name="email" placeholder="Email..." />
                         </div>
                         <div className="textfield">
-                            <label for="usuario"> Usuário</label>
-                            <input type="text" name="usuariocadastro" placeholder="Usuário" />
+                            <label for="usuario">Usuário</label>
+                            <input type="text" name="usuariocadastro" placeholder="Usuário..." />
                         </div>
                         <div className="textfield">
-                            <label for="senha"> Senha</label>
-                            <input type="password" name="senhacadastro" placeholder="Senha" />
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senhacadastro" placeholder="Senha..." />
                         </div>
                         </form>
                         <button className="btn-cadastro" onClick={() => enviarCadastro()}>Cadastre-se</button>
