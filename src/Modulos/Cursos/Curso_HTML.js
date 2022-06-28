@@ -32,13 +32,6 @@ const Curso_HTML = () => {
                                 estruturar o conteúdo  disponibilizado em uma página.
                             </p>
                         </div>
-                       
-
-                    <div className="caixaAvaliacaoCurso">
-                        <div className="caixaAvaliacaoCurso-Positiva">
-                            <p><FontAwesomeIcon icon={faHeart}/>200</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div className="cursoRight">

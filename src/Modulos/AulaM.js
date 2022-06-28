@@ -42,6 +42,7 @@ const AulaM = () => {
         .catch(function (error) {
             console.log(error);
         })
+
     }, [])
     //FIM DO GET E POST
 
@@ -68,7 +69,10 @@ const AulaM = () => {
 
     const adicionarCurtida = () => {
         const objAdd = {idaula: idaula, iduser: iduser}
-        axios.post('http://localhost:3001/userCurtidaAulaAdd', objAdd)
+        
+        //POST PARA ADICIONAR CURTIDAS NA AULA
+            axios.post('http://localhost:3001/userCurtidaAulaAdd', objAdd)
+            
             .then(function (response) {
                 console.log(response);
                 if (response.status == 200){
