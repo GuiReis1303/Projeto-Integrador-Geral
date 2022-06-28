@@ -44,7 +44,6 @@ const AulaM = () => {
         })
     }, [])
     //FIM DO GET E POST
-    console.log(curtida[aulaselecionada])
 
     const verificarCurtida = () => {
 
@@ -100,7 +99,7 @@ const AulaM = () => {
 
                         <div className="caixaAvaliacaoAula">
                             <div className="avaliacaoAulaPositiva">
-                                <button className="botaoPositivo" onClick={() => verificarCurtida()}><FontAwesomeIcon icon={faHeart}/></button>
+                                <button className="botaoPositivo" onClick={() => verificarCurtida()}><FontAwesomeIcon icon={faHeart}/> {curtida == 0 ? "Carregando" : curtida[0].curtidas}</button>
                             </div>
                         </div>
                     </div>
