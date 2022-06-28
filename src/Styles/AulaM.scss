@@ -9,7 +9,7 @@
     max-height: 70vh;
    background-color: $BackgroundBlack;
    @include container();
-   box-shadow: 3em 3em 3em inset rgba(5, 5, 179, 0.274);
+   box-shadow: 3em 3em 3em inset #0505b346;
 }
 
 .aulaLeft{
@@ -27,7 +27,12 @@
     justify-content: space-between;
     font-size: $h2FontSize;
 }
+.botaoPositivo{
+    color: $GreenDarkColor;
+background-color: inherit;
+border: none;
 
+}
 .nomeAula{
     margin-left: 5%;
     color: $GreenColor;

@@ -9,8 +9,8 @@
   background-color: #201b2c;
   padding: 1.5rem 0;
   margin: 0 auto;
-  -webkit-box-shadow: 3em 3em 3em inset rgba(5, 5, 179, 0.274);
-          box-shadow: 3em 3em 3em inset rgba(5, 5, 179, 0.274);
+  -webkit-box-shadow: 3em 3em 3em inset #0505b346;
+          box-shadow: 3em 3em 3em inset #0505b346;
 }
 
 .aulaLeft {
@@ -31,6 +31,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 2em;
+}
+
+.botaoPositivo {
+  color: #017244;
+  background-color: inherit;
+  border: none;
 }
 
 .nomeAula {
