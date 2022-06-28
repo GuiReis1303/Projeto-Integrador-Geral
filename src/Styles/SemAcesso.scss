@@ -82,7 +82,7 @@
   
 
     .semacesso{
-        
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         width: 100%;
@@ -127,9 +127,10 @@
            
         }
         &-right{
-           display: none;
+           display: flex;
             img{
-              display: none;
+              display: flex;
+              width: 100%;
             }
         }
         &-cadastro{

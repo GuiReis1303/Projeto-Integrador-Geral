@@ -25,7 +25,7 @@ function App() {
                 <Route path='Assinatura' element={<Assinatura/>} />
                 <Route path='Cursos' element={<VerificaCurso/>} />
                 <Route path='Comunidade' element={<VerificaComunidade/>} />
-                <Route path='Faq' element={<Faq />} />
+                <Route path='Faq' element={<Manutencao/>} />
                 <Route path='Cadastro' element={<Login2 cadastro={true}/>} />
                 <Route path='Login2' element={<Login2/>} /> 
                 <Route path='Curso_HTML' element={<Curso_HTML/>} />

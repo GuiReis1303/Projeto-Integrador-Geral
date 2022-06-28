@@ -32,12 +32,6 @@ const Curso_Financas = () => {
                                 gráfico e para web, tratamento de fotos e vídeos.
                             </p>
                         </div>
-                        
-                    <div className="caixaAvaliacaoCurso">
-                        <div className="caixaAvaliacaoCurso-Positiva">
-                            <p><FontAwesomeIcon icon={faHeart}/>200</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div className="cursoRight">
