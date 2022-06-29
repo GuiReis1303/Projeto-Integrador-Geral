@@ -68,6 +68,7 @@
 
 
 .meio{
+    
     @include MeioGrid();
     button{@include botaoPreco(); @include HoverBotaoPreco();}
 
@@ -75,6 +76,7 @@
                 color: #cdd3d3;
                 background-color: #255b60;
                 grid-area: c1 ;
+                
                 @include BorderRadiusCaixa();
             }
 
