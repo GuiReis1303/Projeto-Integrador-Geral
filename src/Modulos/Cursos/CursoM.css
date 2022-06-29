@@ -4,37 +4,52 @@
 
 .cursoGeral {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #28285c;
   height: 70vh;
 }
+
 .cursoGeral-Left {
   width: 45%;
 }
+
 .cursoGeral-nomeCurso {
   text-align: center;
   color: #00ff88;
 }
+
 .cursoGeral-imagemCurso {
   width: 40%;
   margin: 0 auto;
 }
+
 .cursoGeral-imagemCurso img {
   width: 100%;
 }
+
 .cursoGeral-boxCursoMobile {
   display: none;
 }
+
 .cursoGeral-boxCurso {
   color: #cfcfe8;
   font-size: 1.2em;
 }
 
 .caixaAvaliacaoCurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
+
 .caixaAvaliacaoCurso-Positiva {
   color: green;
   margin-right: 20px;
@@ -49,22 +64,32 @@
 .cursoRight {
   margin-top: 10px;
   width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: end;
   overflow-y: auto;
 }
+
 .cursoRight-linkAulasCursos {
   width: 75%;
 }
+
 .cursoRight-linkAulasCursos-linkAulas {
   text-decoration: none;
   color: #00ff88;
 }
+
 .cursoRight-linkAulasCursos-linkAulas:hover {
   color: #017244;
-  transition: 0.3s;
+  -webkit-transition: .3s;
+  transition: .3s;
   font-size: 2rem;
 }
 
@@ -72,18 +97,27 @@
   text-decoration: none;
   color: #00ff88;
 }
+
 .linkAulasD:hover {
   color: #017244;
-  transition: 0.3s;
+  -webkit-transition: .3s;
+  transition: .3s;
   font-size: 1.1rem;
 }
 
 .descricaoCurso {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #cfcfe8;
 }
+
 .descricaoCurso h2 {
   font-size: 2em;
 }
@@ -91,8 +125,12 @@
 @media only screen and (max-width: 450px) {
   .cursoGeral {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #28285c;
     height: 190vw;
     font-size: 4.4vw;
@@ -122,35 +160,41 @@
     font-size: 1.2em;
     padding-top: 25px;
   }
-
   .descricaoCurso {
     display: none;
   }
-
   .caixaAvaliacaoCurso {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   .caixaAvaliacaoCurso-Positiva {
     color: green;
     margin-right: 20px;
   }
-
   .avaliacaoCursoNegativa {
     color: #00ff88;
     margin-right: 20px;
   }
-
   /* CSS cursoRight */
   .cursoRight-mobile {
     margin-top: -10vw;
     width: 45%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: end;
     overflow-y: auto;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #28285c;
     height: 70vh;
   }
@@ -162,28 +206,33 @@
     text-decoration: none;
     color: #00ff88;
   }
-
   .linkAulasD {
     text-decoration: none;
     color: #00ff88;
   }
   .linkAulasD:hover {
     color: #017244;
-    transition: 0.3s;
+    -webkit-transition: .3s;
+    transition: .3s;
     font-size: 1.1rem;
   }
-
   .cursoRight {
     display: none;
   }
-
   .descricaoCurso {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #cfcfe8;
   }
   .descricaoCurso h2 {
     font-size: 2em;
   }
-}/*# sourceMappingURL=CursoM.css.map */
+}
+/*# sourceMappingURL=CursoM.css.map */
