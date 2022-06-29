@@ -1,5 +1,5 @@
 import React from "react";
-import Comunidade from "../Paginas/Comunidade";
+import Feed from "./Comunidade/Feed";
 import SemAcesso from "../Paginas/SemAcesso";
 
 
@@ -9,7 +9,7 @@ const VerificaComunidade = () => {
 
     return ( 
         <div>
-            {id != null ? <Comunidade/> : <SemAcesso/>}
+            {id != null ? <Feed/> : <SemAcesso/>}
         </div>
      );
 }

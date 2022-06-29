@@ -10,6 +10,7 @@ import 'react-notifications-component/dist/theme.css'
 const Login2 = (props) => {
     const navigate = useNavigate()
 
+    //NOTIFICAÇÕES
     const botaoSucessoLogin = () =>{
         Store.addNotification({
             title: "--- Login Sucesso ---",
@@ -117,8 +118,11 @@ const Login2 = (props) => {
             },
             width: 600
         })
-    }
+    }  
+    //FIM DAS NOTIFICAÇÕES
 
+
+    //FUNÇÃO DE SELEÇÃO DE PAGINA
     const mudarCadastro = () =>{
         document.getElementById('cadastro').classList.remove('invisivel');
         document.getElementById('login').classList.add('invisivel')
@@ -128,6 +132,7 @@ const Login2 = (props) => {
         document.getElementById('login').classList.remove('invisivel');
         document.getElementById('cadastro').classList.add('invisivel')
     }
+    //FIM DA FUNÇÃO DE SELEÇÃO DE PAGINA
 
     const verificarDados = (obj) => {
         console.log("Antes do IF")
