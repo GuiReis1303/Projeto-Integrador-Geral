@@ -6,7 +6,7 @@ const NovoPost = () => {
     return ( 
         <div className="container">
             <div className="btn-newPost" >
-                <Link to="/post" >
+                <Link to="/CriarPost" >
                     <button>New Post</button>
                 </Link>
             </div>
