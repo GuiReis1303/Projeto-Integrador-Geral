@@ -55,10 +55,11 @@ CREATE TABLE `comunidade` (
   `titulo` varchar(45) NOT NULL,
   `comentario` mediumtext NOT NULL,
   `iduser` int(11) NOT NULL,
+  `descricao` tinytext NOT NULL,
   PRIMARY KEY (`idcomunidade`),
   UNIQUE KEY `idcomunidade_UNIQUE` (`idcomunidade`),
   KEY `iduser_idx` (`iduser`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,34 +68,8 @@ CREATE TABLE `comunidade` (
 
 LOCK TABLES `comunidade` WRITE;
 /*!40000 ALTER TABLE `comunidade` DISABLE KEYS */;
-INSERT INTO `comunidade` VALUES (1,'Aula HTML','gostei bastante da aula',1),(2,'Aula Photoshop','gostei muito dessa aula, mt bem explicada',2);
+INSERT INTO `comunidade` VALUES (1,'Aula HTML','gostei bastante da aula',1,'Sobre a aula HTML'),(2,'Aula Photoshop','gostei muito dessa aula, mt bem explicada',2,'Sobre a aula Photoshop'),(3,'Aula Finanças','Agora vou conseguir dinheiro de vdd',5,'Bora lucrar');
 /*!40000 ALTER TABLE `comunidade` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `curso`
---
-
-DROP TABLE IF EXISTS `curso`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `curso` (
-  `idcurso` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(60) CHARACTER SET latin1 NOT NULL,
-  `idavaliacao` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idcurso`),
-  UNIQUE KEY `idcurso_UNIQUE` (`idcurso`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `curso`
---
-
-LOCK TABLES `curso` WRITE;
-/*!40000 ALTER TABLE `curso` DISABLE KEYS */;
-INSERT INTO `curso` VALUES (1,'HTML Completo',NULL);
-/*!40000 ALTER TABLE `curso` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -166,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-29  9:23:35
+-- Dump completed on 2022-06-29 18:24:56
