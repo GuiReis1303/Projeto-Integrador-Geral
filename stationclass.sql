@@ -52,15 +52,13 @@ DROP TABLE IF EXISTS `comunidade`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `comunidade` (
   `idcomunidade` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(45) NOT NULL,
   `comentario` mediumtext NOT NULL,
-  `avaliacaoPositiva` int(11) NOT NULL,
-  `avaliacaoNegativa` int(11) NOT NULL,
   `iduser` int(11) NOT NULL,
   PRIMARY KEY (`idcomunidade`),
   UNIQUE KEY `idcomunidade_UNIQUE` (`idcomunidade`),
-  KEY `iduser_idx` (`iduser`),
-  CONSTRAINT `iduser_comunidade` FOREIGN KEY (`iduser`) REFERENCES `usuario` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  KEY `iduser_idx` (`iduser`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,6 +67,7 @@ CREATE TABLE `comunidade` (
 
 LOCK TABLES `comunidade` WRITE;
 /*!40000 ALTER TABLE `comunidade` DISABLE KEYS */;
+INSERT INTO `comunidade` VALUES (1,'Aula HTML','gostei bastante da aula',1),(2,'Aula Photoshop','gostei muito dessa aula, mt bem explicada',2);
 /*!40000 ALTER TABLE `comunidade` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -140,6 +139,7 @@ CREATE TABLE `usuario` (
   `nick` varchar(30) NOT NULL,
   `email` varchar(60) NOT NULL,
   `senha` varchar(30) NOT NULL,
+  `tipo_conta` varchar(1) DEFAULT NULL,
   PRIMARY KEY (`iduser`),
   UNIQUE KEY `iduser_UNIQUE` (`iduser`),
   UNIQUE KEY `nick_UNIQUE` (`nick`),
@@ -153,7 +153,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'gui','gui@gmail.com','12345'),(2,'Conrado','conrado@gmail.com','12345'),(3,'Paulo','paulo@gmail.com','12345'),(4,'Marcos','marcos@gmail.com','12345'),(5,'Aralto','aralto@gmail.com','12345'),(6,'gui1','gui','12345'),(7,'','',''),(10,'123','gui12','13245'),(11,'sla13','sla@gmail.com','12345'),(13,'teste','teste','teste'),(14,'teste1','teste1','teste1'),(15,'teste2','teste2','teste2'),(16,'teste3','teste3','teste3'),(17,'teste4','teste4','teste4'),(18,'testes2','testes1','testes2'),(22,'134012g','gui13@gmail.com','12345'),(23,'Gui14','gui14@gmail.com','12345'),(24,'isa ','isabelaap@gmail.com','1234'),(25,'reis13','reis@gmail.com','12345'),(27,'reis14','reis14@gmail.com','12345'),(28,'reis15','reis15@gmail.com','12345'),(29,'sirley13','sirley@gmail.com','12345'),(30,'bia13','bia@gmail.com','12345'),(31,'sally13','sally@gmail.com','12345'),(32,'sally14','sally14@gmail.com','12345'),(33,'marcos13','marcos13@gmail.com','12345'),(34,'sasasass','guireis1303@gmail.comsss','sssssssssssss'),(35,'felipe13','felipe@gmail.com','12345');
+INSERT INTO `usuario` VALUES (1,'gui','gui@gmail.com','12345','1'),(2,'Conrado','conrado@gmail.com','12345',NULL),(3,'Paulo','paulo@gmail.com','12345',NULL),(4,'Marcos','marcos@gmail.com','12345',NULL),(5,'Aralto','aralto@gmail.com','12345',NULL),(6,'gui1','gui','12345',NULL),(7,'','','',NULL),(10,'123','gui12','13245',NULL),(11,'sla13','sla@gmail.com','12345',NULL),(13,'teste','teste','teste',NULL),(14,'teste1','teste1','teste1',NULL),(15,'teste2','teste2','teste2',NULL),(16,'teste3','teste3','teste3',NULL),(17,'teste4','teste4','teste4',NULL),(18,'testes2','testes1','testes2',NULL),(22,'134012g','gui13@gmail.com','12345',NULL),(23,'Gui14','gui14@gmail.com','12345',NULL),(24,'isa ','isabelaap@gmail.com','1234',NULL),(25,'reis13','reis@gmail.com','12345',NULL),(27,'reis14','reis14@gmail.com','12345',NULL),(28,'reis15','reis15@gmail.com','12345',NULL),(29,'sirley13','sirley@gmail.com','12345',NULL),(30,'bia13','bia@gmail.com','12345',NULL),(31,'sally13','sally@gmail.com','12345',NULL),(32,'sally14','sally14@gmail.com','12345',NULL),(33,'marcos13','marcos13@gmail.com','12345',NULL),(34,'sasasass','guireis1303@gmail.comsss','sssssssssssss',NULL),(35,'felipe13','felipe@gmail.com','12345',NULL);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -166,4 +166,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-28 10:32:53
+-- Dump completed on 2022-06-29  9:23:35
