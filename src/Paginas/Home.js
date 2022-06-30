@@ -54,8 +54,8 @@ const Home = () => {
                     </p>
                 </div>
 
-              </div>
-            </section>
+            </div>
+          </section>
 
 
             <section className="cta">
