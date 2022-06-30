@@ -56,10 +56,11 @@ CREATE TABLE `comunidade` (
   `comentario` mediumtext NOT NULL,
   `iduser` int(11) NOT NULL,
   `descricao` tinytext NOT NULL,
+  `criacao` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`idcomunidade`),
   UNIQUE KEY `idcomunidade_UNIQUE` (`idcomunidade`),
   KEY `iduser_idx` (`iduser`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +69,7 @@ CREATE TABLE `comunidade` (
 
 LOCK TABLES `comunidade` WRITE;
 /*!40000 ALTER TABLE `comunidade` DISABLE KEYS */;
-INSERT INTO `comunidade` VALUES (1,'Aula HTML','gostei bastante da aula',1,'Sobre a aula HTML'),(2,'Aula Photoshop','gostei muito dessa aula, mt bem explicada',2,'Sobre a aula Photoshop'),(3,'Aula Finanças','Agora vou conseguir dinheiro de vdd',5,'Bora lucrar');
+INSERT INTO `comunidade` VALUES (1,'Aula HTML','gostei bastante da aula',1,'Sobre a aula HTML','2022-06-30 16:33:05'),(2,'Aula Photoshop','gostei muito dessa aula, mt bem explicada',2,'Sobre a aula Photoshop','2022-06-30 16:33:05'),(3,'Aula Finanças','Agora vou conseguir dinheiro de vdd',5,'Bora lucrar','2022-06-30 16:33:05');
 /*!40000 ALTER TABLE `comunidade` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -141,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-29 18:24:56
+-- Dump completed on 2022-06-30 16:44:58
