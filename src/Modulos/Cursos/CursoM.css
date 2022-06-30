@@ -37,7 +37,7 @@
 }
 
 .cursoGeral-boxCurso {
-  color: #cfcfe8;
+  color: #e0e0ee;
   font-size: 1.2em;
 }
 
@@ -115,7 +115,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #cfcfe8;
+  background-color: #e0e0ee;
 }
 
 .descricaoCurso h2 {
@@ -156,7 +156,7 @@
     display: none;
   }
   .cursoGeral-boxCurso {
-    color: #cfcfe8;
+    color: #e0e0ee;
     font-size: 1.2em;
     padding-top: 25px;
   }
@@ -229,7 +229,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #cfcfe8;
+    background-color: #e0e0ee;
   }
   .descricaoCurso h2 {
     font-size: 2em;
