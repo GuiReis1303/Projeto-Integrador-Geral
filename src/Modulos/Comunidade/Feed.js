@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom'
 import More from './more.svg'
 import VerificaMenu from '../VerificaMenu'
 import Rodape from '../Rodape'
-import NovoPost from './NovoPost'
 
 import { ReactNotifications, Store } from 'react-notifications-component';
 import "animate.css"
 import 'react-notifications-component/dist/theme.css'
+import MenuALComunidade from '../MenuALComunidade'
 
 const Feed = () => {
 
@@ -70,8 +70,7 @@ const Feed = () => {
     require('./Feed.css')
     return(
         <div>
-            <VerificaMenu/>
-            <NovoPost/>
+            <MenuALComunidade/>
             <ReactNotifications/>
             <main>
 

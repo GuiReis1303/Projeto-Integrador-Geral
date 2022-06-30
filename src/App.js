@@ -2,7 +2,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from './Paginas/Home';
 import Assinatura from './Paginas/Assinatura';
 import Cursos from './Paginas/Cursos';
-import Comunidade from './Paginas/Comunidade';
 import Faq from './Paginas/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Login2 from './Paginas/Login2';
