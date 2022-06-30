@@ -67,7 +67,7 @@ const Feed = () => {
         })
     }
     
-    require('./Feed.css')
+    require('../../Styles/Feed.css')
     return(
         <div>
             <MenuALComunidade/>

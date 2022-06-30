@@ -107,12 +107,12 @@ p {
 }
 
 .btn-readmore button{
-    background-color: #3DECB1;
+    background-color: $GreenColor;
     
 }
 
 .btn-delete button{
-    background-color: rgb(241, 45, 45);
+    background-color: $RedColor;
 }
 
 .loading {
