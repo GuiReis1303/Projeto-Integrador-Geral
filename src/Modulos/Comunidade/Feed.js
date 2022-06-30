@@ -145,15 +145,14 @@ const Feed = () => {
                         return(
                             <div className="card" key={key} id={'card'+post.idcomunidade} >
                                 <header>
-                                    <h2>{post == 0 ? "Carregando" : post.titulo}</h2>
-                                    <img src={More} />
+                                    <h2>{post == 0 ? "Carregando" : post.nick}</h2>
+                                    <h5>{post == 0 ? "Carregando" : post.criacao}</h5>
                                 </header>
 
                                 <div className="line"></div>
-
+                                <h4>{post == 0 ? "Carregando" : post.titulo}</h4>
                                 <p className='' id={'descricao'+post.idcomunidade}>{post == 0 ? "Carregando" : post.descricao}</p>
                                 <p className='invisivel' id={'comentario'+post.idcomunidade}>{post == 0 ? "Carregando" : post.comentario}</p>
-                                <p>Autor: {post == 0 ? "Carregando" : post.nick}</p>
                                 <div className="btns" >
 
                                 {id == post.iduser ? (

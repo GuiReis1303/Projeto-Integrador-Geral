@@ -12,7 +12,7 @@ import 'react-notifications-component/dist/theme.css'
 const validationPost = yup.object().shape({
     title: yup.string().required("O título é obrigatório").max(40, "O título precisa ter menosde 40 caracteres"),
     description: yup.string().required("A descrição é obrigatório").max(150, "A descrição precisa ter menosde 150 caracteres"),
-    content: yup.string().required("O conteúdo é obrigatório").max(500, "O conteúdo precisa ter menos de 500 caracteres")
+    content: yup.string().required("O conteúdo é obrigatório").max(10000, "O conteúdo precisa ter menos de 500 caracteres")
 })
 
 const CriarPost = () => {
