@@ -74,14 +74,14 @@
 }
 
 .comentariosAula {
-  color: #cfcfe8;
+  color: #e0e0ee;
   width: 90%;
 }
 
 .caixaComentario {
   width: 100%;
   background: #201b2c;
-  border: 2px solid #cfcfe8;
+  border: 2px solid #e0e0ee;
   border-radius: 15px;
   margin-bottom: 5px;
   display: -webkit-box;
@@ -133,7 +133,7 @@
 }
 
 .aulaRight::-webkit-scrollbar-track {
-  background: #cfcfe8;
+  background: #e0e0ee;
   /* color of the tracking area */
 }
 

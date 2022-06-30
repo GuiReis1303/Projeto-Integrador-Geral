@@ -11,7 +11,7 @@
           box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
   background-image: -webkit-gradient(linear, right top, left top, from(#201b2c), to(#2f2f6d));
   background-image: linear-gradient(-90deg, #201b2c, #2f2f6d);
-  color: #cfcfe8;
+  color: #e0e0ee;
 }
 
 .rodape-logo {
@@ -45,7 +45,7 @@
 
 .rodape-edit {
   text-decoration: none;
-  color: #cfcfe8;
+  color: #e0e0ee;
   font-size: 1.2em;
 }
 
@@ -83,7 +83,7 @@
 
 .rodape-icon {
   margin-right: 20px;
-  color: #cfcfe8;
+  color: #e0e0ee;
 }
 
 @media only screen and (max-width: 600px) {
@@ -130,7 +130,7 @@
   }
   .rodape-edit {
     text-decoration: none;
-    color: #cfcfe8;
+    color: #e0e0ee;
     font-size: 1.2em;
   }
   .rodape-edit:hover {
@@ -161,7 +161,7 @@
     margin-top: 20px;
   }
   .rodape-icon {
-    color: #cfcfe8;
+    color: #e0e0ee;
   }
 }
 /*# sourceMappingURL=Rodape.css.map */
