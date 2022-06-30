@@ -2,10 +2,16 @@ import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
 import Rodape from "../Modulos/Rodape";
 import Whats from "../Modulos/Whats";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import VerificaMenu from "../Modulos/VerificaMenu";
+import { NavItem } from "react-bootstrap";
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    const mudarAssinatura = () => {
+        navigate('/Assinatura')
+    }
 
     require('../Styles/Home.css')
     return ( 
@@ -26,27 +32,28 @@ const Home = () => {
           <h1>Planos Disponíveis</h1>
           <p>Acesse a área de Assinatura para mais informações.</p>
           <div className="plans-row">
-              <div className="plans-row-plans-col" id="basico-row">
-                  <h3>Básico</h3>
-                  <p>
-                  Poucos benefícios inclusos.
-                  </p>
-              </div>
+                
+                <div className="plans-row-plans-col" id="basico-row" onClick={() => mudarAssinatura()}>
+                    <h3>Básico</h3>
+                    <p>
+                        Poucos benefícios inclusos.
+                    </p>
+                </div>
 
-               <div className="plans-row-plans-col"  href="/Assinatura" id="premiun-row"> 
-                            <h3>Premium</h3>
-                            <p>
-                              Todos benefícios inclusos.
-                            </p> 
-                        </div>
-                      
+                <div className="plans-row-plans-col" id="premiun-row" onClick={() => mudarAssinatura()}> 
+                    <h3>Premium</h3>
+                    <p>
+                        Todos benefícios inclusos.
+                    </p> 
+                </div>
+ 
+                <div  className="plans-row-plans-col" id="padrao-row" onClick={() => mudarAssinatura()}>
+                    <h3>Padrão</h3>
+                    <p>
+                        Alguns benefícios inclusos.
+                    </p>
+                </div>
 
-                              <div  className="plans-row-plans-col" id="padrao-row">
-                                  <h3>Padrão</h3>
-                                  <p>
-                                  Alguns benefícios inclusos.
-                                  </p>
-                              </div>
               </div>
             </section>
 
