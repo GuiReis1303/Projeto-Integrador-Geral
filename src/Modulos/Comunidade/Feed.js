@@ -11,6 +11,7 @@ import "animate.css"
 import 'react-notifications-component/dist/theme.css'
 
 const Feed = () => {
+
     const id = localStorage.getItem("id")
     const [ posts, setPosts ] = useState([])
 
