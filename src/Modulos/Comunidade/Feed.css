@@ -120,6 +120,10 @@ p {
     display: none;
 }
 
+h4{
+    color: #FFF;
+}
+
 @media only screen and (max-width:750px){
     main .cards .card {
         margin: 0 auto;
