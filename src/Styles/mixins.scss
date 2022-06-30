@@ -2,7 +2,24 @@
 
 
 
-
+@mixin botaoHomePage{
+  
+    text-decoration: none;
+    display: inline-block;
+    color:$WhiteColor;
+    border: 1px solid $WhiteColor;
+    font-size: 1rem;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+      &:hover{
+        border: 1px solid $PinkColor;
+        background-color: $PinkColor ;
+        transition: 1s;
+        color: $WhiteColor;
+      }
+}
 
 @mixin container{
   

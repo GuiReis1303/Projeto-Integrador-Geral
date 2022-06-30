@@ -13,34 +13,50 @@ const Home = () => {
             <VerificaMenu/>
 
             <Whats/>   
-            <div className="geral">
-            <div className="branco"></div>
-                <div className="inicio">
-             
-                    <div>
-                        <p className="inicio-p">
-                            <h2>
-                            Bem-vindo à Station Class uma plataforma 
-                            criada para te ajudar a mudar sua vida, 
-                            transformando horas perdidas em aula 
-                            com conteúdo exclusivo e bem atual.
-                            </h2>
-                          
-                   
-                            <h2>
-                            Criamos essa plataforma com o objetivo 
-                            de mudar vidas, trazendo conhecimento e 
-                            aprendizado para todas as pessoas, 
-                            de todos os gêneros, classes e etnias.
-                            </h2>
-                <div className="inicio-botao">
-                      <Link to="/Assinatura"><button>Confira nossos Planos!</button> </Link>   
-                      <Link to="/Cursos" ><button> Conheça nossos Cursos! </button> </Link>
-                </div>
-                        </p>  
+
+          <section className="header">
+        <div className="header-text-box">
+          <h1>Bem vindo a Station <t>Class!</t></h1>
+            <p>O conhecimento está aqui.</p>
+            <a className="header-text-box-botao" href="/Cursos">Conheça nossos cursos</a>
+        </div>
+          </section>
+
+            <section className="plans">
+          <h1>Planos Disponíveis</h1>
+          <p>Acesse a área de Assinatura para mais informações.</p>
+          <div className="plans-row">
+              <div className="plans-row-plans-col" id="basico-row">
+                  <h3>Básico</h3>
+                  <p>
+                  Poucos benefícios inclusos.
+                  </p>
+              </div>
+
+               <div className="plans-row-plans-col"  href="/Assinatura" id="premiun-row"> 
+                            <h3>Premium</h3>
+                            <p>
+                              Todos benefícios inclusos.
+                            </p> 
                         </div>
-                </div>
-                <div className="branco"></div>
+                      
+
+                              <div  className="plans-row-plans-col" id="padrao-row">
+                                  <h3>Padrão</h3>
+                                  <p>
+                                  Alguns benefícios inclusos.
+                                  </p>
+                              </div>
+              </div>
+            </section>
+
+
+            <section className="cta">
+          <h1>Interaja em nossa comunidade!</h1>
+        <a href="/Comunidade" className="cta-hero-btn">Navegue</a>
+            </section>
+
+            <div className="geral">
                
                 <Carousel fade>
                     <Carousel.Item>
@@ -88,10 +104,11 @@ const Home = () => {
                 </Carousel>
                 
            
+          
             <main>
           <div>
-            <h2 className="h2principaiscategorias"><b>Principais categorias</b></h2>
-            <hr></hr>
+            <h5 className="textoprincipaiscategorias"><b>Principais categorias</b></h5>
+            
           </div>
         <div className="gallery">
          <div className="gallery-card" id="card-01">
