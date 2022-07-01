@@ -24,11 +24,9 @@ const Curso_FinancasC = () => {
                                 </div>
                             </div>
                             <div className="caixatextocursos">
-                                <h3>Linguagens de Programação</h3>
-                                <p>Venha aprender programação conosco, ensinamos desde linguagens front-end até back-end.
-                                    Venha aprender a fazer um site do zero com HTML e CSS e fazer ele funcional com JS.
-                                </p>
-                                <p1>Guilherme F. dos Reis </p1>
+                                <h3>Matemática Financeira Básica</h3>
+                                <p> Nesse curso iremos ajudar como se organizar financeiramente para melhorar sua vida Financeira </p>
+                                <p1>Marcos Paulo Marçal</p1>
                                 
                                 <p2><FontAwesomeIcon icon={faHtml5} className="iconCursos"/>Curso de HTML Completo</p2>
                                 <p2><FontAwesomeIcon icon={faCss3} className="iconCursos"/> Curso de CSS - Completo</p2>
@@ -51,9 +49,10 @@ const Curso_FinancasC = () => {
                                 </div>
                             </div>
                             <div className="caixatextocursos">
-                                <h3>HTML Completo</h3>
-                                <p>Curso mais didático e completo de HTML, aprendendo desde o básico até como usar div's</p>
-                                <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>
+                                <h3>Começando a Investir</h3>
+                                <p>Nesse curso iremos mostrar com funciona os primeiros investimento para a sua carteira ser diversificada.
+                                </p>
+                                <p1>Marcos Paulo Marçal</p1>
                                 
                                 <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
                                 <p2><FontAwesomeIcon icon={faNewspaper} className="iconCursos"/> 23 artigos</p2>
@@ -77,8 +76,8 @@ const Curso_FinancasC = () => {
                                 </div>
                             </div>
                             <div className="caixatextocursos">
-                                <h3>CSS Completo</h3>
-                                <p>Curso mais didático e completo de CSS, aprendendo como estilizar todas as tags</p>
+                                <h3>Marcos Paulo Marçal</h3>
+                                <p>Nesse curso irei abrir meu Home Broker para mostrar na pratica com funciona as ferramenta de investimento.</p>
                                 <p1>Gulherme Reis, Marcos Paulo e Paulo Neto </p1>
                                 
                                 <p2><FontAwesomeIcon icon={faClapperboard} className="iconCursos"/>38 horas de vídeo sob demanda</p2>
