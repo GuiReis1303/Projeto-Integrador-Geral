@@ -90,7 +90,7 @@ const CriarPost = () => {
             })
     }
 
-    require('./CriarPost.css')
+    require('../../Styles/Feed.css')
     return(
         <div>
             <ReactNotifications/>
@@ -99,9 +99,9 @@ const CriarPost = () => {
                 <div className="card-post" >
 
                     <h1>Criar postagem</h1>
-                    <div className="line-post" ></div>
+                    <div className="card-post-line" ></div>
 
-                    <div className="card-body-post" >
+                    <div className="card-post-body" >
 
                         <form onSubmit={handleSubmit(verificarDados)} >
 
@@ -118,7 +118,7 @@ const CriarPost = () => {
                             </div>
 
                             <div className="fields" >
-                                <label>Conteúdo</label>
+                                <label>Comentário</label>
                                 <textarea type="text" name="content" id='comentario' {...register("content")} ></textarea>
                                 <p className="error-message">{errors.content?.message}</p>
                             </div>

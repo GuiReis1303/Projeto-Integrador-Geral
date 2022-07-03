@@ -143,7 +143,7 @@ const Feed = () => {
                         }
 
                         return(
-                            <div className="card" key={key} id={'card'+post.idcomunidade} >
+                            <div className="cards-card" key={key} id={'card'+post.idcomunidade} >
                                 <header>
                                     <h2>{post == 0 ? "Carregando" : post.nick}</h2>
                                     <h5>{post == 0 ? "Carregando" : post.criacao}</h5>
@@ -158,7 +158,7 @@ const Feed = () => {
                                 {id == post.iduser ? (
                                     <div className='btns-menu'>
                                         <div className="btn-delete" id='delet'>
-                                            <button onClick={() => deletaPost(post.idcomunidade)}>Deletar</button>
+                                            <button id='deletBotaoColor' onClick={() => deletaPost(post.idcomunidade)}>Deletar</button>
                                         </div>
 
                                         <div className="btn-readmore" id={'vermaisu'+post.idcomunidade}>

@@ -1,15 +1,79 @@
 @import "../Variables/Variables.scss";
 @import '../Styles/mixins.scss';
 
-main header {
-    display: flex;
+@mixin botaoComunidade{
+   
+        color: #122035;
+        font-size: 1.3rem;
+        border: 0;
+        border-radius: 10px;
+        font-family: Heebo;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 5px 40px;
+        font-family:Lato;
+        transition: 0.5s;
+        &:hover{
+           
+            border: 1px solid $GreenColor;
+            background-color:transparent;
+            color: $GreenColor;
+            font-weight: 400;
+        }
+    
 }
 
-.cards .card h2 {
+main header {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 500px;
+
 }
+body{
+    margin-top: 0px;
+    background-image: linear-gradient( #75276f75, rgba(21, 36, 121, 0.849));
+  
+}
+
+
+
+.cards{
+    margin: 0;
+  
+    margin-top: 93px;
+    height: 170%;
+    font-family:Lato;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+        &-card{
+            h2 {display: flex;  flex-wrap: wrap;     max-width: 500px;  font-family:Lato; }
+                margin: 0 auto;
+                background-color: #122035;
+                padding: 30px 40px;
+                width: 600px;
+                border-radius: 7px;
+                margin-top: 50px;
+                color: $GreenColor;
+            header {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                h2 { font-weight: 400;  font-family:Lato;  color: #D2DAF5; font-size: 1.75rem;  letter-spacing: 0.5px; }
+            }
+
+        }
+            p {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                max-width: 500px;
+                font-weight: 500;
+                color: #e7e8ec;
+                padding-left: 20px;
+            }
+            
+}
+
+
 
 img {
     width: 20px;
@@ -24,57 +88,25 @@ img {
     background-color: white;
 }
 
-main .cards{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
-    margin-top: 1rem;
-}
 
-main .cards .card {
-    margin: 0 auto;
 
-    background-color: #2F3644;
 
-    padding: 30px 40px;
-    width: 600px;
-
-    border-radius: 7px;
-    margin-top: 40px;
-
-}
-
-.cards .card header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.card header h2 {
-    font-family: Noto Sans;
-    font-weight: 700;
-
-    color: #D2DAF5;
-
-    font-size: 1.7rem;
-}
 
 .line {
-    background-color: #3E445B;
+    background-color: $WhiteColor;
     height: 2px;
+    margin-bottom: 10px;
 }
 
-p {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    
-    max-width: 500px;
 
-    font-family: Noto Sans;
-    font-weight: 500;
 
-    color: #B3BACF;
+#deletBotaoColor{
+    &:hover{
+    color:$RedColor;
+    border: 1px solid $RedColor;
+    font-weight: 400;
+    }
 }
 
 .btns {
@@ -82,25 +114,21 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    &-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    button {
+       @include botaoComunidade();
+    }
+  
 }
 
-.btns-menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
 
-.btns button {
-    color: rgba(255, 255, 255, 0.938);
-    font-size: 1.3rem;
-    border: 0;
-    border-radius: 10px;
-    font-family: Heebo;
-    font-weight: 700;
-    cursor: pointer;
-    padding: 5px 40px;
-}
+
+
 
 .btn-edit button{
     background-color: #80D8FF;
@@ -110,7 +138,6 @@ p {
     background-color: $GreenColor;
     
 }
-
 .btn-delete button{
     background-color: $RedColor;
 }
@@ -148,4 +175,70 @@ p {
     .btns-menu button{
         margin-top: 10px;
     }
+}
+
+// CRIAR POST
+
+
+
+
+.card-post {
+    height: 100vh;
+    background-color: $BackgroundDarkBlue;
+    padding: 30px 90px;
+    border-radius: 15px;
+    width: 55%;
+    margin: 0 auto;
+    font-family:Lato;
+    h1{  font-weight: 500; text-align: center;  color: #D2DAF5;   font-size: 3rem;  margin-bottom: 5px;}
+    &-line{  height: 2px;   background-color: #3E445B;  }
+        &-body{  margin-top: 25px;  }
+}
+
+.fields {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+    color: #D2DAF5;
+    font-family: Poppins;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    padding-left: 15px;
+}
+
+input {
+    height: 45px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.btn-post{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.btn-post button{
+ 
+    @include botaoComunidade();
+    padding: 10px 60px;
+   border: 3px 0px 5px solid #122035;
+}
+
+.error-message {
+    color: rgb(240, 47, 47);
 }

@@ -4,13 +4,75 @@ main header {
   display: flex;
 }
 
-.cards .card h2 {
+body {
+  margin-top: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#75276f75), to(rgba(21, 36, 121, 0.849)));
+  background-image: linear-gradient(#75276f75, rgba(21, 36, 121, 0.849));
+}
+
+.cards {
+  margin: 0;
+  margin-top: 93px;
+  height: 170%;
+  font-family: Lato;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+.cards-card {
+  margin: 0 auto;
+  background-color: #122035;
+  padding: 30px 40px;
+  width: 600px;
+  border-radius: 7px;
+  margin-top: 50px;
+  color: #00ff88;
+}
+
+.cards-card h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 500px;
+  font-family: Lato;
+}
+
+.cards-card header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.cards-card header h2 {
+  font-weight: 400;
+  font-family: Lato;
+  color: #D2DAF5;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+}
+
+.cards p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  max-width: 500px;
+  font-weight: 500;
+  color: #e7e8ec;
+  padding-left: 20px;
 }
 
 img {
@@ -25,58 +87,16 @@ img {
   background-color: white;
 }
 
-main .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 1rem;
-}
-
-main .cards .card {
-  margin: 0 auto;
-  background-color: #2F3644;
-  padding: 30px 40px;
-  width: 600px;
-  border-radius: 7px;
-  margin-top: 40px;
-}
-
-.cards .card header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.card header h2 {
-  font-family: Noto Sans;
-  font-weight: 700;
-  color: #D2DAF5;
-  font-size: 1.7rem;
-}
-
 .line {
-  background-color: #3E445B;
+  background-color: #e0e0ee;
   height: 2px;
+  margin-bottom: 10px;
 }
 
-p {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  max-width: 500px;
-  font-family: Noto Sans;
-  font-weight: 500;
-  color: #B3BACF;
+#deletBotaoColor:hover {
+  color: #CA0000;
+  border: 1px solid #CA0000;
+  font-weight: 400;
 }
 
 .btns {
@@ -102,7 +122,7 @@ p {
 }
 
 .btns button {
-  color: rgba(255, 255, 255, 0.938);
+  color: #122035;
   font-size: 1.3rem;
   border: 0;
   border-radius: 10px;
@@ -110,6 +130,16 @@ p {
   font-weight: 700;
   cursor: pointer;
   padding: 5px 40px;
+  font-family: Lato;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btns button:hover {
+  border: 1px solid #00ff88;
+  background-color: transparent;
+  color: #00ff88;
+  font-weight: 400;
 }
 
 .btn-edit button {
@@ -165,5 +195,95 @@ p {
   .btns-menu button {
     margin-top: 10px;
   }
+}
+
+.card-post {
+  height: 100vh;
+  background-color: #28285c;
+  padding: 30px 90px;
+  border-radius: 15px;
+  width: 55%;
+  margin: 0 auto;
+  font-family: Lato;
+}
+
+.card-post h1 {
+  font-weight: 500;
+  text-align: center;
+  color: #D2DAF5;
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.card-post-line {
+  height: 2px;
+  background-color: #3E445B;
+}
+
+.card-post-body {
+  margin-top: 25px;
+}
+
+.fields {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.2rem;
+  color: #D2DAF5;
+  font-family: Poppins;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 1.2rem;
+  padding-left: 15px;
+}
+
+input {
+  height: 45px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+  padding-top: 10px;
+}
+
+.btn-post {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-post button {
+  color: #122035;
+  font-size: 1.3rem;
+  border: 0;
+  border-radius: 10px;
+  font-family: Heebo;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 5px 40px;
+  font-family: Lato;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 60px;
+  border: 3px 0px 5px solid #122035;
+}
+
+.btn-post button:hover {
+  border: 1px solid #00ff88;
+  background-color: transparent;
+  color: #00ff88;
+  font-weight: 400;
+}
+
+.error-message {
+  color: #f02f2f;
 }
 /*# sourceMappingURL=Feed.css.map */

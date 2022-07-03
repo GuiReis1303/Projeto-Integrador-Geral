@@ -108,6 +108,7 @@
 }
 
 .plans-row-plans-col {
+  cursor: pointer;
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
   background: #fff3f3;
