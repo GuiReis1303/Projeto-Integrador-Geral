@@ -138,7 +138,7 @@ const Login2 = (props) => {
 
             console.log(obj)
 
-            axios.post('http://192.168.15.109:3001/Usuario', obj)
+            axios.post('http://localhost:3001/Usuario', obj)
             .then(function (response) {
                 console.log(response);
                 console.log(response.status)
@@ -193,7 +193,7 @@ const Login2 = (props) => {
                 botaoErroLoginoVazio();
             } else{
 
-                axios.post('http://192.168.15.109:3001/Verifica', obj)
+                axios.post('http://localhost:3001/Verifica', obj)
                 .then(function (response) {
                     if (response.data == 0){
                         botaoErroLogin();

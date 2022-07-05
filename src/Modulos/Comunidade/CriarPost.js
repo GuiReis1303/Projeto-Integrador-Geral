@@ -71,7 +71,7 @@ const CriarPost = () => {
         }
         console.log(obj)
 
-        axios.post('http://192.168.15.109:3001/CriarPost', obj)
+        axios.post('http://localhost:3001/CriarPost', obj)
             .then(function (response) {
                 console.log(response);
                 console.log(response.status)

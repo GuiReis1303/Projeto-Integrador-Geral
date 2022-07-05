@@ -76,7 +76,7 @@ const AulaM = () => {
 
     React.useEffect( () => {
         //GET PARA INFORMAÇÕES DA AULA
-        axios.get('http://192.168.15.109:3001/AulaM')
+        axios.get('http://localhost:3001/AulaM')
         .then(function (response) {
             const dados = response.data;
             alteraAula(dados);
@@ -87,7 +87,7 @@ const AulaM = () => {
         })
 
         //POST PARA PEGAR CURTIDAS
-        axios.post('http://192.168.15.109:3001/curtidaAula', obj)
+        axios.post('http://localhost:3001/curtidaAula', obj)
         .then(function (response) {
             const dados = response.data;
             alteraCurtida(dados);
@@ -107,7 +107,7 @@ const AulaM = () => {
         const objVer = {idaula: idaula, iduser: iduser}
 
             //POST PARA VERIFICAR SE O USUARIO JA CURTIU
-            axios.post('http://192.168.15.109:3001/userCurtidaAula', objVer)
+            axios.post('http://localhost:3001/userCurtidaAula', objVer)
             .then(function (response) {
                 console.log(response);
                 if (response.data == 0){
@@ -116,7 +116,7 @@ const AulaM = () => {
                     const iduser = localStorage.getItem('id')
                     const idaula = localStorage.getItem('idaula')
                     const objcurtida = {iduser: iduser, idaula: idaula}
-                    axios.delete(`http://192.168.15.109:3001/DeletaCurtida/${objcurtida.iduser}/${objcurtida.idaula}`)
+                    axios.delete(`http://localhost:3001/DeletaCurtida/${objcurtida.iduser}/${objcurtida.idaula}`)
                                 .then(function (response) {
                                     sucessoDeletaCurtida();
                                     console.log("Removido com Sucesso")
@@ -135,7 +135,7 @@ const AulaM = () => {
         const objAdd = {idaula: idaula, iduser: iduser}
         
         //POST PARA ADICIONAR CURTIDAS NA AULA
-            axios.post('http://192.168.15.109:3001/userCurtidaAulaAdd', objAdd)
+            axios.post('http://localhost:3001/userCurtidaAulaAdd', objAdd)
             
             .then(function (response) {
                 console.log(response);

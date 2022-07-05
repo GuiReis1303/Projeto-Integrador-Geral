@@ -18,7 +18,7 @@ const Feed = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://192.168.15.109:3001/Comunidade')
+        axios.get('http://localhost:3001/Comunidade')
             .then(function (response) {
                 console.log(response);
                 const dados = response.data;
@@ -80,7 +80,7 @@ const Feed = () => {
                             const obj = {idcomunidade}
                             console.log(obj.idcomunidade)
 
-                            axios.delete(`http://192.168.15.109:3001/DeletaPost/${obj.idcomunidade}`)
+                            axios.delete(`http://localhost:3001/DeletaPost/${obj.idcomunidade}`)
                                 .then(function (response) {
                                     sucessoDeletaPost();
                                     setTimeout(() => {
