@@ -1,13 +1,14 @@
 main header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 body {
-  margin-top: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#75276f75), to(rgba(21, 36, 121, 0.849)));
-  background-image: linear-gradient(#75276f75, rgba(21, 36, 121, 0.849));
+  margin-top: 50px;
+  background-image: linear-gradient(rgba(117, 39, 111, 0.4588235294), rgba(21, 36, 121, 0.849));
+}
+
+.criacao {
+  display: block;
 }
 
 .cards {
@@ -15,19 +16,11 @@ body {
   margin-top: 93px;
   height: 170%;
   font-family: Lato;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 1rem;
 }
-
 .cards-card {
   margin: 0 auto;
   background-color: #122035;
@@ -37,27 +30,17 @@ body {
   margin-top: 50px;
   color: #00ff88;
 }
-
 .cards-card h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 500px;
   font-family: Lato;
 }
-
 .cards-card header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 15px;
 }
-
 .cards-card header h2 {
   font-weight: 400;
   font-family: Lato;
@@ -65,7 +48,6 @@ body {
   font-size: 1.75rem;
   letter-spacing: 0.5px;
 }
-
 .cards p {
   margin-top: 10px;
   font-size: 1.2rem;
@@ -101,26 +83,16 @@ img {
 
 .btns {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 30px;
 }
-
 .btns-menu {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 30px;
 }
-
 .btns button {
   color: #122035;
   font-size: 1.3rem;
@@ -131,10 +103,8 @@ img {
   cursor: pointer;
   padding: 5px 40px;
   font-family: Lato;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .btns button:hover {
   border: 1px solid #00ff88;
   background-color: transparent;
@@ -156,15 +126,9 @@ img {
 
 .loading {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .invisivel {
@@ -172,31 +136,32 @@ img {
 }
 
 @media only screen and (max-width: 750px) {
-  main .cards .card {
+  .criacao {
+    display: none;
+  }
+
+  .cards {
     margin: 0 auto;
     background-color: #2F3644;
-    padding: 30px 40px;
     width: 90%;
     border-radius: 7px;
     margin-top: 40px;
   }
-  .btns-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+
+  .cards-card {
+    width: 90%;
   }
+
+  .btns-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .btns-menu button {
     margin-top: 10px;
   }
 }
-
 .card-post {
   height: 100vh;
   background-color: #28285c;
@@ -206,7 +171,6 @@ img {
   margin: 0 auto;
   font-family: Lato;
 }
-
 .card-post h1 {
   font-weight: 500;
   text-align: center;
@@ -214,12 +178,10 @@ img {
   font-size: 3rem;
   margin-bottom: 5px;
 }
-
 .card-post-line {
   height: 2px;
   background-color: #3E445B;
 }
-
 .card-post-body {
   margin-top: 25px;
 }
@@ -270,12 +232,11 @@ textarea {
   cursor: pointer;
   padding: 5px 40px;
   font-family: Lato;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 10px 60px;
   border: 3px 0px 5px solid #122035;
+  margin-right: 10px;
 }
-
 .btn-post button:hover {
   border: 1px solid #00ff88;
   background-color: transparent;
@@ -284,6 +245,17 @@ textarea {
 }
 
 .error-message {
-  color: #f02f2f;
+  color: rgb(240, 47, 47);
 }
-/*# sourceMappingURL=Feed.css.map */
+
+@media only screen and (max-width: 750px) {
+  .card-post {
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .btn-post button {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=Feed.css.map */

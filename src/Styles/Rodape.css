@@ -1,86 +1,61 @@
 .rodape {
   width: 100%;
   height: 30vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
-          box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
-  background-image: -webkit-gradient(linear, right top, left top, from(#201b2c), to(#2f2f6d));
+  justify-content: space-between;
+  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.575) inset;
   background-image: linear-gradient(-90deg, #201b2c, #2f2f6d);
   color: #e0e0ee;
 }
-
 .rodape-logo {
   width: 20%;
 }
-
 .rodape-logo img {
   width: 100%;
   opacity: 25%;
   padding-top: 7%;
 }
-
 .rodape-informacao {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   font-size: 0.8em;
   width: 50vw;
 }
-
 .rodape-informacao h3 {
   font-size: 1.8em;
 }
-
 .rodape-inicio {
   width: 150px;
   padding-top: 0.5em;
 }
-
 .rodape-edit {
   text-decoration: none;
   color: #e0e0ee;
   font-size: 1.2em;
 }
-
 .rodape-edit:hover {
   text-decoration: underline;
   color: #f0f0f0;
   font-size: 1.2em;
 }
-
 .rodape span {
   position: absolute;
   padding-top: 25vh;
 }
-
 .rodape-sobrenos {
   width: 150px;
   padding-top: 0.5em;
 }
-
 .rodape-suporte {
   width: 150px;
   padding-top: 0.5em;
 }
-
 .rodape-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 4vw;
   cursor: pointer;
 }
-
 .rodape-icon {
   margin-right: 20px;
   color: #e0e0ee;
@@ -91,16 +66,9 @@
     margin-top: 10px;
     width: 100%;
     height: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .rodape-logo {
     display: none;
@@ -111,16 +79,9 @@
     padding-top: 7%;
   }
   .rodape-informacao {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .rodape-informacao h3 {
     font-size: 1.5rem;
@@ -150,12 +111,8 @@
     margin-top: 20px;
   }
   .rodape-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     font-size: 8vw;
     cursor: pointer;
     margin-top: 20px;
@@ -163,5 +120,4 @@
   .rodape-icon {
     color: #e0e0ee;
   }
-}
-/*# sourceMappingURL=Rodape.css.map */
+}/*# sourceMappingURL=Rodape.css.map */

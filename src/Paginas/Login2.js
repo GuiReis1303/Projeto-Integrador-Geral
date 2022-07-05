@@ -25,7 +25,6 @@ const Login2 = (props) => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -43,7 +42,6 @@ const Login2 = (props) => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -61,7 +59,6 @@ const Login2 = (props) => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -80,7 +77,6 @@ const Login2 = (props) => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -98,7 +94,6 @@ const Login2 = (props) => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -116,7 +111,6 @@ const Login2 = (props) => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }  
     //FIM DAS NOTIFICAÇÕES
@@ -144,7 +138,7 @@ const Login2 = (props) => {
 
             console.log(obj)
 
-            axios.post('http://localhost:3001/Usuario', obj)
+            axios.post('http://192.168.15.109:3001/Usuario', obj)
             .then(function (response) {
                 console.log(response);
                 console.log(response.status)
@@ -152,6 +146,9 @@ const Login2 = (props) => {
                     botaoSucessoCadastro()
                     setTimeout(() => {
                         navigate("/")
+                        setTimeout(() => {
+                            navigate("/Login2")
+                        }, 10);
                     }, 1000);
                 }
             })
@@ -196,7 +193,7 @@ const Login2 = (props) => {
                 botaoErroLoginoVazio();
             } else{
 
-                axios.post('http://localhost:3001/Verifica', obj)
+                axios.post('http://192.168.15.109:3001/Verifica', obj)
                 .then(function (response) {
                     if (response.data == 0){
                         botaoErroLogin();
@@ -205,10 +202,11 @@ const Login2 = (props) => {
                         const idusuario = response.data
                         console.log(idusuario[0])
                         localStorage.setItem("id", idusuario[0].iduser)
+                        localStorage.setItem("tconta", idusuario[0].tipo_conta)
                         botaoSucessoLogin();
 
                         setTimeout(() => {
-                            navigate("/")
+                            navigate("/Comunidade")
                         }, 1000);
                     }
                     

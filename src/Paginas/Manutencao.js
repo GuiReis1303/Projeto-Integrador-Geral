@@ -7,7 +7,7 @@ const Manutencao = () => {
         <div className="semacesso">
 
             <div className="semacesso-right">
-                <img className="caixacursos-carouselImagem" src={require("./Imagens/manutencao.png")}/>
+                <img className="caixacursos-carouselImagem" src={require("./Imagens/manutencao1.png")}/>
                 </div>
             <div className="semacesso-left">
                 <div className="semacesso-left-texto">

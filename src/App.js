@@ -15,6 +15,7 @@ import Manutencao from "./Paginas/Manutencao";
 import VerificaCurso from "./Modulos/VerificaCurso";
 import VerificaComunidade from "./Modulos/VerificaComunidade";
 import CriarPost from "./Modulos/Comunidade/CriarPost";
+import VerificaAula from "./Modulos/VerificaAula";
 
 function App() {
     require('./App.css')
@@ -31,7 +32,7 @@ function App() {
                 <Route path='Curso_HTML' element={<Curso_HTML/>} />
                 <Route path='Curso_Financas' element={<Curso_Financas/>} />
                 <Route path='Curso_Photoshop' element={<Curso_Photoshop/>} />
-                <Route path='AulaM' element={<AulaM/>} />
+                <Route path='AulaM' element={<VerificaAula/>} />
                 <Route path='MenuALogin' element={<MenuALogin/>} />
                 <Route path='SemAcesso' element={<SemAcesso/>} />
                 <Route path='Manutencao' element={<Manutencao/>} />

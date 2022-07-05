@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { ReactNotifications, Store } from 'react-notifications-component';
 import "animate.css"
@@ -31,7 +31,6 @@ const CriarPost = () => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -49,7 +48,6 @@ const CriarPost = () => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -73,7 +71,7 @@ const CriarPost = () => {
         }
         console.log(obj)
 
-        axios.post('http://localhost:3001/CriarPost', obj)
+        axios.post('http://192.168.15.109:3001/CriarPost', obj)
             .then(function (response) {
                 console.log(response);
                 console.log(response.status)
@@ -124,7 +122,9 @@ const CriarPost = () => {
                             </div>
 
                             <div className="btn-post" >
+                                <Link to={'/Comunidade'}><button className='comunidade' type="submit">Voltar</button></Link>
                                 <button type="submit">Enviar</button>
+                                
                             </div>
 
                         </form>

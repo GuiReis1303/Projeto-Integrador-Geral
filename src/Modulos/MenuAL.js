@@ -8,6 +8,7 @@ const MenuAL = () => {
 
     const deslogaUser = () => {
         localStorage.removeItem("id")
+        localStorage.removeItem("tconta")
     }
 
     require('../Styles/MenuAL.css');

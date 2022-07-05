@@ -84,7 +84,7 @@ app.post('/Usuario', (req, res) => {
 app.post('/Verifica', (req, res) => {
   const nick = req.body.nick;
   const senha = req.body.senha;
-  const query = `SELECT nick, senha, iduser FROM usuario WHERE nick='${nick}' and senha='${senha}';`
+  const query = `SELECT nick, senha, iduser, tipo_conta FROM usuario WHERE nick='${nick}' and senha='${senha}';`
   connection.query(query, function (error, results, fields) {
     if (error) throw error;
     res.send(results);
@@ -127,7 +127,7 @@ app.post('/userCurtidaAulaAdd', (req, res) => {
 
 app.get('/Comunidade', (req, res) => {
  
-  connection.query('SELECT comunidade.idcomunidade, comunidade.titulo, comunidade.comentario, comunidade.iduser, comunidade.descricao, comunidade.criacao, usuario.nick FROM comunidade JOIN usuario ON usuario.iduser = comunidade.iduser;', function (error, results, fields) {
+  connection.query('SELECT comunidade.idcomunidade, comunidade.titulo, comunidade.comentario, comunidade.iduser, comunidade.descricao, comunidade.criacao, usuario.nick FROM comunidade JOIN usuario ON usuario.iduser = comunidade.iduser ORDER BY criacao DESC;', function (error, results, fields) {
     if (error) throw error;
     res.send(results);
   });
@@ -152,6 +152,18 @@ app.delete('/DeletaPost/:idcomunidade', (req, res) => {
   const idcomunidade = req.params.idcomunidade;
  
   const query = `DELETE FROM comunidade WHERE idcomunidade=${idcomunidade};`
+  connection.query(query, function (error, results, fields) {
+    if (error) throw error;
+    res.send(results);
+  });
+  
+})
+
+app.delete('/DeletaCurtida/:iduser/:idaula', (req, res) => {
+  const iduser = req.params.iduser;
+  const idaula = req.params.idaula
+ 
+  const query = `DELETE FROM curtida_aula WHERE iduser = ${iduser} AND idaula = ${idaula};`
   connection.query(query, function (error, results, fields) {
     if (error) throw error;
     res.send(results);

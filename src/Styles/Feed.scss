@@ -28,12 +28,14 @@ main header {
 
 }
 body{
-    margin-top: 0px;
+    margin-top: 50px;
     background-image: linear-gradient( #75276f75, rgba(21, 36, 121, 0.849));
   
 }
 
-
+.criacao{
+    display: block;
+}
 
 .cards{
     margin: 0;
@@ -154,16 +156,20 @@ img {
 }
 
 @media only screen and (max-width:750px){
-    main .cards .card {
+    .criacao{
+        display: none;
+    }
+
+    .cards{
         margin: 0 auto;
-    
         background-color: #2F3644;
-    
-        padding: 30px 40px;
         width: 90%;
-    
         border-radius: 7px;
         margin-top: 40px;
+    }
+
+    .cards-card{
+        width: 90%;
     }
 
     .btns-menu{
@@ -178,9 +184,6 @@ img {
 }
 
 // CRIAR POST
-
-
-
 
 .card-post {
     height: 100vh;
@@ -236,9 +239,22 @@ textarea {
  
     @include botaoComunidade();
     padding: 10px 60px;
-   border: 3px 0px 5px solid #122035;
+    border: 3px 0px 5px solid #122035;
+    margin-right: 10px;
 }
 
 .error-message {
     color: rgb(240, 47, 47);
+}
+
+@media only screen and (max-width:750px){
+    .card-post{
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .btn-post button{
+        margin-top: 10px;
+    }
 }

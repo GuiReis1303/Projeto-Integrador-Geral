@@ -18,7 +18,7 @@ const Feed = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:3001/Comunidade')
+        axios.get('http://192.168.15.109:3001/Comunidade')
             .then(function (response) {
                 console.log(response);
                 const dados = response.data;
@@ -45,7 +45,6 @@ const Feed = () => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
 
@@ -63,7 +62,6 @@ const Feed = () => {
                 duration: 2000,
                 showIcon: true
             },
-            width: 600
         })
     }
     
@@ -82,7 +80,7 @@ const Feed = () => {
                             const obj = {idcomunidade}
                             console.log(obj.idcomunidade)
 
-                            axios.delete(`http://localhost:3001/DeletaPost/${obj.idcomunidade}`)
+                            axios.delete(`http://192.168.15.109:3001/DeletaPost/${obj.idcomunidade}`)
                                 .then(function (response) {
                                     sucessoDeletaPost();
                                     setTimeout(() => {
@@ -146,7 +144,7 @@ const Feed = () => {
                             <div className="cards-card" key={key} id={'card'+post.idcomunidade} >
                                 <header>
                                     <h2>{post == 0 ? "Carregando" : post.nick}</h2>
-                                    <h5>{post == 0 ? "Carregando" : post.criacao}</h5>
+                                    <h5 className='criacao'>{post == 0 ? "Carregando" : post.criacao}</h5>
                                 </header>
 
                                 <div className="line"></div>
