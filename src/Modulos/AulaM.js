@@ -119,7 +119,12 @@ const AulaM = () => {
                     axios.delete(`http://localhost:3001/DeletaCurtida/${objcurtida.iduser}/${objcurtida.idaula}`)
                                 .then(function (response) {
                                     sucessoDeletaCurtida();
-                                    console.log("Removido com Sucesso")
+                                    setTimeout(() => {
+                                        navigate('/')
+                                        setTimeout(() => {
+                                            navigate('/AulaM')
+                                        }, 10)
+                                    }, 1000);
                                 })
                                 .catch(function (error) {
                                     erroDeletaCurtida();
