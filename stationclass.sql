@@ -39,7 +39,7 @@ CREATE TABLE `aula` (
 
 LOCK TABLES `aula` WRITE;
 /*!40000 ALTER TABLE `aula` DISABLE KEYS */;
-INSERT INTO `aula` VALUES (1,'Criando a Estrutura HTML','https://www.youtube-nocookie.com/embed/uCyVx1vYDz8'),(2,'Como Começar a Investir','https://www.youtube-nocookie.com/embed/uCyVx1vYDz8'),(3,'Aprendendo Photoshop','https://www.youtube-nocookie.com/embed/uCyVx1vYDz8');
+INSERT INTO `aula` VALUES (1,'Criando a Estrutura HTML','https://www.youtube.com/embed/D-MZagJWgbI'),(2,'Como Começar a Investir','https://www.youtube.com/embed/D-MZagJWgbI'),(3,'Aprendendo Photoshop','https://www.youtube.com/embed/D-MZagJWgbI');
 /*!40000 ALTER TABLE `aula` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,7 +60,7 @@ CREATE TABLE `comunidade` (
   PRIMARY KEY (`idcomunidade`),
   UNIQUE KEY `idcomunidade_UNIQUE` (`idcomunidade`),
   KEY `iduser_idx` (`iduser`)
-) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +69,7 @@ CREATE TABLE `comunidade` (
 
 LOCK TABLES `comunidade` WRITE;
 /*!40000 ALTER TABLE `comunidade` DISABLE KEYS */;
-INSERT INTO `comunidade` VALUES (1,'Aula HTML','gostei bastante da aula',1,'Sobre a aula HTML','2022-06-30 16:33:05'),(2,'Aula Photoshop','gostei muito dessa aula, mt bem explicada',2,'Sobre a aula Photoshop','2022-06-30 16:33:05'),(3,'Aula Finanças','Agora vou conseguir dinheiro de vdd',5,'Bora lucrar','2022-06-30 16:33:05');
+INSERT INTO `comunidade` VALUES (41,'Aula Finanças','Acho que esse curso de investimentos vai me ajudar muito já que tenho um dinheiro sobrando e investir ele pode dar bom',4,'Bora ganhar dinheiro','2022-07-05 10:35:47'),(40,'Aula HTML','Acho que a aula de HTML foi muito bem explicada e o instrutor é muito habilidoso para explicar e também programar em HTML',1,'Minha opnião sobre a aula','2022-07-05 10:34:34'),(42,'Aula Photoshop','Adorei a aula de photoshop e o professor sabe muito do aplicativo, mas também sabe como deixar tudo bonito, ele é muito top',3,'Bora deixar tudo bonito','2022-07-05 10:37:05');
 /*!40000 ALTER TABLE `comunidade` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ CREATE TABLE `curtida_aula` (
   KEY `idaula_idx` (`idaula`),
   CONSTRAINT `idaula` FOREIGN KEY (`idaula`) REFERENCES `aula` (`idaula`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `iduser` FOREIGN KEY (`iduser`) REFERENCES `usuario` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,7 +99,7 @@ CREATE TABLE `curtida_aula` (
 
 LOCK TABLES `curtida_aula` WRITE;
 /*!40000 ALTER TABLE `curtida_aula` DISABLE KEYS */;
-INSERT INTO `curtida_aula` VALUES (19,1,1),(20,1,2),(21,1,3),(22,2,1),(23,2,2),(24,2,3),(25,3,1),(26,3,2),(27,3,3),(28,4,1),(29,4,2),(30,4,3),(31,5,1),(32,5,2),(33,5,3),(34,6,1),(35,6,2),(36,6,3),(37,1,1),(38,1,1);
+INSERT INTO `curtida_aula` VALUES (20,1,2),(21,1,3),(22,2,1),(23,2,2),(24,2,3),(25,3,1),(26,3,2),(27,3,3),(28,4,1),(29,4,2),(30,4,3),(31,5,1),(32,5,2),(33,5,3),(34,6,1),(35,6,2),(36,6,3),(39,10,1);
 /*!40000 ALTER TABLE `curtida_aula` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,12 +115,12 @@ CREATE TABLE `usuario` (
   `nick` varchar(30) NOT NULL,
   `email` varchar(60) NOT NULL,
   `senha` varchar(30) NOT NULL,
-  `tipo_conta` varchar(1) DEFAULT NULL,
+  `tipo_conta` varchar(1) DEFAULT '0',
   PRIMARY KEY (`iduser`),
   UNIQUE KEY `iduser_UNIQUE` (`iduser`),
   UNIQUE KEY `nick_UNIQUE` (`nick`),
   UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,7 +129,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'gui','gui@gmail.com','12345','1'),(2,'Conrado','conrado@gmail.com','12345',NULL),(3,'Paulo','paulo@gmail.com','12345',NULL),(4,'Marcos','marcos@gmail.com','12345',NULL),(5,'Aralto','aralto@gmail.com','12345',NULL),(6,'gui1','gui','12345',NULL),(7,'','','',NULL),(10,'123','gui12','13245',NULL),(11,'sla13','sla@gmail.com','12345',NULL),(13,'teste','teste','teste',NULL),(14,'teste1','teste1','teste1',NULL),(15,'teste2','teste2','teste2',NULL),(16,'teste3','teste3','teste3',NULL),(17,'teste4','teste4','teste4',NULL),(18,'testes2','testes1','testes2',NULL),(22,'134012g','gui13@gmail.com','12345',NULL),(23,'Gui14','gui14@gmail.com','12345',NULL),(24,'isa ','isabelaap@gmail.com','1234',NULL),(25,'reis13','reis@gmail.com','12345',NULL),(27,'reis14','reis14@gmail.com','12345',NULL),(28,'reis15','reis15@gmail.com','12345',NULL),(29,'sirley13','sirley@gmail.com','12345',NULL),(30,'bia13','bia@gmail.com','12345',NULL),(31,'sally13','sally@gmail.com','12345',NULL),(32,'sally14','sally14@gmail.com','12345',NULL),(33,'marcos13','marcos13@gmail.com','12345',NULL),(34,'sasasass','guireis1303@gmail.comsss','sssssssssssss',NULL),(35,'felipe13','felipe@gmail.com','12345',NULL);
+INSERT INTO `usuario` VALUES (1,'Gui','gui@gmail.com','12345','1'),(2,'teste0','teste0@gmail.com','12345','1'),(3,'Paulo','paulo@gmail.com','12345','1'),(4,'Marcos','marcos@gmail.com','12345','1'),(5,'Aralto','aralto@gmail.com','12345','1'),(6,'gui1','gui','12345','0'),(10,'123','gui12','13245','0'),(11,'teste1','teste1@','12345','0'),(12,'Guilherme13','slaslalda@gmail.com','12345','0');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -142,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-30 16:44:58
+-- Dump completed on 2022-07-06  9:12:34
