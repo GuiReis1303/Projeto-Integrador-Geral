@@ -28,7 +28,9 @@ const MenuALComunidade = () => {
                             <Nav.Link href="/FAQ" className="editMenuALH1" id="FAQ">FAQ</Nav.Link>
                         </Nav>
                         <Nav className="me-auto">
-                            <Nav.Link href="/CriarPost" className="editMenuALH2" id="Home"><button className="editMenuALH2-button2">Nova Postagem </button></Nav.Link>
+                            <Nav.Link href="/CriarPost" className="editMenuALH2" id="Home">
+                                <button className="editMenuALH2-button2"> Nova Postagem </button>
+                            </Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link href="/" className="editMenuALH2"><button className="editMenuALH2-button1" onClick={() => deslogaUser()}>Sair</button></Nav.Link>
